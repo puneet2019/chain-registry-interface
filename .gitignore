@@ -1,0 +1,26 @@
+# Ensure local planning doc never gets committed
+/docs/PLAN.md
+
+# IDE
+.idea/
+.vscode/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+bin/
+dist/
+coverage/
+
+# Rust
+/target/
+**/target/
+Cargo.lock
+
+# macOS
+.DS_Store
