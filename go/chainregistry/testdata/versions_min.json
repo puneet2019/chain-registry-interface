@@ -1,0 +1,7 @@
+{
+  "$schema": "../versions.schema.json",
+  "chain_name": "cosmoshub",
+  "versions": [
+    { "name": "v1" }
+  ]
+}

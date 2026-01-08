@@ -1,0 +1,11 @@
+{
+  "$schema": "../memo_keys.schema.json",
+  "memo_keys": [
+    {
+      "key": "relayer_memo",
+      "description": "Test memo key",
+      "git_repo": "https://github.com/example/repo",
+      "memo": {"foo": "bar"}
+    }
+  ]
+}

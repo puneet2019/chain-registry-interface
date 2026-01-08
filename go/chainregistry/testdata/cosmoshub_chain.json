@@ -1,0 +1,6 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "cosmoshub",
+  "chain_type": "cosmos",
+  "status": "live"
+}
