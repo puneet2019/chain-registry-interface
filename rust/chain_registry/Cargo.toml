@@ -1,0 +1,15 @@
+[package]
+name = "chain_registry"
+version = "0.0.0"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+description = "Typed runtime access to Cosmos chain-registry (schemas only; no embedded data)."
+repository = "https://github.com/chain-registry-interface"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
