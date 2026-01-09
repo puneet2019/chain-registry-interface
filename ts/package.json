@@ -1,0 +1,27 @@
+{
+  "name": "@chain-registry-interface/ts",
+  "version": "0.0.0",
+  "description": "Typed runtime access to Cosmos chain-registry (TypeScript). No embedded data.",
+  "license": "Apache-2.0 OR MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chain-registry-interface"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "test": "npm run build && node --test dist/test/**/*.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "rimraf": "^5.0.5",
+    "@types/node": "^20.11.0"
+  }
+}
