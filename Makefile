@@ -1,6 +1,6 @@
 # Minimal Makefile for local dev and CI
 
-.PHONY: all ci ci-go ci-rust schemas go-build go-test rust-build rust-test
+.PHONY: all ci ci-go ci-rust ci-ts schemas go-build go-test rust-build rust-test ts-build
 
 all: ci
 
@@ -27,3 +27,13 @@ rust-test:
 	cd rust/chain_registry && cargo test
 
 ci-rust: rust-build rust-test
+
+# TypeScript
+ts-build:
+	cd ts && npm i && npm run build
+
+ts-test:
+	cd ts && (npm ci || npm i)
+	cd ts && npm test
+
+ci-ts: ts-test

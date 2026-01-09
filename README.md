@@ -33,6 +33,10 @@ Usage examples
   - use chain_registry::fetch_chain;
   - let chain = fetch_chain("osmosis").await?;
   - println!("{}", chain.chain_name);
+- TypeScript
+  - import { fetchChain, fetchAssetList } from "@chain-registry-interface/ts";
+  - const chain = await fetchChain("cosmoshub");
+  - console.log(chain.chain_name);
 
 Live tests (optional)
 - Tests default to offline fixtures. To enable network tests, set CHAIN_REGISTRY_LIVE=1.
@@ -47,3 +51,19 @@ Development
 
 Versioning
 - Version bumps only when schemas change (semver applies to type compatibility). Registry data updates alone do not require a release.
+
+Publishing (Rust crates.io)
+- Prereqs:
+  - Create a crates.io account and verify your email.
+  - Generate an API token at https://crates.io/me and save it locally.
+- One-time auth on your machine:
+  - Run: cargo login <YOUR_TOKEN>
+- Sanity checks before publishing:
+  - Update version in rust/chain_registry/Cargo.toml.
+  - Run: make ci-rust (build + tests) and ensure README has usage.
+  - Optional: cargo publish --dry-run in rust/chain_registry
+- Publish:
+  - cd rust/chain_registry && cargo publish
+- Notes:
+  - Only bump versions when schemas change (per this repo’s policy).
+  - Use yanked releases for quick rollbacks if necessary.
