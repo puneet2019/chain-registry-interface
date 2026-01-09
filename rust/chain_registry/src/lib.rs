@@ -153,11 +153,16 @@ fn assetlist_url(name: &str) -> String {
 }
 
 fn memo_keys_url() -> String {
-    format!("{}/memo_keys.json", RAW_BASE)
+    format!("{}/_memo_keys/ICS20_memo_keys.json", RAW_BASE)
 }
 
 fn ibc_data_url() -> String {
     format!("{}/ibc/ibc-data.json", RAW_BASE)
+}
+
+fn ibc_connection_url(a: &str, b: &str) -> String {
+    let (x, y) = if a <= b { (a, b) } else { (b, a) };
+    format!("{}/_IBC/{}-{}.json", RAW_BASE, x, y)
 }
 
 fn versions_url(name: &str) -> String {

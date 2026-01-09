@@ -9,7 +9,7 @@ function assetListUrl(name: string) {
   return `${RAW_BASE}/${name}/assetlist.json`;
 }
 function memoKeysUrl() {
-  return `${RAW_BASE}/memo_keys.json`;
+  return `${RAW_BASE}/_memo_keys/ICS20_memo_keys.json`;
 }
 function ibcDataUrl() {
   return `${RAW_BASE}/ibc/ibc-data.json`;
