@@ -37,9 +37,10 @@ Testing guidance
 - Network flakiness: keep live tests behind CHAIN_REGISTRY_LIVE, and keep them fast.
 
 Adding new helpers
-- Keep signatures aligned with README and issue: 
-  - Go: FetchChain(ctx, name), FetchAssetList(ctx, name), FetchIBCData(ctx, name), FetchMemoKeys(ctx, name), FetchVersions(ctx, name)
-  - Rust: async fetch_chain(name), fetch_asset_list(name), fetch_ibc_data(name), fetch_memo_keys(name), fetch_versions(name)
+- Keep signatures aligned with README and issue:
+  - Go: FetchChain(ctx, name), FetchAssetList(ctx, name), FetchMemoKeys(ctx, name), FetchVersions(ctx, name)
+  - Rust: async fetch_chain(name), fetch_asset_list(name), fetch_memo_keys(name), fetch_versions(name)
+  - Note: The registry does not provide an aggregate ibc/ibc-data.json; per-connection files live under _IBC/<a>-<b>.json. Add per-connection helpers separately if needed.
 - Keep dependencies minimal (std + net/http + encoding/json for Go; reqwest+serde for Rust).
 
 Checklist for PRs

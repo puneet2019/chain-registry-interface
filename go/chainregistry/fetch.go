@@ -36,10 +36,6 @@ func buildMemoKeysURL(_ string) string { // chainName is unused; kept for signat
 	return fmt.Sprintf("%s/_memo_keys/ICS20_memo_keys.json", rawBase)
 }
 
-func buildIBCDataURL() string {
-	return fmt.Sprintf("%s/ibc/ibc-data.json", rawBase)
-}
-
 func buildIBCConnectionURL(chainA, chainB string) string {
 	// Alphabetical order: a-b
 	if chainA > chainB {
@@ -136,15 +132,6 @@ func FetchMemoKeys(ctx context.Context, chainName string) (*MemoKeys, error) { /
 	return &m, nil
 }
 
-// FetchIBCData fetches ibc/ibc-data.json from the registry.
-func FetchIBCData(ctx context.Context, chainName string) (*IBCData, error) { // chainName unused
-	u := buildIBCDataURL()
-	var d IBCData
-	if err := fetchJSON(ctx, u, &d); err != nil {
-		return nil, err
-	}
-	return &d, nil
-}
 
 // FetchVersions fetches versions.json for a given chain. Tries root, then testnets/.
 func FetchVersions(ctx context.Context, chainName string) (*Versions, error) {

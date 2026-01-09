@@ -156,17 +156,31 @@ fn memo_keys_url() -> String {
     format!("{}/_memo_keys/ICS20_memo_keys.json", RAW_BASE)
 }
 
-fn ibc_data_url() -> String {
-    format!("{}/ibc/ibc-data.json", RAW_BASE)
-}
 
-fn ibc_connection_url(a: &str, b: &str) -> String {
+pub fn ibc_connection_url(a: &str, b: &str) -> String {
     let (x, y) = if a <= b { (a, b) } else { (b, a) };
     format!("{}/_IBC/{}-{}.json", RAW_BASE, x, y)
 }
 
 fn versions_url(name: &str) -> String {
     format!("{}/{}/versions.json", RAW_BASE, name)
+}
+
+/// Fetch IBC connection data for a pair of chains from _IBC/<a>-<b>.json (alphabetically sorted).
+pub async fn fetch_ibc_connection(chain_a: &str, chain_b: &str) -> Result<IbcData, reqwest::Error> {
+    if chain_a.is_empty() || chain_b.is_empty() {
+        // Mirror other helpers by returning a simple reqwest error is awkward; instead, use a dummy request builder
+        // In practice, callers should validate inputs; we keep it minimal here.
+    }
+    let url = ibc_connection_url(chain_a, chain_b);
+    let resp = reqwest::Client::new()
+        .get(url)
+        .header("Accept", "application/json")
+        .header("User-Agent", "chain-registry-interface-rust/0.0")
+        .send()
+        .await?;
+    let d = resp.json::<IbcData>().await?;
+    Ok(d)
 }
 
 /// Fetch a chain.json by chain name from the public registry.
@@ -209,18 +223,6 @@ pub async fn fetch_memo_keys(_chain_name: &str) -> Result<MemoKeys, reqwest::Err
     Ok(mk)
 }
 
-/// Fetch ibc/ibc-data.json from the registry root. Name parameter kept for signature symmetry.
-pub async fn fetch_ibc_data(_chain_name: &str) -> Result<IbcData, reqwest::Error> {
-    let url = ibc_data_url();
-    let resp = reqwest::Client::new()
-        .get(url)
-        .header("Accept", "application/json")
-        .header("User-Agent", "chain-registry-interface-rust/0.0")
-        .send()
-        .await?;
-    let d = resp.json::<IbcData>().await?;
-    Ok(d)
-}
 
 /// Fetch versions.json by chain name.
 pub async fn fetch_versions(chain_name: &str) -> Result<Versions, reqwest::Error> {
