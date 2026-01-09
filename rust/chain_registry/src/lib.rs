@@ -160,6 +160,10 @@ fn ibc_data_url() -> String {
     format!("{}/ibc/ibc-data.json", RAW_BASE)
 }
 
+fn versions_url(name: &str) -> String {
+    format!("{}/{}/versions.json", RAW_BASE, name)
+}
+
 /// Fetch a chain.json by chain name from the public registry.
 /// No caching or validation beyond JSON parsing.
 pub async fn fetch_chain(chain_name: &str) -> Result<Chain, reqwest::Error> {
@@ -211,6 +215,19 @@ pub async fn fetch_ibc_data(_chain_name: &str) -> Result<IbcData, reqwest::Error
         .await?;
     let d = resp.json::<IbcData>().await?;
     Ok(d)
+}
+
+/// Fetch versions.json by chain name.
+pub async fn fetch_versions(chain_name: &str) -> Result<Versions, reqwest::Error> {
+    let url = versions_url(chain_name);
+    let resp = reqwest::Client::new()
+        .get(url)
+        .header("Accept", "application/json")
+        .header("User-Agent", "chain-registry-interface-rust/0.0")
+        .send()
+        .await?;
+    let v = resp.json::<Versions>().await?;
+    Ok(v)
 }
 
 

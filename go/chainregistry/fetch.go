@@ -31,6 +31,10 @@ func buildIBCDataURL() string {
 	return fmt.Sprintf("%s/ibc/ibc-data.json", rawBase)
 }
 
+func buildVersionsURL(chainName string) string {
+	return fmt.Sprintf("%s/%s/versions.json", rawBase, chainName)
+}
+
 // fetchJSON performs an HTTP GET and decodes the JSON body into v.
 // No caching or validation is performed beyond JSON decoding.
 func fetchJSON(ctx context.Context, url string, v any) error {
@@ -102,6 +106,19 @@ func FetchIBCData(ctx context.Context, chainName string) (*IBCData, error) { // 
 		return nil, err
 	}
 	return &d, nil
+}
+
+// FetchVersions fetches versions.json for a given chain.
+func FetchVersions(ctx context.Context, chainName string) (*Versions, error) {
+	if chainName == "" {
+		return nil, errors.New("empty chainName")
+	}
+	u := buildVersionsURL(chainName)
+	var v Versions
+	if err := fetchJSON(ctx, u, &v); err != nil {
+		return nil, err
+	}
+	return &v, nil
 }
 
 // WithTimeout is a small helper to create a child context with a default timeout
