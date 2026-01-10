@@ -1,4 +1,4 @@
-use chain_registry::AssetList;
+use chain_registry_interface::AssetList;
 
 #[test]
 fn parse_assetlist_fixture() {

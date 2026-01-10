@@ -1,4 +1,4 @@
-use chain_registry::MemoKeys;
+use chain_registry_interface::MemoKeys;
 
 #[test]
 fn parse_memo_keys_fixture() {

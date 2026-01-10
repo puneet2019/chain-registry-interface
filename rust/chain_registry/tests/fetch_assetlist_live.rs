@@ -4,7 +4,7 @@ async fn fetch_assetlist_live_optional() {
         eprintln!("skipping live network test; set CHAIN_REGISTRY_LIVE=1 to enable");
         return;
     }
-    let al = chain_registry::fetch_asset_list("osmosis")
+    let al = chain_registry_interface::fetch_asset_list("osmosis")
         .await
         .expect("fetch osmosis assetlist");
     assert_eq!(al.chain_name, "osmosis");

@@ -31,7 +31,7 @@ Usage examples
   - assets, _ := chainregistry.FetchAssetList(ctx, "osmosis")
   - fmt.Println(len(assets.Assets))
 - Rust
-  - use chain_registry::fetch_chain;
+  - use chain_registry_interface::fetch_chain;
   - let chain = fetch_chain("osmosis").await?;
   - println!("{}", chain.chain_name);
 - TypeScript

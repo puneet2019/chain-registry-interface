@@ -4,7 +4,7 @@ async fn fetch_ibc_connection_live_optional() {
         eprintln!("skipping live network test; set CHAIN_REGISTRY_LIVE=1 to enable");
         return;
     }
-    let d = chain_registry::fetch_ibc_connection("agoric", "cosmoshub")
+    let d = chain_registry_interface::fetch_ibc_connection("agoric", "cosmoshub")
         .await
         .expect("fetch agoric-cosmoshub ibc connection");
     assert_eq!(d.chain_1.chain_name, "agoric");

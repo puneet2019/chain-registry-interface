@@ -1,4 +1,4 @@
-use chain_registry::Chain;
+use chain_registry_interface::Chain;
 
 #[test]
 fn parse_chain_fixture() {

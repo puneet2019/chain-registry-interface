@@ -1,4 +1,4 @@
-use chain_registry::Versions;
+use chain_registry_interface::Versions;
 
 #[test]
 fn parse_versions_fixture() {

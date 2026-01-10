@@ -4,7 +4,7 @@ async fn fetch_versions_live_optional() {
         eprintln!("skipping live network test; set CHAIN_REGISTRY_LIVE=1 to enable");
         return;
     }
-    let v = chain_registry::fetch_versions("cosmoshub")
+    let v = chain_registry_interface::fetch_versions("cosmoshub")
         .await
         .expect("fetch cosmoshub versions");
     assert_eq!(v.chain_name, "cosmoshub");

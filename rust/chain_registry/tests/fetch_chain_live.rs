@@ -4,6 +4,6 @@ async fn fetch_chain_live_optional() {
         eprintln!("skipping live network test; set CHAIN_REGISTRY_LIVE=1 to enable");
         return;
     }
-    let chain = chain_registry::fetch_chain("osmosis").await.expect("fetch osmosis");
+    let chain = chain_registry_interface::fetch_chain("osmosis").await.expect("fetch osmosis");
     assert_eq!(chain.chain_name, "osmosis");
 }

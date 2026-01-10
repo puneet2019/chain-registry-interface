@@ -1,13 +1,13 @@
 [package]
-name = "chain_registry"
-version = "0.0.0"
+name = "chain-registry-interface"
+version = "0.0.1"
 edition = "2021"
 license = "Apache-2.0 OR MIT"
 description = "Typed runtime access to Cosmos chain-registry (schemas only; no embedded data)."
 repository = "https://github.com/puneet2019/chain-registry-interface"
 homepage = "https://github.com/puneet2019/chain-registry-interface"
-documentation = "https://docs.rs/chain_registry"
-readme = "../../README.md"
+documentation = "https://docs.rs/chain-registry-interface"
+readme = "README.md"
 authors = ["puneet2019"]
 keywords = ["cosmos", "ibc", "blockchain", "registry"]
 

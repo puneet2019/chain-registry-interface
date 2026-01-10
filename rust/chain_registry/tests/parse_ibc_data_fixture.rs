@@ -1,4 +1,4 @@
-use chain_registry::IbcData;
+use chain_registry_interface::IbcData;
 
 #[test]
 fn parse_ibc_data_fixture() {
