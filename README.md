@@ -23,7 +23,7 @@ Usage examples
 - Go
   - import (
       "context"
-      chainregistry "github.com/chain-registry-interface/go/chainregistry"
+      chainregistry "github.com/puneet2019/chain-registry-interface/go/chainregistry"
     )
   - ctx := context.Background()
   - chain, _ := chainregistry.FetchChain(ctx, "cosmoshub")
@@ -35,7 +35,7 @@ Usage examples
   - let chain = fetch_chain("osmosis").await?;
   - println!("{}", chain.chain_name);
 - TypeScript
-  - import { fetchChain, fetchAssetList } from "@chain-registry-interface/ts";
+  - import { fetchChain, fetchAssetList } from "@puneet_m/chain-registry-interface";
   - const chain = await fetchChain("cosmoshub");
   - console.log(chain.chain_name);
 

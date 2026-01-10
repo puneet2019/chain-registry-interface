@@ -81,7 +81,7 @@ release-rust: tag-rust publish-rust
 
 release-ts: tag-ts publish-ts
 
-release-all: release-rust release-ts
+release-all: release-go release-rust release-ts
 
 # Proto registry (core Cosmos stack)
 PROTO_OUT := proto-bundles
