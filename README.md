@@ -10,6 +10,7 @@ Status
 - Makefile-based CI in place (Go and Rust via `make ci-go` / `make ci-rust`).
 - Dev script to fetch latest schemas: scripts/fetch-schemas.sh (downloads into scripts/schemas/)
 - Implementing types per schemas in small, verifiable steps (Go and Rust).
+- Experimental proto registry tooling for core Cosmos stack (see below).
 
 Guiding rules
 - Schemas are the source of truth (no hand-wavy fields, no renaming, no merging).
@@ -38,6 +39,24 @@ Usage examples
   - const chain = await fetchChain("cosmoshub");
   - console.log(chain.chain_name);
 
+Proto registry (experimental)
+- Build immutable proto bundles for the core stack: cometbft, cosmos-sdk, ibc-go, wasmd.
+- Requirements: Go toolchain installed. Optional: protoc and protoc-gen-go for Go bindings.
+- Make targets:
+  - make proto-core           # builds bundles into proto-bundles/
+  - make proto-core-go        # builds bundles and attempts Go codegen
+  - make proto-clean          # removes proto-bundles/
+- Direct script usage:
+  - scripts/proto-registry.sh build \
+      github.com/cometbft/cometbft@v0.38.12 \
+      github.com/cosmos/cosmos-sdk@v0.50.9 \
+      github.com/cosmos/ibc-go/v8@v8.4.0 \
+      github.com/CosmWasm/wasmd@v0.50.0
+- Env options:
+  - OUT_DIR=proto-bundles GEN_GO=1 GEN_TS=0 GEN_RUST=0 scripts/proto-registry.sh build <modules>
+- Output:
+  - One directory per module@version under proto-bundles/, containing copied proto trees and a manifest.json.
+
 Live tests (optional)
 - Tests default to offline fixtures. To enable network tests, set CHAIN_REGISTRY_LIVE=1.
   - Example: CHAIN_REGISTRY_LIVE=1 make ci-go
@@ -47,6 +66,7 @@ Development
 - CI: GitHub Actions are configured for Go and Rust builds/tests in .github/workflows.
 - To refresh schemas for reference:
   - bash scripts/fetch-schemas.sh
+- Proto registry plan: docs/PROTO_REGISTRY_PLAN.md
 - Maintenance playbook: see docs/MAINTENANCE.md
 
 Versioning

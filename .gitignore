@@ -1,5 +1,6 @@
 # Ensure local planning doc never gets committed
 /docs/PLAN.md
+/docs/PROTO_REGISTRY_PLAN.md
 
 # IDE
 .idea/
