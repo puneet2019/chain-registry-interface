@@ -1,7 +1,9 @@
 # Minimal Makefile for local dev and CI
 
-.PHONY: all ci ci-go ci-rust ci-ts schemas go-build go-test rust-build rust-test ts-build proto-core proto-core-go proto-clean \
-	tag-go tag-rust tag-ts publish-rust publish-ts release-go release-rust release-ts release-all
+.PHONY: all ci ci-go ci-rust ci-ts schemas go-build go-test rust-build rust-test ts-build \
+	proto-core proto-core-go proto-all-chains proto-all-chains-go proto-clean \
+	tag-go tag-rust tag-ts publish-rust publish-ts release-go release-rust release-ts release-all \
+	fetch-upstream-protos-core fetch-upstream-protos
 
 all: ci
 
@@ -13,19 +15,19 @@ schemas:
 
 # Go
 go-build:
-	cd go/chainregistry && go build ./...
+	cd sdk-go/chainregistry && go build ./...
 
 go-test:
-	cd go/chainregistry && go test ./...
+	cd sdk-go/chainregistry && go test ./...
 
 ci-go: go-build go-test
 
 # Rust
 rust-build:
-	cd rust/chain_registry && cargo build
+	cd sdk-rust/chain_registry && cargo build
 
 rust-test:
-	cd rust/chain_registry && cargo test
+	cd sdk-rust/chain_registry && cargo test
 
 ci-rust: rust-build rust-test
 
@@ -85,18 +87,61 @@ release-all: release-go release-rust release-ts
 
 # Proto registry (core Cosmos stack)
 PROTO_OUT := proto-bundles
-CORE_MODULES := \
-	github.com/cometbft/cometbft@v0.38.12 \
-	github.com/cosmos/cosmos-sdk@v0.50.9 \
-	github.com/cosmos/ibc-go/v8@v8.4.0 \
-	github.com/CosmWasm/wasmd@v0.50.0
 
 proto-core:
-	OUT_DIR=$(PROTO_OUT) bash scripts/proto-registry.sh build $(CORE_MODULES)
+	OUT_DIR=$(PROTO_OUT) bash proto-tools/builders/build-core-stack.sh
 
 # Same as proto-core but also try Go codegen (requires protoc + protoc-gen-go installed)
 proto-core-go:
-	GEN_GO=1 OUT_DIR=$(PROTO_OUT) bash scripts/proto-registry.sh build $(CORE_MODULES)
+	GEN_GO=1 OUT_DIR=$(PROTO_OUT) bash proto-tools/builders/build-core-stack.sh
+
+# Proto registry (core Cosmos stack with latest tags for TypeScript)
+PROTO_CORE_LATEST_OUT := proto-bundles-core-latest
+
+proto-core-latest:
+	OUT_DIR=$(PROTO_CORE_LATEST_OUT) bash proto-tools/builders/build-core-stack-latest.sh
+
+# Same as proto-core-latest but also try TS codegen (uses latest relevant tags)
+proto-core-latest-ts:
+	GEN_TS=1 OUT_DIR=$(PROTO_CORE_LATEST_OUT) bash proto-tools/builders/build-core-stack-latest.sh
+
+# Proto registry (core Cosmos stack TypeScript bindings - cosmjs-types style)
+PROTO_CORE_TS_OUT := proto-bundles-ts-core
+
+proto-core-ts:
+	OUT_DIR=$(PROTO_CORE_TS_OUT) bash proto-tools/builders/build-core-stack-ts.sh
+
+# TypeScript SDK (core Cosmos stack - cosmjs-types style)
+sdk-ts-build:
+	bash proto-tools/build-core-stack-ts.sh
+
+# Same as sdk-ts-build but also run tests
+sdk-ts-test:
+	cd sdk-ts && npm run build && npm test
+
+# Proto registry (all chains in chain-registry - expanded functionality)
+PROTO_ALL_CHAINS_OUT := proto-bundles-all
+
+proto-all-chains:
+	OUT_DIR=$(PROTO_ALL_CHAINS_OUT) bash proto-tools/builders/build-all-chains.sh
+
+# Same as proto-all-chains but also try Go codegen
+proto-all-chains-go:
+	GEN_GO=1 OUT_DIR=$(PROTO_ALL_CHAINS_OUT) bash proto-tools/builders/build-all-chains.sh
 
 proto-clean:
-	rm -rf $(PROTO_OUT)
+	rm -rf $(PROTO_OUT) $(PROTO_ALL_CHAINS_OUT) $(PROTO_CORE_LATEST_OUT) $(PROTO_CORE_TS_OUT)
+
+# Upstream protos (direct from upstream repos via git and optional buf export)
+UPSTREAM_OUT := protos/upstream
+
+# Fetch core stack upstream protos into protos/upstream/
+fetch-upstream-protos-core:
+	OUT_DIR=$(UPSTREAM_OUT) bash proto-tools/fetchers/fetch-upstream-protos.sh core
+
+# Fetch arbitrary repos; pass MODULES as space-separated list of repo@tag
+# Example:
+#   MODULES="github.com/cosmos/cosmos-sdk@v0.50.9 github.com/cosmos/ibc-go@v8.4.0" make fetch-upstream-protos
+fetch-upstream-protos:
+	@if [ -z "$(MODULES)" ]; then echo "ERROR: set MODULES to space-separated <repo>@<tag> list"; exit 1; fi
+	OUT_DIR=$(UPSTREAM_OUT) bash proto-tools/fetchers/fetch-upstream-protos.sh fetch $(MODULES)
