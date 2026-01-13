@@ -1,6 +1,6 @@
 [package]
 name = "chain-registry-interface"
-version = "0.0.1"
+version = "0.0.1-alpha1"
 edition = "2021"
 license = "Apache-2.0 OR MIT"
 description = "Typed runtime access to Cosmos chain-registry (schemas only; no embedded data)."

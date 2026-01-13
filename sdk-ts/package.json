@@ -1,6 +1,6 @@
 {
   "name": "@puneet_m/chain-registry-interface",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha1",
   "description": "Typed runtime access to Cosmos chain-registry (TypeScript). No embedded data.",
   "license": "Apache-2.0 OR MIT",
   "repository": {

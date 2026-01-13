@@ -71,10 +71,10 @@ tag-ts: require-version
 
 # Registry publishes (assumes versions already bumped in manifests)
 publish-rust:
-	cd rust/chain_registry && cargo publish
+	cd sdk-rust/chain_registry && cargo publish
 
 publish-ts:
-	cd ts && npm publish --access public
+	cd sdk-ts && npm publish --access public
 
 # Composite release targets
 release-go: tag-go
