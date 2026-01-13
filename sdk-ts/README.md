@@ -1,58 +1,44 @@
-# @puneet_m/core-proto-types
+# @puneet_m/chain-registry-interface
 
-TypeScript types for the core Cosmos stack (cometbft, cosmos-sdk, ibc-go, wasmd), generated in the style of cosmjs-types.
+Typed runtime access to Cosmos chain-registry (TypeScript). No embedded data.
 
 ## Overview
 
-This package provides TypeScript bindings for the core Cosmos ecosystem protobuf definitions, generated from the latest relevant tags of:
+This package provides TypeScript types and fetch functions for accessing the Cosmos chain-registry at runtime. It allows you to programmatically access chain information, asset lists, IBC connections, and other registry data.
 
-- [cometbft/cometbft](https://github.com/cometbft/cometbft)
-- [cosmos/cosmos-sdk](https://github.com/cosmos/cosmos-sdk) 
-- [cosmos/ibc-go](https://github.com/cosmos/ibc-go)
-- [CosmWasm/wasmd](https://github.com/CosmWasm/wasmd)
+## Installation
+
+```bash
+npm install @puneet_m/chain-registry-interface
+```
 
 ## Usage
 
-```bash
-npm install @puneet_m/core-proto-types
-```
-
 ```typescript
-import { CosmosBaseV1Beta1Coin } from '@puneet_m/core-proto-types/cosmos/base/v1beta1/coin';
+import { fetchChain, fetchAssetList, fetchIBCConnection } from '@puneet_m/chain-registry-interface';
 
-// Use the generated types in your application
-const coin: CosmosBaseV1Beta1Coin = {
-  denom: 'uatom',
-  amount: '1000000'
-};
+// Fetch chain information
+const chain = await fetchChain('cosmoshub');
+console.log(chain.pretty_name);
+
+// Fetch asset list
+const assetList = await fetchAssetList('osmosis');
+console.log(assetList.assets);
+
+// Fetch IBC connection data
+const ibcData = await fetchIBCConnection('cosmoshub', 'osmosis');
+console.log(ibcData.channels);
 ```
 
-## Generation
+## API
 
-The TypeScript bindings are generated using [Telescope](https://github.com/cosmology-tech/telescope) from proto definition bundles created with the latest relevant tags from each repository.
-
-To regenerate the bindings:
-
-```bash
-# Build the proto bundles with latest tags and generate TypeScript
-make proto-core-ts
-```
-
-This will:
-1. Fetch the latest relevant tags for each core module
-2. Create proto bundles for each module
-3. Generate TypeScript bindings using Telescope
-4. Output to `proto-bundles-ts-core-latest/<module>/_bindings/ts`
-
-## Structure
-
-The package follows the same directory structure as the source proto files, making it easy to find the types you need. Each module (cometbft, cosmos-sdk, etc.) has its own generated bindings that can be imported independently.
+- `fetchChain(chainName: string)`: Fetches chain information
+- `fetchAssetList(chainName: string)`: Fetches asset list for a chain
+- `fetchMemoKeys()`: Fetches memo keys
+- `fetchVersions(chainName: string)`: Fetches version information
+- `fetchIBCConnection(chainA: string, chainB: string)`: Fetches IBC connection data between two chains
+- `ibcConnectionUrl(chainA: string, chainB: string)`: Generates the URL for IBC connection data
 
 ## License
 
-This project is licensed under either of
-
-- Apache License, Version 2.0 ([LICENSE-APACHE](../LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
-- MIT license ([LICENSE-MIT](../LICENSE-MIT) or http://opensource.org/licenses/MIT)
-
-at your option.
+This project is licensed under the Apache License 2.0 or MIT license, at your option.

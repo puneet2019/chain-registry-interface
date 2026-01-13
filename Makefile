@@ -103,7 +103,7 @@ proto-core-latest:
 
 # Same as proto-core-latest but also try TS codegen (uses latest relevant tags)
 proto-core-latest-ts:
-	GEN_TS=1 OUT_DIR=$(PROTO_CORE_LATEST_OUT) bash proto-tools/builders/build-core-stack-latest.sh
+	GEN_TS=1 OUT_DIR=proto-ts bash proto-tools/builders/build-core-stack-ts-latest.sh
 
 # Proto registry (core Cosmos stack TypeScript bindings - cosmjs-types style)
 PROTO_CORE_TS_OUT := proto-bundles-ts-core
@@ -111,9 +111,9 @@ PROTO_CORE_TS_OUT := proto-bundles-ts-core
 proto-core-ts:
 	OUT_DIR=$(PROTO_CORE_TS_OUT) bash proto-tools/builders/build-core-stack-ts.sh
 
-# TypeScript SDK (core Cosmos stack - cosmjs-types style)
+# TypeScript SDK (core Cosmos stack - cosmjs-types style with latest tags)
 sdk-ts-build:
-	bash proto-tools/build-core-stack-ts.sh
+	OUT_DIR=proto-ts bash proto-tools/builders/build-core-stack-ts-latest.sh
 
 # Same as sdk-ts-build but also run tests
 sdk-ts-test:
@@ -145,3 +145,13 @@ fetch-upstream-protos-core:
 fetch-upstream-protos:
 	@if [ -z "$(MODULES)" ]; then echo "ERROR: set MODULES to space-separated <repo>@<tag> list"; exit 1; fi
 	OUT_DIR=$(UPSTREAM_OUT) bash proto-tools/fetchers/fetch-upstream-protos.sh fetch $(MODULES)
+
+# Fetch latest proto files for core Cosmos stack
+fetch-proto-core-latest:
+	bash fetch-proto-files.sh
+
+# Clean proto directory
+clean-proto:
+	rm -rf proto/
+
+.PHONY: proto-all-chains-go proto-all-chains proto-clean proto-core-go proto-core proto-core-latest proto-core-latest-ts proto-core-ts sdk-ts-build sdk-ts-test fetch-proto-core-latest clean-proto

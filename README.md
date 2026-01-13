@@ -43,19 +43,60 @@ Proto registry (experimental)
 - Build immutable proto bundles for the core stack: cometbft, cosmos-sdk, ibc-go, wasmd.
 - Requirements: Go toolchain installed. Optional: protoc and protoc-gen-go for Go bindings.
 - Make targets:
-  - make proto-core           # builds bundles into proto-bundles/
-  - make proto-core-go        # builds bundles and attempts Go codegen
-  - make proto-clean          # removes proto-bundles/
+  - make proto-core             # builds core stack bundles into proto-bundles/
+  - make proto-core-go          # builds core stack bundles with Go codegen
+  - make proto-core-latest      # builds core stack with latest relevant tags
+  - make proto-core-latest-ts   # builds core stack with latest tags and TS generation
+  - make proto-core-ts          # builds core stack TypeScript bindings (cosmjs-types style)
+  - make sdk-ts-build           # builds core stack TypeScript SDK (cosmjs-types style) with latest tags
+  - make sdk-ts-test            # builds and tests the TypeScript SDK
+  - make proto-all-chains       # builds all chains bundles into proto-bundles-all/
+  - make proto-all-chains-go    # builds all chains bundles with Go codegen
+  - make proto-clean            # removes all proto-bundles/
 - Direct script usage:
-  - scripts/proto-registry.sh build \
+  - proto-tools/proto-registry-cli.sh build-bundle \
       github.com/cometbft/cometbft@v0.38.12 \
       github.com/cosmos/cosmos-sdk@v0.50.9 \
       github.com/cosmos/ibc-go/v8@v8.4.0 \
       github.com/CosmWasm/wasmd@v0.50.0
 - Env options:
-  - OUT_DIR=proto-bundles GEN_GO=1 GEN_TS=0 GEN_RUST=0 scripts/proto-registry.sh build <modules>
+  - OUT_DIR=proto-bundles GEN_GO=1 GEN_TS=0 GEN_RUST=0 proto-tools/proto-registry-cli.sh build-bundle <modules>
 - Output:
   - One directory per module@version under proto-bundles/, containing copied proto trees and a manifest.json.
+- TypeScript (Telescope) manual helper:
+  - Install generator: cd protos-ts && npm i
+  - Run for a bundle: node protos-ts/telescope-from-bundle.cjs proto-bundles/<bundle-dir>
+  - Output will be written into <bundle>/_bindings/ts
+- TypeScript SDK (CosmJS-Types Style):
+  - Builds TypeScript bindings for the core Cosmos stack with latest tags
+  - Modular organization by package (cosmos, ibc, tendermint, cosmwasm)
+  - TypeScript interfaces matching the proto definitions
+  - Proper imports and dependencies handled
+  - Usage: make sdk-ts-build
+
+Proto files fetcher (latest core stack)
+- Fetch latest proto files for the core Cosmos stack: cometbft, cosmos-sdk, ibc-go, wasmd.
+- Requirements: curl and tar installed.
+- Make targets:
+  - make fetch-proto-core-latest  # downloads latest proto files to proto/ directory
+  - make clean-proto              # removes proto/ directory
+- Direct script usage:
+  - bash fetch-proto-files.sh
+- Output:
+  - Proto files organized by module in the proto/ directory (214 proto files total)
+  - Uses latest relevant tags automatically determined from GitHub
+
+Upstream protos (direct from upstream repos)
+- Fetch raw proto sources from upstream repos/tags; output to protos/upstream/<repo>-<tag>
+- Make targets:
+  - make fetch-upstream-protos-core
+  - MODULES="github.com/cosmos/cosmos-sdk@v0.50.9 github.com/cosmos/ibc-go@v8.4.0" make fetch-upstream-protos
+- Direct script usage:
+  - proto-tools/proto-registry-cli.sh fetch-upstream core
+  - proto-tools/proto-registry-cli.sh fetch-upstream fetch <repo>@<tag> [more...]
+- Notes:
+  - Uses buf export when available, else copies proto/ and third_party/proto/
+  - Strictly read-only: no edits are applied to upstream files
 
 Live tests (optional)
 - Tests default to offline fixtures. To enable network tests, set CHAIN_REGISTRY_LIVE=1.
@@ -67,6 +108,7 @@ Development
 - To refresh schemas for reference:
   - bash scripts/fetch-schemas.sh
 - Proto registry plan: docs/PROTO_REGISTRY_PLAN.md
+- Research notes on codegen stacks (cosmjs-types and cosmos-rust): docs/RESEARCH_CODEGEN.md
 - Maintenance playbook: see docs/MAINTENANCE.md
 
 Versioning
