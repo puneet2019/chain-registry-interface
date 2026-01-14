@@ -1,0 +1,27 @@
+{
+  "name": "chain-registry-fetch-data-example",
+  "version": "1.0.0",
+  "description": "Example of fetching chain data using chain-registry-interface package",
+  "main": "fetch-chain-data.js",
+  "scripts": {
+    "start": "node fetch-chain-data.js",
+    "fetch:ts": "ts-node fetch-chain-data.ts",
+    "fetch:js": "node fetch-chain-data.js"
+  },
+  "dependencies": {
+    "@puneet_m/chain-registry-interface": "^0.0.1-alpha1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.0.0"
+  },
+  "keywords": [
+    "cosmos",
+    "blockchain",
+    "chain-registry",
+    "data-fetching"
+  ],
+  "author": "Chain Registry Interface",
+  "license": "MIT"
+}
