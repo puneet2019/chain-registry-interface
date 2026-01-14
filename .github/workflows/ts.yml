@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps
-        working-directory: ts
+      - name: Install deps (sdk-ts)
+        working-directory: sdk-ts
         run: npm ci || npm i
 
-      - name: Run TS tests
-        working-directory: ts
+      - name: Run TS tests (sdk-ts)
+        working-directory: sdk-ts
         run: npm test
