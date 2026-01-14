@@ -2,7 +2,7 @@
 
 .PHONY: all ci ci-go ci-rust ci-ts schemas go-build go-test rust-build rust-test ts-build \
 	proto-core proto-core-go proto-all-chains proto-all-chains-go proto-clean \
-	tag-go tag-rust tag-ts publish-rust publish-ts release-go release-rust release-ts release-all \
+	tag-go tag-rust tag-ts publish-rust publish-rust-dry publish-ts publish-ts-dry release-go release-rust release-ts release-all \
 	fetch-upstream-protos-core fetch-upstream-protos
 
 all: ci
@@ -73,8 +73,15 @@ tag-ts: require-version
 publish-rust:
 	cd sdk-rust/chain_registry && cargo publish
 
+publish-rust-dry:
+	cd sdk-rust/chain_registry && cargo publish --dry-run
+
 publish-ts:
-	cd sdk-ts && npm publish --access public
+	cd sdk-ts && npm publish --access public --tag alpha
+
+publish-ts-dry:
+	cd sdk-ts && npm pack
+	echo "Dry run: npm pack created a .tgz file but did not publish"
 
 # Composite release targets
 release-go: tag-go
