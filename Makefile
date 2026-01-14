@@ -33,11 +33,11 @@ ci-rust: rust-build rust-test
 
 # TypeScript
 ts-build:
-	cd ts && npm i && npm run build
+	cd sdk-ts && npm i && npm run build
 
 ts-test:
-	cd ts && (npm ci || npm i)
-	cd ts && npm test
+	cd sdk-ts && (npm ci || npm i)
+	cd sdk-ts && npm test
 
 ci-ts: ts-test
 
