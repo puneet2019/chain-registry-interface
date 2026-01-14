@@ -81,15 +81,7 @@ cargo run --bin fetch-chain-data
 
 ## Note about Go Module Publication
 
-The Go example uses a local replace directive in `go.mod` because the currently published version has an incorrect tag structure. For Go modules in subdirectories to work properly, the repository should be tagged at the root level (e.g., `v0.0.1-alpha2`) rather than with the subdirectory path included.
-
-### For Future Releases
-
-To publish the Go module correctly for public consumption:
-
-1. Tag the repository at the root level with a semantic version (e.g., `git tag v0.0.1-alpha2`)
-2. Push the tag to the remote repository (e.g., `git push origin v0.0.1-alpha2`)
-3. Users will then be able to import the module as:
+The Go module is now properly published and can be used directly. Users can import the module as:
 
 ```go
 import "github.com/puneet2019/chain-registry-interface/sdk-go/chainregistry"
@@ -100,6 +92,4 @@ And reference it in their go.mod as:
 require github.com/puneet2019/chain-registry-interface/sdk-go/chainregistry v0.0.1-alpha2
 ```
 
-This is the standard Go module publication pattern for monorepos with modules in subdirectories.
-
-For immediate production use with the current publication structure, the local replace directive approach shown in this example is the appropriate workaround.
+This works because the repository has been properly tagged at the root level with the semantic version (e.g., `v0.0.1-alpha2`).

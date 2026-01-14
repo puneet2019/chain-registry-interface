@@ -1,2 +1,2 @@
-github.com/puneet2019/chain-registry-interface v0.0.1-alpha2 h1:kjUu5IDvEfIH/1AVPNAZXSdAKlmLR+gBaZuAN1DLeiw=
-github.com/puneet2019/chain-registry-interface v0.0.1-alpha2/go.mod h1:ETVtoOxz+kJpsTkB177GZRDh8IXkEAieS8Uj8D8sGOI=
+github.com/puneet2019/chain-registry-interface/sdk-go/chainregistry v0.0.0-20260114080924-a6f74ccb8a92 h1:3l/i6TuCMb8jCDl1qm+As2k3i94ng8f6uFbdStayWcw=
+github.com/puneet2019/chain-registry-interface/sdk-go/chainregistry v0.0.0-20260114080924-a6f74ccb8a92/go.mod h1:qJFkvSOH+f8GFc4zehem0PERBLCDWgmJ63A70qL7ff0=

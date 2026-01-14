@@ -2,4 +2,4 @@ module example
 
 go 1.21
 
-require github.com/puneet2019/chain-registry-interface v0.0.1-alpha2
+require github.com/puneet2019/chain-registry-interface/sdk-go/chainregistry v0.0.0-20260114080924-a6f74ccb8a92
