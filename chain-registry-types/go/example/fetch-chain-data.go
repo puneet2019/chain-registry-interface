@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	chainregistry "github.com/puneet2019/chain-registry-interface/sdk-go/chainregistry"
+	chainregistry "github.com/puneet2019/chain-registry-interface/chain-registry-types/go"
 )
 
 func fetchChainData() error {

@@ -23,7 +23,7 @@ Usage examples
 - Go
   - import (
       "context"
-      chainregistry "github.com/puneet2019/chain-registry-interface/go/chainregistry"
+      chainregistry "github.com/puneet2019/chain-registry-interface/chain-registry-types/go"
     )
   - ctx := context.Background()
   - chain, _ := chainregistry.FetchChain(ctx, "cosmoshub")
@@ -121,11 +121,11 @@ Publishing (Rust crates.io)
 - One-time auth on your machine:
   - Run: cargo login <YOUR_TOKEN>
 - Sanity checks before publishing:
-  - Update version in rust/chain_registry/Cargo.toml.
+  - Update version in chain-registry-types/rust/Cargo.toml.
   - Run: make ci-rust (build + tests) and ensure README has usage.
-  - Optional: cargo publish --dry-run in rust/chain_registry
+  - Optional: cargo publish --dry-run in chain-registry-types/rust
 - Publish:
-  - cd rust/chain_registry && cargo publish
+  - cd chain-registry-types/rust && cargo publish
 - Notes:
   - Only bump versions when schemas change (per this repo’s policy).
   - Use yanked releases for quick rollbacks if necessary.

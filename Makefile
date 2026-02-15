@@ -15,29 +15,29 @@ schemas:
 
 # Go
 go-build:
-	cd sdk-go/chainregistry && go build ./...
+	cd chain-registry-types/go && go build ./...
 
 go-test:
-	cd sdk-go/chainregistry && go test ./...
+	cd chain-registry-types/go && go test ./...
 
 ci-go: go-build go-test
 
 # Rust
 rust-build:
-	cd sdk-rust/chain_registry && cargo build
+	cd chain-registry-types/rust && cargo build
 
 rust-test:
-	cd sdk-rust/chain_registry && cargo test
+	cd chain-registry-types/rust && cargo test
 
 ci-rust: rust-build rust-test
 
 # TypeScript
 ts-build:
-	cd sdk-ts && npm i && npm run build
+	cd chain-registry-types/ts && npm i && npm run build
 
 ts-test:
-	cd sdk-ts && (npm ci || npm i)
-	cd sdk-ts && npm test
+	cd chain-registry-types/ts && (npm ci || npm i)
+	cd chain-registry-types/ts && npm test
 
 ci-ts: ts-test
 
@@ -71,16 +71,16 @@ tag-ts: require-version
 
 # Registry publishes (assumes versions already bumped in manifests)
 publish-rust:
-	cd sdk-rust/chain_registry && cargo publish
+	cd chain-registry-types/rust && cargo publish
 
 publish-rust-dry:
-	cd sdk-rust/chain_registry && cargo publish --dry-run
+	cd chain-registry-types/rust && cargo publish --dry-run
 
 publish-ts:
-	cd sdk-ts && npm publish --access public --tag alpha
+	cd chain-registry-types/ts && npm publish --access public --tag alpha
 
 publish-ts-dry:
-	cd sdk-ts && npm pack
+	cd chain-registry-types/ts && npm pack
 	echo "Dry run: npm pack created a .tgz file but did not publish"
 
 # Composite release targets
@@ -124,7 +124,7 @@ sdk-ts-build:
 
 # Same as sdk-ts-build but also run tests
 sdk-ts-test:
-	cd sdk-ts && npm run build && npm test
+	cd chain-registry-types/ts && npm run build && npm test
 
 # Proto registry (all chains in chain-registry - expanded functionality)
 PROTO_ALL_CHAINS_OUT := proto-bundles-all

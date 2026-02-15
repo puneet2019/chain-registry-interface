@@ -1,5 +1,4 @@
 go 1.21
 
-use ./example
-
-use ./sdk-go/chainregistry
+use ./chain-registry-types/go
+use ./chain-registry-types/go/example
