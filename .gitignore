@@ -30,3 +30,8 @@ Cargo.lock
 # Node
 node_modules/
 **/node_modules/
+
+# Local clones of upstream repos (reference only, clone on demand)
+/chain-registry/
+/cosmjs-types/
+/cosmos-rust/
