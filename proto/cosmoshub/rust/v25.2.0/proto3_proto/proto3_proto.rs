@@ -76,7 +76,7 @@ pub mod message {
         }
     }
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Nested {
     #[prost(string, tag = "1")]
     pub bunny: ::prost::alloc::string::String,
@@ -113,7 +113,7 @@ pub struct TestUtf8 {
 }
 /// Nested message and enum types in `TestUTF8`.
 pub mod test_utf8 {
-    #[derive(Clone, PartialEq, Eq, Hash, ::prost::Oneof)]
+    #[derive(Clone, PartialEq, ::prost::Oneof)]
     pub enum Oneof {
         #[prost(string, tag = "3")]
         Field(::prost::alloc::string::String),

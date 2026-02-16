@@ -493,7 +493,7 @@ pub struct TestAllTypes {
 }
 /// Nested message and enum types in `TestAllTypes`.
 pub mod test_all_types {
-    #[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+    #[derive(Clone, Copy, PartialEq, ::prost::Message)]
     pub struct NestedMessage {
         /// The field name "b" fails to compile in proto1 because it conflicts with
         /// a local variable named "b" in one of the generated methods.
@@ -501,7 +501,7 @@ pub mod test_all_types {
         #[prost(int32, optional, tag = "1")]
         pub bb: ::core::option::Option<i32>,
     }
-    #[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+    #[derive(Clone, PartialEq, ::prost::Message)]
     pub struct NestedGroup {
         #[prost(int32, optional, tag = "404")]
         pub single_id: ::core::option::Option<i32>,
@@ -538,7 +538,7 @@ pub mod test_all_types {
         }
     }
     /// Nested messages
-    #[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Oneof)]
+    #[derive(Clone, Copy, PartialEq, ::prost::Oneof)]
     pub enum NestedType {
         #[prost(message, tag = "21")]
         SingleNestedMessage(NestedMessage),
@@ -564,7 +564,7 @@ pub struct NestedTestAllTypes {
     pub payload: ::core::option::Option<::prost::alloc::boxed::Box<TestAllTypes>>,
 }
 /// This proto has a required field.
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct TestRequired {
     #[prost(int32, required, tag = "1")]
     pub required_int32: i32,
@@ -600,7 +600,7 @@ impl GlobalEnum {
     }
 }
 /// Message scoped extensions
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Proto2ExtensionScopedMessage {
 }
 // @@protoc_insertion_point(module)

@@ -99,7 +99,7 @@ pub struct RpcCommandOptions {
 /// By default, all request fields are configured as flags based on the
 /// kebab-case name of the field. Fields can be turned into positional arguments
 /// instead by using RpcCommandOptions.positional_args.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct FlagOptions {
     /// name is an alternate name to use for the field flag.
     #[prost(string, tag = "1")]
@@ -124,7 +124,7 @@ pub struct FlagOptions {
     pub hidden: bool,
 }
 /// PositionalArgDescriptor describes a positional argument.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PositionalArgDescriptor {
     /// proto_field specifies the proto field to use as the positional arg. Any
     /// fields used as positional args will not have a flag generated.

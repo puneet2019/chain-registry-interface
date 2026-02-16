@@ -4,7 +4,7 @@
 ///
 /// NOTE: The amount field is an Int which implements the custom method
 /// signatures required by gogoproto.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Coin {
     #[prost(string, tag = "1")]
     pub denom: ::prost::alloc::string::String,
@@ -15,7 +15,7 @@ pub struct Coin {
 ///
 /// NOTE: The amount field is an Dec which implements the custom method
 /// signatures required by gogoproto.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DecCoin {
     #[prost(string, tag = "1")]
     pub denom: ::prost::alloc::string::String,
@@ -24,14 +24,14 @@ pub struct DecCoin {
 }
 /// IntProto defines a Protobuf wrapper around an Int object.
 /// Deprecated: Prefer to use math.Int directly. It supports binary Marshal and Unmarshal.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct IntProto {
     #[prost(string, tag = "1")]
     pub int: ::prost::alloc::string::String,
 }
 /// DecProto defines a Protobuf wrapper around a Dec object.
 /// Deprecated: Prefer to use math.LegacyDec directly. It supports binary Marshal and Unmarshal.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DecProto {
     #[prost(string, tag = "1")]
     pub dec: ::prost::alloc::string::String,

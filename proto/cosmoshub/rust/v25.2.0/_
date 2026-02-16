@@ -136,5 +136,4 @@ pub struct ValidateJwtsvidResponse {
     #[prost(message, optional, tag = "2")]
     pub claims: ::core::option::Option<::prost_types::Struct>,
 }
-include!(".tonic.rs");
 // @@protoc_insertion_point(module)

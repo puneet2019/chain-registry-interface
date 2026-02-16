@@ -12,7 +12,7 @@ pub struct ParameterChangeProposal {
 }
 /// ParamChange defines an individual parameter change, for use in
 /// ParameterChangeProposal.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ParamChange {
     #[prost(string, tag = "1")]
     pub subspace: ::prost::alloc::string::String,

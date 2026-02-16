@@ -44,7 +44,7 @@ pub struct ModuleConfig {
     pub golang_bindings: ::prost::alloc::vec::Vec<GolangBinding>,
 }
 /// GolangBinding is an explicit interface type to implementing type binding for dependency injection.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GolangBinding {
     /// interface_type is the interface type which will be bound to a specific implementation type
     #[prost(string, tag = "1")]

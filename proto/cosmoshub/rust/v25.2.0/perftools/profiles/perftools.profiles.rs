@@ -72,7 +72,7 @@ pub struct Profile {
     pub default_sample_type: i64,
 }
 /// ValueType describes the semantics and measurement units of a value.
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ValueType {
     /// Index into string table.
     #[prost(int64, tag = "1")]
@@ -110,7 +110,7 @@ pub struct Sample {
     #[prost(message, repeated, tag = "3")]
     pub label: ::prost::alloc::vec::Vec<Label>,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Label {
     /// Index into string table. An annotation for a sample (e.g.
     /// "allocation_size") with an associated value.
@@ -136,7 +136,7 @@ pub struct Label {
     #[prost(int64, tag = "4")]
     pub num_unit: i64,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Mapping {
     /// Unique nonzero id for the mapping.
     #[prost(uint64, tag = "1")]
@@ -210,7 +210,7 @@ pub struct Location {
     #[prost(bool, tag = "5")]
     pub is_folded: bool,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Line {
     /// The id of the corresponding profile.Function for this line.
     #[prost(uint64, tag = "1")]
@@ -222,7 +222,7 @@ pub struct Line {
     #[prost(int64, tag = "3")]
     pub column: i64,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Function {
     /// Unique nonzero id for the function.
     #[prost(uint64, tag = "1")]

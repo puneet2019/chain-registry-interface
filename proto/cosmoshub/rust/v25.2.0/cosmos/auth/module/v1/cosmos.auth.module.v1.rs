@@ -19,7 +19,7 @@ pub struct Module {
     pub enable_unordered_transactions: bool,
 }
 /// ModuleAccountPermission represents permissions for a module account.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ModuleAccountPermission {
     /// account is the name of the module.
     #[prost(string, tag = "1")]

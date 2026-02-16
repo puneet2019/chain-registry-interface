@@ -495,7 +495,7 @@ pub struct TestAllTypes {
 }
 /// Nested message and enum types in `TestAllTypes`.
 pub mod test_all_types {
-    #[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+    #[derive(Clone, Copy, PartialEq, ::prost::Message)]
     pub struct NestedMessage {
         /// The field name "b" fails to compile in proto1 because it conflicts with
         /// a local variable named "b" in one of the generated methods.
@@ -533,7 +533,7 @@ pub mod test_all_types {
         }
     }
     /// Nested messages
-    #[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Oneof)]
+    #[derive(Clone, Copy, PartialEq, ::prost::Oneof)]
     pub enum NestedType {
         #[prost(message, tag = "21")]
         SingleNestedMessage(NestedMessage),

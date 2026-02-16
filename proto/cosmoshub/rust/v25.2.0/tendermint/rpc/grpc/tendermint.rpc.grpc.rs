@@ -3,10 +3,10 @@
 // ----------------------------------------
 // Request types
 
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct RequestPing {
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestBroadcastTx {
     #[prost(bytes = "vec", tag = "1")]
     pub tx: ::prost::alloc::vec::Vec<u8>,
@@ -14,7 +14,7 @@ pub struct RequestBroadcastTx {
 // ----------------------------------------
 // Response types
 
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ResponsePing {
 }
 #[derive(Clone, PartialEq, ::prost::Message)]
@@ -24,5 +24,4 @@ pub struct ResponseBroadcastTx {
     #[prost(message, optional, tag = "2")]
     pub tx_result: ::core::option::Option<super::super::abci::ExecTxResult>,
 }
-include!("tendermint.rpc.grpc.tonic.rs");
 // @@protoc_insertion_point(module)

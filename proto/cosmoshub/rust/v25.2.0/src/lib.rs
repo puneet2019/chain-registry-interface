@@ -3,19 +3,6 @@
 pub mod amino {
     include!("../amino/amino.rs");
 }
-pub mod cel {
-    pub mod expr {
-        include!("../cel/expr/cel.expr.rs");
-        pub mod conformance {
-            pub mod proto2 {
-                include!("../cel/expr/conformance/proto2/cel.expr.conformance.proto2.rs");
-            }
-            pub mod proto3 {
-                include!("../cel/expr/conformance/proto3/cel.expr.conformance.proto3.rs");
-            }
-        }
-    }
-}
 pub mod cosmos {
     pub mod app {
         pub mod runtime {
@@ -73,11 +60,6 @@ pub mod cosmos {
         }
     }
     pub mod base {
-        pub mod abci {
-            pub mod v1beta1 {
-                include!("../cosmos/base/abci/v1beta1/cosmos.base.abci.v1beta1.rs");
-            }
-        }
         pub mod node {
             pub mod v1beta1 {
                 include!("../cosmos/base/node/v1beta1/cosmos.base.node.v1beta1.rs");
@@ -100,13 +82,6 @@ pub mod cosmos {
                 include!("../cosmos/base/reflection/v2alpha1/cosmos.base.reflection.v2alpha1.rs");
                 #[cfg(feature = "grpc")]
                 include!("../cosmos/base/reflection/v2alpha1/cosmos.base.reflection.v2alpha1.tonic.rs");
-            }
-        }
-        pub mod tendermint {
-            pub mod v1beta1 {
-                include!("../cosmos/base/tendermint/v1beta1/cosmos.base.tendermint.v1beta1.rs");
-                #[cfg(feature = "grpc")]
-                include!("../cosmos/base/tendermint/v1beta1/cosmos.base.tendermint.v1beta1.tonic.rs");
             }
         }
         pub mod v1beta1 {
@@ -369,42 +344,6 @@ pub mod cosmos {
             include!("../cosmos/slashing/v1beta1/cosmos.slashing.v1beta1.tonic.rs");
         }
     }
-    pub mod staking {
-        pub mod module {
-            pub mod v1 {
-                include!("../cosmos/staking/module/v1/cosmos.staking.module.v1.rs");
-            }
-        }
-        pub mod v1beta1 {
-            include!("../cosmos/staking/v1beta1/cosmos.staking.v1beta1.rs");
-            #[cfg(feature = "grpc")]
-            include!("../cosmos/staking/v1beta1/cosmos.staking.v1beta1.tonic.rs");
-        }
-    }
-    pub mod store {
-        pub mod internal {
-            pub mod kv {
-                pub mod v1beta1 {
-                    include!("../cosmos/store/internal/kv/v1beta1/cosmos.store.internal.kv.v1beta1.rs");
-                }
-            }
-        }
-        pub mod snapshots {
-            pub mod v1 {
-                include!("../cosmos/store/snapshots/v1/cosmos.store.snapshots.v1.rs");
-            }
-        }
-        pub mod streaming {
-            pub mod abci {
-                include!("../cosmos/store/streaming/abci/cosmos.store.streaming.abci.rs");
-                #[cfg(feature = "grpc")]
-                include!("../cosmos/store/streaming/abci/cosmos.store.streaming.abci.tonic.rs");
-            }
-        }
-        pub mod v1beta1 {
-            include!("../cosmos/store/v1beta1/cosmos.store.v1beta1.rs");
-        }
-    }
     pub mod tx {
         pub mod config {
             pub mod v1 {
@@ -415,11 +354,6 @@ pub mod cosmos {
             pub mod v1beta1 {
                 include!("../cosmos/tx/signing/v1beta1/cosmos.tx.signing.v1beta1.rs");
             }
-        }
-        pub mod v1beta1 {
-            include!("../cosmos/tx/v1beta1/cosmos.tx.v1beta1.rs");
-            #[cfg(feature = "grpc")]
-            include!("../cosmos/tx/v1beta1/cosmos.tx.v1beta1.tonic.rs");
         }
     }
     pub mod upgrade {
@@ -456,24 +390,6 @@ pub mod cosmwasm {
             include!("../cosmwasm/wasm/v1/cosmwasm.wasm.v1.rs");
             #[cfg(feature = "grpc")]
             include!("../cosmwasm/wasm/v1/cosmwasm.wasm.v1.tonic.rs");
-        }
-    }
-}
-pub mod ethereum {
-    pub mod eth {
-        pub mod dbval {
-            include!("../ethereum/eth/dbval/ethereum.eth.dbval.rs");
-        }
-        pub mod ext {
-            include!("../ethereum/eth/ext/ethereum.eth.ext.rs");
-        }
-        pub mod v1 {
-            include!("../ethereum/eth/v1/ethereum.eth.v1.rs");
-        }
-        pub mod v1alpha1 {
-            include!("../ethereum/eth/v1alpha1/ethereum.eth.v1alpha1.rs");
-            #[cfg(feature = "grpc")]
-            include!("../ethereum/eth/v1alpha1/ethereum.eth.v1alpha1.tonic.rs");
         }
     }
 }
@@ -525,113 +441,10 @@ pub mod google {
 pub mod iavl {
     include!("../iavl/iavl.rs");
 }
-pub mod ibc {
-    pub mod applications {
-        pub mod interchain_accounts {
-            pub mod controller {
-                pub mod v1 {
-                    include!("../ibc/applications/interchain_accounts/controller/v1/ibc.applications.interchain_accounts.controller.v1.rs");
-                    #[cfg(feature = "grpc")]
-                    include!("../ibc/applications/interchain_accounts/controller/v1/ibc.applications.interchain_accounts.controller.v1.tonic.rs");
-                }
-            }
-            pub mod genesis {
-                pub mod v1 {
-                    include!("../ibc/applications/interchain_accounts/genesis/v1/ibc.applications.interchain_accounts.genesis.v1.rs");
-                }
-            }
-            pub mod host {
-                pub mod v1 {
-                    include!("../ibc/applications/interchain_accounts/host/v1/ibc.applications.interchain_accounts.host.v1.rs");
-                    #[cfg(feature = "grpc")]
-                    include!("../ibc/applications/interchain_accounts/host/v1/ibc.applications.interchain_accounts.host.v1.tonic.rs");
-                }
-            }
-            pub mod v1 {
-                include!("../ibc/applications/interchain_accounts/v1/ibc.applications.interchain_accounts.v1.rs");
-            }
-        }
-        pub mod transfer {
-            pub mod v1 {
-                include!("../ibc/applications/transfer/v1/ibc.applications.transfer.v1.rs");
-                #[cfg(feature = "grpc")]
-                include!("../ibc/applications/transfer/v1/ibc.applications.transfer.v1.tonic.rs");
-            }
-        }
-    }
-    pub mod core {
-        pub mod channel {
-            pub mod v1 {
-                include!("../ibc/core/channel/v1/ibc.core.channel.v1.rs");
-                #[cfg(feature = "grpc")]
-                include!("../ibc/core/channel/v1/ibc.core.channel.v1.tonic.rs");
-            }
-            pub mod v2 {
-                include!("../ibc/core/channel/v2/ibc.core.channel.v2.rs");
-                #[cfg(feature = "grpc")]
-                include!("../ibc/core/channel/v2/ibc.core.channel.v2.tonic.rs");
-            }
-        }
-        pub mod client {
-            pub mod v1 {
-                include!("../ibc/core/client/v1/ibc.core.client.v1.rs");
-                #[cfg(feature = "grpc")]
-                include!("../ibc/core/client/v1/ibc.core.client.v1.tonic.rs");
-            }
-            pub mod v2 {
-                include!("../ibc/core/client/v2/ibc.core.client.v2.rs");
-                #[cfg(feature = "grpc")]
-                include!("../ibc/core/client/v2/ibc.core.client.v2.tonic.rs");
-            }
-        }
-        pub mod commitment {
-            pub mod v2 {
-                include!("../ibc/core/commitment/v2/ibc.core.commitment.v2.rs");
-            }
-        }
-    }
-    pub mod lightclients {
-        pub mod solomachine {
-            pub mod v3 {
-                include!("../ibc/lightclients/solomachine/v3/ibc.lightclients.solomachine.v3.rs");
-            }
-        }
-        pub mod wasm {
-            pub mod v1 {
-                include!("../ibc/lightclients/wasm/v1/ibc.lightclients.wasm.v1.rs");
-                #[cfg(feature = "grpc")]
-                include!("../ibc/lightclients/wasm/v1/ibc.lightclients.wasm.v1.tonic.rs");
-            }
-        }
-    }
-}
-pub mod interchain_security {
-    pub mod ccv {
-        pub mod consumer {
-            pub mod v1 {
-                include!("../interchain_security/ccv/consumer/v1/interchain_security.ccv.consumer.v1.rs");
-            }
-        }
-        pub mod v1 {
-            include!("../interchain_security/ccv/v1/interchain_security.ccv.v1.rs");
-        }
-    }
-}
 pub mod packetforward {
     pub mod v1 {
         include!("../packetforward/v1/packetforward.v1.rs");
     }
-}
-pub mod perftools {
-    pub mod profiles {
-        include!("../perftools/profiles/perftools.profiles.rs");
-    }
-}
-pub mod proto {
-    include!("../proto/proto.rs");
-}
-pub mod proto3_proto {
-    include!("../proto3_proto/proto3_proto.rs");
 }
 pub mod ratelimit {
     pub mod module {
@@ -646,70 +459,7 @@ pub mod ratelimit {
     }
 }
 pub mod tendermint {
-    pub mod abci {
-        include!("../tendermint/abci/tendermint.abci.rs");
-        #[cfg(feature = "grpc")]
-        include!("../tendermint/abci/tendermint.abci.tonic.rs");
-    }
-    pub mod blocksync {
-        include!("../tendermint/blocksync/tendermint.blocksync.rs");
-    }
-    pub mod consensus {
-        include!("../tendermint/consensus/tendermint.consensus.rs");
-    }
-    pub mod crypto {
-        include!("../tendermint/crypto/tendermint.crypto.rs");
-    }
-    pub mod libs {
-        pub mod bits {
-            include!("../tendermint/libs/bits/tendermint.libs.bits.rs");
-        }
-    }
-    pub mod mempool {
-        include!("../tendermint/mempool/tendermint.mempool.rs");
-    }
-    pub mod p2p {
-        include!("../tendermint/p2p/tendermint.p2p.rs");
-    }
-    pub mod privval {
-        include!("../tendermint/privval/tendermint.privval.rs");
-    }
-    pub mod rpc {
-        pub mod grpc {
-            include!("../tendermint/rpc/grpc/tendermint.rpc.grpc.rs");
-            #[cfg(feature = "grpc")]
-            include!("../tendermint/rpc/grpc/tendermint.rpc.grpc.tonic.rs");
-        }
-    }
-    pub mod state {
-        include!("../tendermint/state/tendermint.state.rs");
-    }
-    pub mod statesync {
-        include!("../tendermint/statesync/tendermint.statesync.rs");
-    }
-    pub mod store {
-        include!("../tendermint/store/tendermint.store.rs");
-    }
     pub mod types {
         include!("../tendermint/types/tendermint.types.rs");
-    }
-    pub mod version {
-        include!("../tendermint/version/tendermint.version.rs");
-    }
-}
-pub mod test_proto {
-    include!("../test_proto/test_proto.rs");
-}
-pub mod testing {
-    include!("../testing/testing.rs");
-}
-pub mod zipkin {
-    pub mod proto3 {
-        include!("../zipkin/proto3/zipkin.proto3.rs");
-    }
-    pub mod testing {
-        include!("../zipkin/testing/zipkin.testing.rs");
-        #[cfg(feature = "grpc")]
-        include!("../zipkin/testing/zipkin.testing.tonic.rs");
     }
 }

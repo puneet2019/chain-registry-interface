@@ -73,7 +73,7 @@ pub struct Resource {
     pub ads: ::prost::alloc::vec::Vec<AdsEntry>,
 }
 /// XAttr encodes extended attributes for a resource.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct XAttr {
     /// Name specifies the attribute name.
     #[prost(string, tag = "1")]
@@ -83,7 +83,7 @@ pub struct XAttr {
     pub data: ::prost::alloc::vec::Vec<u8>,
 }
 /// ADSEntry encodes information for a Windows Alternate Data Stream.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct AdsEntry {
     /// Name specifices the stream name.
     #[prost(string, tag = "1")]

@@ -56,7 +56,7 @@ pub mod value {
     }
 }
 /// An enum value.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct EnumValue {
     /// The fully qualified name of the enum type.
     #[prost(string, tag = "1")]
@@ -123,7 +123,7 @@ pub struct Explain {
 /// Nested message and enum types in `Explain`.
 pub mod explain {
     /// ID and value index of one step.
-    #[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+    #[derive(Clone, Copy, PartialEq, ::prost::Message)]
     pub struct ExprStep {
         /// ID of corresponding Expr node.
         #[prost(int64, tag = "1")]

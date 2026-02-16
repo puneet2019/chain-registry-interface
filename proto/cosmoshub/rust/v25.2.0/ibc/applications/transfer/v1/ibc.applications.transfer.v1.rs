@@ -4,7 +4,7 @@
 /// NOTE: To prevent a single token from being transferred, set the
 /// TransfersEnabled parameter to true and then set the bank module's SendEnabled
 /// parameter for the denomination to false.
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Params {
     /// send_enabled enables or disables all cross-chain token transfers from this
     /// chain.
@@ -36,7 +36,7 @@ pub struct Denom {
     pub trace: ::prost::alloc::vec::Vec<Hop>,
 }
 /// Hop defines a port ID, channel ID pair specifying a unique "hop" in a trace
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Hop {
     #[prost(string, tag = "1")]
     pub port_id: ::prost::alloc::string::String,

@@ -38,7 +38,7 @@ pub struct PeriodicAllowance {
     pub period_reset: ::core::option::Option<::prost_types::Timestamp>,
 }
 /// AllowedMsgAllowance creates allowance only for specified message types.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct AllowedMsgAllowance {
     /// allowance can be any of basic and periodic fee allowance.
     #[prost(message, optional, tag = "1")]
@@ -48,7 +48,7 @@ pub struct AllowedMsgAllowance {
     pub allowed_messages: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
 }
 /// Grant is stored in the KVStore to record a grant with full context
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Grant {
     /// granter is the address of the user granting an allowance of their funds.
     #[prost(string, tag = "1")]

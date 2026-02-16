@@ -24,7 +24,7 @@ pub struct ValidatorSetChangePacketData {
 }
 /// This packet is sent from the consumer chain to the provider chain
 /// to notify that a VSC packet reached maturity on the consumer chain.
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct VscMaturedPacketData {
     /// the id of the VSC packet that reached maturity
     #[prost(uint64, tag = "1")]
@@ -33,7 +33,7 @@ pub struct VscMaturedPacketData {
 /// This packet is sent from the consumer chain to the provider chain
 /// to request the slashing of a validator as a result of an infraction
 /// committed on the consumer chain.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SlashPacketData {
     #[prost(message, optional, tag = "1")]
     pub validator: ::core::option::Option<super::super::super::tendermint::abci::Validator>,
@@ -45,7 +45,7 @@ pub struct SlashPacketData {
     pub infraction: i32,
 }
 /// ConsumerPacketData contains a consumer packet data and a type tag
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ConsumerPacketData {
     #[prost(enumeration = "ConsumerPacketDataType", tag = "1")]
     pub r#type: i32,
@@ -54,7 +54,7 @@ pub struct ConsumerPacketData {
 }
 /// Nested message and enum types in `ConsumerPacketData`.
 pub mod consumer_packet_data {
-    #[derive(Clone, PartialEq, Eq, Hash, ::prost::Oneof)]
+    #[derive(Clone, PartialEq, ::prost::Oneof)]
     pub enum Data {
         #[prost(message, tag = "2")]
         SlashPacketData(super::SlashPacketData),
@@ -63,7 +63,7 @@ pub mod consumer_packet_data {
     }
 }
 /// Note this type is used during IBC handshake methods for both the consumer and provider
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct HandshakeMetadata {
     #[prost(string, tag = "1")]
     pub provider_fee_pool_addr: ::prost::alloc::string::String,
@@ -72,7 +72,7 @@ pub struct HandshakeMetadata {
 }
 /// ConsumerPacketData contains a consumer packet data and a type tag
 /// that is compatible with ICS v1 and v2 over the wire. It is not used for internal storage.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ConsumerPacketDataV1 {
     #[prost(enumeration = "ConsumerPacketDataType", tag = "1")]
     pub r#type: i32,
@@ -81,7 +81,7 @@ pub struct ConsumerPacketDataV1 {
 }
 /// Nested message and enum types in `ConsumerPacketDataV1`.
 pub mod consumer_packet_data_v1 {
-    #[derive(Clone, PartialEq, Eq, Hash, ::prost::Oneof)]
+    #[derive(Clone, PartialEq, ::prost::Oneof)]
     pub enum Data {
         #[prost(message, tag = "2")]
         SlashPacketData(super::SlashPacketDataV1),
@@ -91,7 +91,7 @@ pub mod consumer_packet_data_v1 {
 }
 /// This packet is sent from the consumer chain to the provider chain
 /// It is backward compatible with the ICS v1 and v2 version of the packet.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SlashPacketDataV1 {
     #[prost(message, optional, tag = "1")]
     pub validator: ::core::option::Option<super::super::super::tendermint::abci::Validator>,

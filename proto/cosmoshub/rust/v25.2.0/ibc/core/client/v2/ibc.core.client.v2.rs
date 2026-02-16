@@ -4,7 +4,7 @@
 /// for a given client.
 /// If it is set, then only relayers in the allow list can send v2 messages
 /// If it is not set, then the client allows permissionless relaying of v2 messages
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Config {
     /// allowed_relayers defines the set of allowed relayers for IBC V2 protocol for the given client
     #[prost(string, repeated, tag = "1")]

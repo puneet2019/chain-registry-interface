@@ -13,7 +13,7 @@ pub struct HistoricalInfo {
 }
 /// CommissionRates defines the initial commission rates to be used for creating
 /// a validator.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct CommissionRates {
     /// rate is the commission rate charged to delegators, as a fraction.
     #[prost(string, tag = "1")]
@@ -26,7 +26,7 @@ pub struct CommissionRates {
     pub max_change_rate: ::prost::alloc::string::String,
 }
 /// Commission defines commission parameters for a given validator.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Commission {
     /// commission_rates defines the initial commission rates to be used for creating a validator.
     #[prost(message, optional, tag = "1")]
@@ -36,7 +36,7 @@ pub struct Commission {
     pub update_time: ::core::option::Option<::prost_types::Timestamp>,
 }
 /// Description defines a validator description.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Description {
     /// moniker defines a human-readable name for the validator.
     #[prost(string, tag = "1")]
@@ -62,7 +62,7 @@ pub struct Description {
 /// bond shares is based on the amount of coins delegated divided by the current
 /// exchange rate. Voting power can be calculated as total bonded shares
 /// multiplied by exchange rate.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Validator {
     /// operator_address defines the address of the validator's operator; bech encoded in JSON.
     #[prost(string, tag = "1")]
@@ -105,7 +105,7 @@ pub struct Validator {
     pub unbonding_ids: ::prost::alloc::vec::Vec<u64>,
 }
 /// ValAddresses defines a repeated set of validator addresses.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ValAddresses {
     #[prost(string, repeated, tag = "1")]
     pub addresses: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
@@ -113,7 +113,7 @@ pub struct ValAddresses {
 /// DVPair is struct that just has a delegator-validator pair with no other data.
 /// It is intended to be used as a marshalable pointer. For example, a DVPair can
 /// be used to construct the key to getting an UnbondingDelegation from state.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DvPair {
     #[prost(string, tag = "1")]
     pub delegator_address: ::prost::alloc::string::String,
@@ -130,7 +130,7 @@ pub struct DvPairs {
 /// with no other data. It is intended to be used as a marshalable pointer. For
 /// example, a DVVTriplet can be used to construct the key to getting a
 /// Redelegation from state.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DvvTriplet {
     #[prost(string, tag = "1")]
     pub delegator_address: ::prost::alloc::string::String,
@@ -148,7 +148,7 @@ pub struct DvvTriplets {
 /// Delegation represents the bond with tokens held by an account. It is
 /// owned by one delegator, and is associated with the voting power of one
 /// validator.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Delegation {
     /// delegator_address is the encoded address of the delegator.
     #[prost(string, tag = "1")]
@@ -177,7 +177,7 @@ pub struct UnbondingDelegation {
     pub entries: ::prost::alloc::vec::Vec<UnbondingDelegationEntry>,
 }
 /// UnbondingDelegationEntry defines an unbonding object with relevant metadata.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct UnbondingDelegationEntry {
     /// creation_height is the height which the unbonding took place.
     #[prost(int64, tag = "1")]
@@ -199,7 +199,7 @@ pub struct UnbondingDelegationEntry {
     pub unbonding_on_hold_ref_count: i64,
 }
 /// RedelegationEntry defines a redelegation object with relevant metadata.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RedelegationEntry {
     /// creation_height  defines the height which the redelegation took place.
     #[prost(int64, tag = "1")]
@@ -240,7 +240,7 @@ pub struct Redelegation {
     pub entries: ::prost::alloc::vec::Vec<RedelegationEntry>,
 }
 /// Params defines the parameters for the x/staking module.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Params {
     /// unbonding_time is the time duration of unbonding.
     #[prost(message, optional, tag = "1")]
@@ -263,7 +263,7 @@ pub struct Params {
 }
 /// DelegationResponse is equivalent to Delegation except that it contains a
 /// balance in addition to shares which is more suitable for client responses.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DelegationResponse {
     #[prost(message, optional, tag = "1")]
     pub delegation: ::core::option::Option<Delegation>,
@@ -273,7 +273,7 @@ pub struct DelegationResponse {
 /// RedelegationEntryResponse is equivalent to a RedelegationEntry except that it
 /// contains a balance in addition to shares which is more suitable for client
 /// responses.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RedelegationEntryResponse {
     #[prost(message, optional, tag = "1")]
     pub redelegation_entry: ::core::option::Option<RedelegationEntry>,
@@ -292,7 +292,7 @@ pub struct RedelegationResponse {
 }
 /// Pool is used for tracking bonded and not-bonded token supply of the bond
 /// denomination.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Pool {
     #[prost(string, tag = "1")]
     pub not_bonded_tokens: ::prost::alloc::string::String,

@@ -9,7 +9,7 @@ pub struct Pairs {
     pub pairs: ::prost::alloc::vec::Vec<Pair>,
 }
 /// Pair defines a key/value bytes tuple.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Pair {
     #[prost(bytes = "vec", tag = "1")]
     pub key: ::prost::alloc::vec::Vec<u8>,

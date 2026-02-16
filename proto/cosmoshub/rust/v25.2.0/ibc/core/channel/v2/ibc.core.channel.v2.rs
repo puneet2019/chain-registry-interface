@@ -18,7 +18,7 @@ pub struct GenesisState {
 /// packet commitments, acknowledgements, and receipts.
 /// Caller is responsible for knowing the context necessary to interpret this
 /// state as a commitment, acknowledgement, or a receipt.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PacketState {
     /// client unique identifier.
     #[prost(string, tag = "1")]
@@ -31,7 +31,7 @@ pub struct PacketState {
     pub data: ::prost::alloc::vec::Vec<u8>,
 }
 /// PacketSequence defines the genesis type necessary to retrieve and store next send sequences.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PacketSequence {
     /// client unique identifier.
     #[prost(string, tag = "1")]

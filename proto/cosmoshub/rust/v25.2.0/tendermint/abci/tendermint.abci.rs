@@ -46,15 +46,15 @@ pub mod request {
         FinalizeBlock(super::RequestFinalizeBlock),
     }
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestEcho {
     #[prost(string, tag = "1")]
     pub message: ::prost::alloc::string::String,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct RequestFlush {
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestInfo {
     #[prost(string, tag = "1")]
     pub version: ::prost::alloc::string::String,
@@ -80,7 +80,7 @@ pub struct RequestInitChain {
     #[prost(int64, tag = "6")]
     pub initial_height: i64,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestQuery {
     #[prost(bytes = "vec", tag = "1")]
     pub data: ::prost::alloc::vec::Vec<u8>,
@@ -91,22 +91,22 @@ pub struct RequestQuery {
     #[prost(bool, tag = "4")]
     pub prove: bool,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestCheckTx {
     #[prost(bytes = "vec", tag = "1")]
     pub tx: ::prost::alloc::vec::Vec<u8>,
     #[prost(enumeration = "CheckTxType", tag = "2")]
     pub r#type: i32,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct RequestCommit {
 }
 /// lists available snapshots
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct RequestListSnapshots {
 }
 /// offers a snapshot to the application
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestOfferSnapshot {
     /// snapshot offered by peers
     #[prost(message, optional, tag = "1")]
@@ -116,7 +116,7 @@ pub struct RequestOfferSnapshot {
     pub app_hash: ::prost::alloc::vec::Vec<u8>,
 }
 /// loads a snapshot chunk
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct RequestLoadSnapshotChunk {
     #[prost(uint64, tag = "1")]
     pub height: u64,
@@ -126,7 +126,7 @@ pub struct RequestLoadSnapshotChunk {
     pub chunk: u32,
 }
 /// Applies a snapshot chunk
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestApplySnapshotChunk {
     #[prost(uint32, tag = "1")]
     pub index: u32,
@@ -204,7 +204,7 @@ pub struct RequestExtendVote {
     pub proposer_address: ::prost::alloc::vec::Vec<u8>,
 }
 /// Verify the vote extension
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RequestVerifyVoteExtension {
     /// the hash of the block that this received vote corresponds to
     #[prost(bytes = "vec", tag = "1")]
@@ -287,20 +287,20 @@ pub mod response {
     }
 }
 /// nondeterministic
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResponseException {
     #[prost(string, tag = "1")]
     pub error: ::prost::alloc::string::String,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResponseEcho {
     #[prost(string, tag = "1")]
     pub message: ::prost::alloc::string::String,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ResponseFlush {
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResponseInfo {
     #[prost(string, tag = "1")]
     pub data: ::prost::alloc::string::String,
@@ -368,7 +368,7 @@ pub struct ResponseCheckTx {
     #[prost(string, tag = "8")]
     pub codespace: ::prost::alloc::string::String,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ResponseCommit {
     #[prost(int64, tag = "3")]
     pub retain_height: i64,
@@ -378,7 +378,7 @@ pub struct ResponseListSnapshots {
     #[prost(message, repeated, tag = "1")]
     pub snapshots: ::prost::alloc::vec::Vec<Snapshot>,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ResponseOfferSnapshot {
     #[prost(enumeration = "response_offer_snapshot::Result", tag = "1")]
     pub result: i32,
@@ -430,12 +430,12 @@ pub mod response_offer_snapshot {
         }
     }
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResponseLoadSnapshotChunk {
     #[prost(bytes = "vec", tag = "1")]
     pub chunk: ::prost::alloc::vec::Vec<u8>,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResponseApplySnapshotChunk {
     #[prost(enumeration = "response_apply_snapshot_chunk::Result", tag = "1")]
     pub result: i32,
@@ -493,12 +493,12 @@ pub mod response_apply_snapshot_chunk {
         }
     }
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResponsePrepareProposal {
     #[prost(bytes = "vec", repeated, tag = "1")]
     pub txs: ::prost::alloc::vec::Vec<::prost::alloc::vec::Vec<u8>>,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ResponseProcessProposal {
     #[prost(enumeration = "response_process_proposal::ProposalStatus", tag = "1")]
     pub status: i32,
@@ -535,12 +535,12 @@ pub mod response_process_proposal {
         }
     }
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ResponseExtendVote {
     #[prost(bytes = "vec", tag = "1")]
     pub vote_extension: ::prost::alloc::vec::Vec<u8>,
 }
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ResponseVerifyVoteExtension {
     #[prost(enumeration = "response_verify_vote_extension::VerifyStatus", tag = "1")]
     pub status: i32,
@@ -636,7 +636,7 @@ pub struct Event {
     pub attributes: ::prost::alloc::vec::Vec<EventAttribute>,
 }
 /// EventAttribute is a single key-value pair, associated with an event.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct EventAttribute {
     #[prost(string, tag = "1")]
     pub key: ::prost::alloc::string::String,
@@ -688,7 +688,7 @@ pub struct TxResult {
 // ----------------------------------------
 // Blockchain Types
 
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Validator {
     /// The first 20 bytes of SHA256(public key)
     #[prost(bytes = "vec", tag = "1")]
@@ -699,21 +699,21 @@ pub struct Validator {
     #[prost(int64, tag = "3")]
     pub power: i64,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ValidatorUpdate {
     #[prost(message, optional, tag = "1")]
     pub pub_key: ::core::option::Option<super::crypto::PublicKey>,
     #[prost(int64, tag = "2")]
     pub power: i64,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct VoteInfo {
     #[prost(message, optional, tag = "1")]
     pub validator: ::core::option::Option<Validator>,
     #[prost(enumeration = "super::types::BlockIdFlag", tag = "3")]
     pub block_id_flag: i32,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ExtendedVoteInfo {
     /// The validator that sent the vote.
     #[prost(message, optional, tag = "1")]
@@ -728,7 +728,7 @@ pub struct ExtendedVoteInfo {
     #[prost(enumeration = "super::types::BlockIdFlag", tag = "5")]
     pub block_id_flag: i32,
 }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Misbehavior {
     #[prost(enumeration = "MisbehaviorType", tag = "1")]
     pub r#type: i32,
@@ -750,7 +750,7 @@ pub struct Misbehavior {
 // ----------------------------------------
 // State Sync Types
 
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Snapshot {
     /// The height at which the snapshot was taken
     #[prost(uint64, tag = "1")]
@@ -823,5 +823,4 @@ impl MisbehaviorType {
         }
     }
 }
-include!("tendermint.abci.tonic.rs");
 // @@protoc_insertion_point(module)

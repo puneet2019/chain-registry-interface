@@ -34,7 +34,7 @@ pub struct HostGenesisState {
 }
 /// ActiveChannel contains a connection ID, port ID and associated active channel ID, as well as a boolean flag to
 /// indicate if the channel is middleware enabled
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ActiveChannel {
     #[prost(string, tag = "1")]
     pub connection_id: ::prost::alloc::string::String,
@@ -46,7 +46,7 @@ pub struct ActiveChannel {
     pub is_middleware_enabled: bool,
 }
 /// RegisteredInterchainAccount contains a connection ID, port ID and associated interchain account address
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct RegisteredInterchainAccount {
     #[prost(string, tag = "1")]
     pub connection_id: ::prost::alloc::string::String,

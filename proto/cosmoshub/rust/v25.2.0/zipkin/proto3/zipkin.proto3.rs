@@ -185,7 +185,7 @@ pub mod span {
 /// The network context of a node in the service graph.
 ///
 /// The next id is 5.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Endpoint {
     /// Lower-case label of this node in the service graph, such as "favstar".
     /// Leave absent if unknown.
@@ -213,7 +213,7 @@ pub struct Endpoint {
 /// Unlike log statements, annotations are often codes. Ex. "ws" for WireSend
 ///
 /// The next id is 3.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Annotation {
     /// Epoch microseconds of this event.
     ///

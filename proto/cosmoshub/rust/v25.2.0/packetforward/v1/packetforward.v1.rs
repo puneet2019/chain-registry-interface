@@ -12,7 +12,7 @@ pub struct GenesisState {
 }
 /// InFlightPacket contains information about original packet for
 /// writing the acknowledgement and refunding if necessary.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct InFlightPacket {
     #[prost(string, tag = "1")]
     pub original_sender_address: ::prost::alloc::string::String,

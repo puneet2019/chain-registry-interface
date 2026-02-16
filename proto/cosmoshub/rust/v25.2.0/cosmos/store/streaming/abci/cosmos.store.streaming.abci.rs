@@ -9,7 +9,7 @@ pub struct ListenFinalizeBlockRequest {
     pub res: ::core::option::Option<super::super::super::super::tendermint::abci::ResponseFinalizeBlock>,
 }
 /// ListenEndBlockResponse is the response type for the ListenEndBlock RPC method
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ListenFinalizeBlockResponse {
 }
 /// ListenCommitRequest is the request type for the ListenCommit RPC method
@@ -24,8 +24,7 @@ pub struct ListenCommitRequest {
     pub change_set: ::prost::alloc::vec::Vec<super::super::v1beta1::StoreKvPair>,
 }
 /// ListenCommitResponse is the response type for the ListenCommit RPC method
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct ListenCommitResponse {
 }
-include!("cosmos.store.streaming.abci.tonic.rs");
 // @@protoc_insertion_point(module)

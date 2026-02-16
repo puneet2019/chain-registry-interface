@@ -3,7 +3,7 @@
 /// BaseAccount defines a base account type. It contains all the necessary fields
 /// for basic account functionality. Any custom account type should extend this
 /// type for additional functionality (e.g. vesting).
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct BaseAccount {
     #[prost(string, tag = "1")]
     pub address: ::prost::alloc::string::String,
@@ -15,7 +15,7 @@ pub struct BaseAccount {
     pub sequence: u64,
 }
 /// ModuleAccount defines an account for modules that holds coins on a pool.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ModuleAccount {
     #[prost(message, optional, tag = "1")]
     pub base_account: ::core::option::Option<BaseAccount>,
@@ -25,7 +25,7 @@ pub struct ModuleAccount {
     pub permissions: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
 }
 /// ModuleCredential represents a unclaimable pubkey for base accounts controlled by modules.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ModuleCredential {
     /// module_name is the name of the module used for address derivation (passed into address.Module).
     #[prost(string, tag = "1")]
@@ -36,7 +36,7 @@ pub struct ModuleCredential {
     pub derivation_keys: ::prost::alloc::vec::Vec<::prost::alloc::vec::Vec<u8>>,
 }
 /// Params defines the parameters for the auth module.
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Params {
     #[prost(uint64, tag = "1")]
     pub max_memo_characters: u64,

@@ -73,7 +73,7 @@ pub struct StringEvent {
 }
 /// Attribute defines an attribute wrapper where the key and value are
 /// strings instead of raw bytes.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Attribute {
     #[prost(string, tag = "1")]
     pub key: ::prost::alloc::string::String,
@@ -81,7 +81,7 @@ pub struct Attribute {
     pub value: ::prost::alloc::string::String,
 }
 /// GasInfo defines tx execution gas context.
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct GasInfo {
     /// GasWanted is the maximum units of work we allow this tx to perform.
     #[prost(uint64, tag = "1")]
@@ -122,7 +122,7 @@ pub struct SimulationResponse {
 }
 /// MsgData defines the data returned in a Result object during message
 /// execution.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct MsgData {
     #[prost(string, tag = "1")]
     pub msg_type: ::prost::alloc::string::String,

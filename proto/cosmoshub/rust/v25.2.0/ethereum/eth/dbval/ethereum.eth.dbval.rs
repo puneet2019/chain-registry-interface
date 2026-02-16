@@ -3,7 +3,7 @@
 /// BackfillStatus is a value used to keep track of the progress of the process
 /// of backfilling blocks leading up to the origin block used to checkpoint sync
 /// a node. There is only one BackfillStatus value in the database.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct BackfillStatus {
     /// low_slot is the slot of the last block that backfill will attempt to
     /// download and import. This is determined by MIN_EPOCHS_FOR_BLOCK_REQUESTS,

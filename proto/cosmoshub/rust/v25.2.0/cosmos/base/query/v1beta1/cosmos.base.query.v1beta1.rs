@@ -7,7 +7,7 @@
 ///           Foo some_parameter = 1;
 ///           PageRequest pagination = 2;
 ///   }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PageRequest {
     /// key is a value returned in PageResponse.next_key to begin
     /// querying the next page most efficiently. Only one of offset or key
@@ -40,7 +40,7 @@ pub struct PageRequest {
 ///           repeated Bar results = 1;
 ///           PageResponse page = 2;
 ///   }
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PageResponse {
     /// next_key is the key to be passed to PageRequest.key to
     /// query the next page most efficiently. It will be empty if

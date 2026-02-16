@@ -5,7 +5,7 @@
 /// state. If a user does not have a validator set preference list set, and has
 /// staked, make their preference list default to their current staking
 /// distribution.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ValidatorPreference {
     /// val_oper_address holds the validator address the user wants to delegate
     /// funds to.

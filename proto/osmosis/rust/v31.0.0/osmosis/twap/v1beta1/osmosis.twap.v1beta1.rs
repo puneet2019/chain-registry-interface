@@ -7,7 +7,7 @@
 /// given SDK today. Would rather we optimize for readability and correctness,
 /// than an optimal state storage format. The system bottleneck is elsewhere for
 /// now.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TwapRecord {
     #[prost(uint64, tag = "1")]
     pub pool_id: u64,
@@ -44,7 +44,7 @@ pub struct TwapRecord {
 }
 /// PruningState allows us to spread out the pruning of TWAP records over time,
 /// instead of pruning all at once at the end of the epoch.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PruningState {
     /// is_pruning is true if the pruning process is ongoing.
     /// This tells the module to continue pruning the TWAP records

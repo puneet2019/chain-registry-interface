@@ -21,7 +21,7 @@ pub struct Tx {
 /// verification. The binary `serialize(tx: TxRaw)` is stored in Tendermint and
 /// the hash `sha256(serialize(tx: TxRaw))` becomes the "txhash", commonly used
 /// as the transaction ID.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TxRaw {
     /// body_bytes is a protobuf serialization of a TxBody that matches the
     /// representation in SignDoc.
@@ -38,7 +38,7 @@ pub struct TxRaw {
     pub signatures: ::prost::alloc::vec::Vec<::prost::alloc::vec::Vec<u8>>,
 }
 /// SignDoc is the type used for generating sign bytes for SIGN_MODE_DIRECT.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SignDoc {
     /// body_bytes is protobuf serialization of a TxBody that matches the
     /// representation in TxRaw.
@@ -196,7 +196,7 @@ pub mod mode_info {
     /// Single is the mode info for a single signer. It is structured as a message
     /// to allow for additional fields such as locale for SIGN_MODE_TEXTUAL in the
     /// future
-    #[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+    #[derive(Clone, Copy, PartialEq, ::prost::Message)]
     pub struct Single {
         /// mode is the signing mode of the single signer
         #[prost(enumeration = "super::super::signing::v1beta1::SignMode", tag = "1")]
@@ -285,7 +285,7 @@ pub struct AuxSignerData {
 }
 /// GetTxsEventRequest is the request type for the Service.TxsByEvents
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetTxsEventRequest {
     /// events is the list of transaction event type.
     /// Deprecated post v0.47.x: use query instead, which should contain a valid
@@ -334,7 +334,7 @@ pub struct GetTxsEventResponse {
 }
 /// BroadcastTxRequest is the request type for the Service.BroadcastTxRequest
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct BroadcastTxRequest {
     /// tx_bytes is the raw transaction.
     #[prost(bytes = "vec", tag = "1")]
@@ -376,7 +376,7 @@ pub struct SimulateResponse {
 }
 /// GetTxRequest is the request type for the Service.GetTx
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetTxRequest {
     /// hash is the tx hash to query, encoded as a hex string.
     #[prost(string, tag = "1")]
@@ -394,7 +394,7 @@ pub struct GetTxResponse {
 }
 /// GetBlockWithTxsRequest is the request type for the Service.GetBlockWithTxs
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetBlockWithTxsRequest {
     /// height is the height of the block to query.
     #[prost(int64, tag = "1")]
@@ -420,7 +420,7 @@ pub struct GetBlockWithTxsResponse {
 }
 /// TxDecodeRequest is the request type for the Service.TxDecode
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TxDecodeRequest {
     /// tx_bytes is the raw transaction.
     #[prost(bytes = "vec", tag = "1")]
@@ -444,7 +444,7 @@ pub struct TxEncodeRequest {
 }
 /// TxEncodeResponse is the response type for the
 /// Service.TxEncode method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TxEncodeResponse {
     /// tx_bytes is the encoded transaction bytes.
     #[prost(bytes = "vec", tag = "1")]
@@ -452,28 +452,28 @@ pub struct TxEncodeResponse {
 }
 /// TxEncodeAminoRequest is the request type for the Service.TxEncodeAmino
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TxEncodeAminoRequest {
     #[prost(string, tag = "1")]
     pub amino_json: ::prost::alloc::string::String,
 }
 /// TxEncodeAminoResponse is the response type for the Service.TxEncodeAmino
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TxEncodeAminoResponse {
     #[prost(bytes = "vec", tag = "1")]
     pub amino_binary: ::prost::alloc::vec::Vec<u8>,
 }
 /// TxDecodeAminoRequest is the request type for the Service.TxDecodeAmino
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TxDecodeAminoRequest {
     #[prost(bytes = "vec", tag = "1")]
     pub amino_binary: ::prost::alloc::vec::Vec<u8>,
 }
 /// TxDecodeAminoResponse is the response type for the Service.TxDecodeAmino
 /// RPC method.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct TxDecodeAminoResponse {
     #[prost(string, tag = "1")]
     pub amino_json: ::prost::alloc::string::String,
@@ -555,5 +555,4 @@ impl BroadcastMode {
         }
     }
 }
-include!("cosmos.tx.v1beta1.tonic.rs");
 // @@protoc_insertion_point(module)

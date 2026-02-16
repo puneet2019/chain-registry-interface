@@ -11,7 +11,7 @@
 /// data, which is eventually forwarded to comet for consumer chain consensus.
 ///
 /// Note this type is only used internally to the consumer CCV module.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct CrossChainValidator {
     #[prost(bytes = "vec", tag = "1")]
     pub address: ::prost::alloc::vec::Vec<u8>,
@@ -30,7 +30,7 @@ pub struct CrossChainValidator {
 /// which may bounce back and forth until handled by the provider.
 ///
 /// Note this type is only used internally to the consumer CCV module.
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct SlashRecord {
     #[prost(bool, tag = "1")]
     pub waiting_on_reply: bool,

@@ -3,7 +3,7 @@
 /// Channel defines pipeline for exactly-once packet delivery between specific
 /// modules on separate blockchains, which has at least one end capable of
 /// sending packets and one end capable of receiving packets.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Channel {
     /// current state of the channel end
     #[prost(enumeration = "State", tag = "1")]
@@ -24,7 +24,7 @@ pub struct Channel {
 }
 /// IdentifiedChannel defines a channel with additional port and channel
 /// identifier fields.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct IdentifiedChannel {
     /// current state of the channel end
     #[prost(enumeration = "State", tag = "1")]
@@ -50,7 +50,7 @@ pub struct IdentifiedChannel {
     pub channel_id: ::prost::alloc::string::String,
 }
 /// Counterparty defines a channel end counterparty
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Counterparty {
     /// port on the counterparty chain which owns the other end of the channel.
     #[prost(string, tag = "1")]
@@ -60,7 +60,7 @@ pub struct Counterparty {
     pub channel_id: ::prost::alloc::string::String,
 }
 /// Packet defines a type that carries data across different chains through IBC
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Packet {
     /// number corresponds to the order of sends and receives, where a Packet
     /// with an earlier sequence number must be sent and received before a Packet
@@ -93,7 +93,7 @@ pub struct Packet {
 /// packet commitments, acknowledgements, and receipts.
 /// Caller is responsible for knowing the context necessary to interpret this
 /// state as a commitment, acknowledgement, or a receipt.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PacketState {
     /// channel port identifier.
     #[prost(string, tag = "1")]
@@ -111,7 +111,7 @@ pub struct PacketState {
 /// PacketId is an identifier for a unique Packet
 /// Source chains refer to packets by source port/channel
 /// Destination chains refer to packets by destination port/channel
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct PacketId {
     /// channel port identifier
     #[prost(string, tag = "1")]
@@ -130,7 +130,7 @@ pub struct PacketId {
 /// The first byte of any message with this format will be the non-ASCII values
 /// `0xaa` (result) or `0xb2` (error). Implemented as defined by ICS:
 /// <https://github.com/cosmos/ibc/tree/master/spec/core/ics-004-channel-and-packet-semantics#acknowledgement-envelope>
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct Acknowledgement {
     /// response contains either a result or an error and must be non-empty
     #[prost(oneof = "acknowledgement::Response", tags = "21, 22")]
@@ -139,7 +139,7 @@ pub struct Acknowledgement {
 /// Nested message and enum types in `Acknowledgement`.
 pub mod acknowledgement {
     /// response contains either a result or an error and must be non-empty
-    #[derive(Clone, PartialEq, Eq, Hash, ::prost::Oneof)]
+    #[derive(Clone, PartialEq, ::prost::Oneof)]
     pub enum Response {
         #[prost(bytes, tag = "21")]
         Result(::prost::alloc::vec::Vec<u8>),
@@ -150,7 +150,7 @@ pub mod acknowledgement {
 /// Timeout defines an execution deadline structure for 04-channel handlers.
 /// This includes packet lifecycle handlers.
 /// A valid Timeout contains either one or both of a timestamp and block height (sequence).
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct Timeout {
     /// block height after which the packet times out
     #[prost(message, optional, tag = "1")]

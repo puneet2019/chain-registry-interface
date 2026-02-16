@@ -47,7 +47,7 @@ pub struct AuthnDescriptor {
 /// NOTE(fdymylja): here we could go as far as providing an entire flow on how
 /// to sign a message given a SigningModeDescriptor, but it's better to think about
 /// this another time
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SigningModeDescriptor {
     /// name defines the unique name of the signing mode
     #[prost(string, tag = "1")]
@@ -61,7 +61,7 @@ pub struct SigningModeDescriptor {
     pub authn_info_provider_method_fullname: ::prost::alloc::string::String,
 }
 /// ChainDescriptor describes chain information of the application
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ChainDescriptor {
     /// id is the chain id
     #[prost(string, tag = "1")]
@@ -89,7 +89,7 @@ pub struct InterfaceDescriptor {
     pub interface_implementers: ::prost::alloc::vec::Vec<InterfaceImplementerDescriptor>,
 }
 /// InterfaceImplementerDescriptor describes an interface implementer
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct InterfaceImplementerDescriptor {
     /// fullname is the protobuf queryable name of the interface implementer
     #[prost(string, tag = "1")]
@@ -103,7 +103,7 @@ pub struct InterfaceImplementerDescriptor {
 }
 /// InterfaceAcceptingMessageDescriptor describes a protobuf message which contains
 /// an interface represented as a google.protobuf.Any
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct InterfaceAcceptingMessageDescriptor {
     /// fullname is the protobuf fullname of the type containing the interface
     #[prost(string, tag = "1")]
@@ -115,21 +115,21 @@ pub struct InterfaceAcceptingMessageDescriptor {
     pub field_descriptor_names: ::prost::alloc::vec::Vec<::prost::alloc::string::String>,
 }
 /// ConfigurationDescriptor contains metadata information on the sdk.Config
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct ConfigurationDescriptor {
     /// bech32_account_address_prefix is the account address prefix
     #[prost(string, tag = "1")]
     pub bech32_account_address_prefix: ::prost::alloc::string::String,
 }
 /// MsgDescriptor describes a cosmos-sdk message that can be delivered with a transaction
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct MsgDescriptor {
     /// msg_type_url contains the TypeURL of a sdk.Msg.
     #[prost(string, tag = "1")]
     pub msg_type_url: ::prost::alloc::string::String,
 }
 /// GetAuthnDescriptorRequest is the request used for the GetAuthnDescriptor RPC
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct GetAuthnDescriptorRequest {
 }
 /// GetAuthnDescriptorResponse is the response returned by the GetAuthnDescriptor RPC
@@ -140,18 +140,18 @@ pub struct GetAuthnDescriptorResponse {
     pub authn: ::core::option::Option<AuthnDescriptor>,
 }
 /// GetChainDescriptorRequest is the request used for the GetChainDescriptor RPC
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct GetChainDescriptorRequest {
 }
 /// GetChainDescriptorResponse is the response returned by the GetChainDescriptor RPC
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetChainDescriptorResponse {
     /// chain describes application chain information
     #[prost(message, optional, tag = "1")]
     pub chain: ::core::option::Option<ChainDescriptor>,
 }
 /// GetCodecDescriptorRequest is the request used for the GetCodecDescriptor RPC
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct GetCodecDescriptorRequest {
 }
 /// GetCodecDescriptorResponse is the response returned by the GetCodecDescriptor RPC
@@ -162,18 +162,18 @@ pub struct GetCodecDescriptorResponse {
     pub codec: ::core::option::Option<CodecDescriptor>,
 }
 /// GetConfigurationDescriptorRequest is the request used for the GetConfigurationDescriptor RPC
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct GetConfigurationDescriptorRequest {
 }
 /// GetConfigurationDescriptorResponse is the response returned by the GetConfigurationDescriptor RPC
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct GetConfigurationDescriptorResponse {
     /// config describes the application's sdk.Config
     #[prost(message, optional, tag = "1")]
     pub config: ::core::option::Option<ConfigurationDescriptor>,
 }
 /// GetQueryServicesDescriptorRequest is the request used for the GetQueryServicesDescriptor RPC
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct GetQueryServicesDescriptorRequest {
 }
 /// GetQueryServicesDescriptorResponse is the response returned by the GetQueryServicesDescriptor RPC
@@ -184,7 +184,7 @@ pub struct GetQueryServicesDescriptorResponse {
     pub queries: ::core::option::Option<QueryServicesDescriptor>,
 }
 /// GetTxDescriptorRequest is the request used for the GetTxDescriptor RPC
-#[derive(Clone, Copy, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, Copy, PartialEq, ::prost::Message)]
 pub struct GetTxDescriptorRequest {
 }
 /// GetTxDescriptorResponse is the response returned by the GetTxDescriptor RPC
@@ -218,7 +218,7 @@ pub struct QueryServiceDescriptor {
 /// QueryMethodDescriptor describes a queryable method of a query service
 /// no other info is provided beside method name and tendermint queryable path
 /// because it would be redundant with the grpc reflection service
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct QueryMethodDescriptor {
     /// name is the protobuf name (not fullname) of the method
     #[prost(string, tag = "1")]
@@ -228,5 +228,4 @@ pub struct QueryMethodDescriptor {
     #[prost(string, tag = "2")]
     pub full_query_path: ::prost::alloc::string::String,
 }
-include!("cosmos.base.reflection.v2alpha1.tonic.rs");
 // @@protoc_insertion_point(module)

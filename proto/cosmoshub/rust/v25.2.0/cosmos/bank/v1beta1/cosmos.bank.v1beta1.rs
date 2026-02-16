@@ -16,7 +16,7 @@ pub struct Params {
 }
 /// SendEnabled maps coin denom to a send_enabled status (whether a denom is
 /// sendable).
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct SendEnabled {
     #[prost(string, tag = "1")]
     pub denom: ::prost::alloc::string::String,
@@ -49,7 +49,7 @@ pub struct Supply {
 }
 /// DenomUnit represents a struct that describes a given
 /// denomination unit of the basic token.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct DenomUnit {
     /// denom represents the string name of the given denom unit (e.g uatom).
     #[prost(string, tag = "1")]

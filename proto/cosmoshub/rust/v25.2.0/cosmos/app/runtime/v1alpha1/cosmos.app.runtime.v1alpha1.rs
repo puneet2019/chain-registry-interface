@@ -58,7 +58,7 @@ pub struct Module {
 }
 /// StoreKeyConfig may be supplied to override the default module store key, which
 /// is the module name.
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct StoreKeyConfig {
     /// name of the module to override the store key of
     #[prost(string, tag = "1")]

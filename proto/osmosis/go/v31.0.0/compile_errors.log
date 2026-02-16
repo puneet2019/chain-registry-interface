@@ -1,0 +1,833 @@
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:10:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:56:12: "DenomPairTakerFee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:155:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:157:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:161:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:171:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:25:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:8:1: Import "osmosis/poolmanager/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:9:1: Import "osmosis/txfees/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:65:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:197:3: "osmosis.poolmanager.v1beta1.TakerFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:202:3: "osmosis.txfees.v1beta1.TxFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:214:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/tx.proto:7:1: Import "osmosis/protorev/v1beta1/protorev.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/tx.proto:9:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/tx.proto:68:12: "TokenPairArbRoutes" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/tx.proto:108:3: "InfoByPoolType" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/tx.proto:170:12: "BaseDenom" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/tx.proto:184:3: "PoolWeights" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:10:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:56:12: "DenomPairTakerFee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:155:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:157:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:161:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:171:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:25:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:8:1: Import "osmosis/poolmanager/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:9:1: Import "osmosis/txfees/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:65:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:197:3: "osmosis.poolmanager.v1beta1.TakerFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:202:3: "osmosis.txfees.v1beta1.TxFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:214:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/gov.proto:7:1: Import "osmosis/protorev/v1beta1/protorev.proto" was not found or had errors.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:10:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:56:12: "DenomPairTakerFee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:155:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:157:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:161:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:171:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:25:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:8:1: Import "osmosis/poolmanager/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:9:1: Import "osmosis/txfees/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:65:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:197:3: "osmosis.poolmanager.v1beta1.TakerFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:202:3: "osmosis.txfees.v1beta1.TxFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:214:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:10:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:56:12: "DenomPairTakerFee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:155:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:157:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:161:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:171:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:25:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:8:1: Import "osmosis/poolmanager/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:9:1: Import "osmosis/txfees/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:65:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:197:3: "osmosis.poolmanager.v1beta1.TakerFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:202:3: "osmosis.txfees.v1beta1.TxFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:214:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:6:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:8:1: Import "osmosis/protorev/v1beta1/protorev.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:10:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:164:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:176:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:194:3: "RouteStatistics" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:209:12: "RouteStatistics" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:224:12: "TokenPairArbRoutes" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:262:3: "InfoByPoolType" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:302:12: "BaseDenom" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/query.proto:339:3: "AllProtocolRevenue" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:10:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:56:12: "DenomPairTakerFee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:155:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:157:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:161:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:171:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:25:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:8:1: Import "osmosis/poolmanager/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:9:1: Import "osmosis/txfees/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:65:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:197:3: "osmosis.poolmanager.v1beta1.TakerFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:202:3: "osmosis.txfees.v1beta1.TxFeesTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/protorev.proto:214:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:5:1: Import "osmosis/protorev/v1beta1/protorev.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:9:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:18:12: "TokenPairArbRoutes" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:24:12: "BaseDenom" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:31:3: "PoolWeights" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:40:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:64:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:70:3: "InfoByPoolType" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/genesis.proto:74:3: "CyclicArbTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/protorev/v1beta1/params.proto:5:1: warning: Import cosmos_proto/cosmos.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/mint/v1beta1/mint.proto:8:1: warning: Import google/protobuf/any.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/mint/v1beta1/mint.proto:7:1: warning: Import google/protobuf/timestamp.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/mint/v1beta1/mint.proto:9:1: warning: Import google/protobuf/duration.proto is unused.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/smartaccount/v1beta1/tx.proto:4:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/smartaccount/v1beta1/query.proto:6:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:26:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:30:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:47:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:8:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:9:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:10:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:35:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:38:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:73:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/tx.proto:86:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:26:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:30:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:47:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:9:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:74:3: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gov.proto:6:1: Import "osmosis/incentives/group.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gov.proto:21:12: "osmosis.incentives.CreateGroup" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:26:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:30:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:47:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:9:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:74:3: "Gauge" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:26:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:30:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:47:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:26:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:30:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:47:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:9:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:74:3: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:20:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:52:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:8:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:9:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:10:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:11:1: Import "osmosis/incentives/group.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:12:1: Import "osmosis/incentives/params.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:123:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:135:3: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:140:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:144:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:146:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:151:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:155:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:157:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:164:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:168:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:170:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:175:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:179:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:181:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:188:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:193:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:195:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:210:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:228:12: "Group" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:233:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:238:12: "GroupsWithGauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:244:3: "Group" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:263:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:266:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:268:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:273:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:276:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:278:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:284:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:288:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:290:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/query.proto:294:26: "Params" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:20:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:52:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:26:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:30:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:47:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:9:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/group.proto:74:3: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/genesis.proto:6:1: Import "osmosis/incentives/params.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/genesis.proto:7:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/genesis.proto:8:1: Import "osmosis/incentives/group.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/genesis.proto:16:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/genesis.proto:19:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/genesis.proto:31:12: "Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/genesis.proto:33:12: "Group" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:20:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/params.proto:52:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:13:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:53:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:62:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/auth/v1beta1/auth.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:11:1: Import "cosmos/auth/v1beta1/auth.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:12:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:66:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:71:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/tx.proto:4:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/tx.proto:7:1: Import "osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/tx.proto:26:3: "PoolParams" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/tx.proto:28:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/auth/v1beta1/auth.proto: File not found.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:11:1: Import "cosmos/auth/v1beta1/auth.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:12:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:66:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/stableswap/v1beta1/stableswap_pool.proto:71:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/auth/v1beta1/auth.proto: File not found.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:15:1: Import "cosmos/auth/v1beta1/auth.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:16:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:108:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:145:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/balancer/v1beta1/tx.proto:6:1: Import "osmosis/gamm/v1beta1/balancerPool.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/balancer/v1beta1/tx.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/balancer/v1beta1/tx.proto:9:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/balancer/v1beta1/tx.proto:25:3: "osmosis.gamm.v1beta1.PoolParams" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/poolmodels/balancer/v1beta1/tx.proto:28:12: "osmosis.gamm.v1beta1.PoolAsset" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:43:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:56:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:76:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:83:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:131:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:154:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:250:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v2/query.proto:5:1: Import "osmosis/gamm/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v2/query.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v2/query.proto:8:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:43:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:56:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:76:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:83:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:131:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:154:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:250:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/shared.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:12:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:8:1: Import "osmosis/gamm/v1beta1/shared.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:9:1: Import "osmosis/gamm/v1beta1/params.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:19:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:20:3: "MigrationRecords" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/gov.proto:5:1: Import "osmosis/gamm/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/gov.proto:6:1: Import "osmosis/gamm/v1beta1/shared.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/gov.proto:26:12: "BalancerToConcentratedPoolLink" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/gov.proto:58:12: "BalancerToConcentratedPoolLink" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:43:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:56:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:76:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:83:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:131:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:154:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/tx.proto:250:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/shared.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:12:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:5:1: Import "osmosis/gamm/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:9:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:13:1: Import "osmosis/gamm/v1beta1/shared.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:14:1: Import "osmosis/gamm/v1beta1/params.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:137:26: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:154:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:161:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:182:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:194:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:210:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:232:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:244:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:252:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:258:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:292:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:299:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:357:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/query.proto:377:3: "MigrationRecords" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/shared.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:12:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:8:1: Import "osmosis/gamm/v1beta1/shared.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:9:1: Import "osmosis/gamm/v1beta1/params.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:19:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/genesis.proto:20:3: "MigrationRecords" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/shared.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+cosmos/auth/v1beta1/auth.proto: File not found.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:15:1: Import "cosmos/auth/v1beta1/auth.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:16:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:108:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/balancerPool.proto:145:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/gamm/v1beta1/params.proto:12:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:69:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:73:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:91:3: "osmosis.lockup.SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:93:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:9:1: Import "osmosis/superfluid/superfluid.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:10:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:98:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:123:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:138:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:178:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:183:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:223:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:227:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/tx.proto:282:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:69:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:73:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:91:3: "osmosis.lockup.SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:93:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+cosmos/staking/v1beta1/staking.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:9:1: Import "osmosis/superfluid/superfluid.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:11:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:12:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:13:1: Import "cosmos/staking/v1beta1/staking.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:157:29: "SuperfluidAssetType" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:161:12: "SuperfluidAsset" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:166:3: "OsmoEquivalentMultiplierRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:176:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:181:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:227:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:238:12: "SuperfluidDelegationRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:240:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:244:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:256:12: "SuperfluidDelegationRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:258:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:262:12: "osmosis.lockup.SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:272:12: "SuperfluidDelegationRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:282:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:291:12: "SuperfluidDelegationRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:294:12: "cosmos.staking.v1beta1.DelegationResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:296:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:300:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:315:12: "ConcentratedPoolUserPositionRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:324:12: "ConcentratedPoolUserPositionRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/query.proto:333:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:69:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:73:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:91:3: "osmosis.lockup.SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:93:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/v1beta1/gov.proto:7:1: Import "osmosis/superfluid/superfluid.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/v1beta1/gov.proto:22:12: "SuperfluidAsset" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:69:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:73:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:91:3: "osmosis.lockup.SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:93:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/genesis.proto:5:1: Import "osmosis/superfluid/superfluid.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/genesis.proto:15:12: "SuperfluidAsset" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/genesis.proto:19:12: "OsmoEquivalentMultiplierRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/genesis.proto:23:12: "SuperfluidIntermediaryAccount" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/genesis.proto:25:12: "LockIdIntermediaryAccountConnection" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:69:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:73:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:91:3: "osmosis.lockup.SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:93:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/superfluid.proto:97:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/superfluid/params.proto:5:1: warning: Import google/protobuf/duration.proto is unused.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/query.proto:7:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/query.proto:45:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/query.proto:52:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/tx.proto:4:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_sudo_msg.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_sudo_msg.proto:13:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_sudo_msg.proto:53:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_query_msg.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_query_msg.proto:12:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_query_msg.proto:33:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_query_msg.proto:39:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/module_query_msg.proto:60:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/pool_query_msg.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/pool_query_msg.proto:56:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/v3/pool_query_msg.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/cosmwasmpool/v1beta1/model/v3/pool_query_msg.proto:19:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/epochs/v1beta1/query.proto:6:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/tx.proto:7:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/query.proto:6:1: warning: Import google/protobuf/duration.proto is unused.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/txfees/v1beta1/genesis.proto:25:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/twap/v1beta1/query.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/twap/v1beta1/query.proto:9:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/twap/v1beta1/genesis.proto:7:1: warning: Import cosmos_proto/cosmos.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/twap/v1beta1/genesis.proto:6:1: warning: Import google/protobuf/any.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v2/query.proto:8:1: warning: Import cosmos_proto/cosmos.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v2/query.proto:7:1: warning: Import google/protobuf/any.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v2/query.proto:9:1: warning: Import google/protobuf/timestamp.proto is unused.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/gov.proto:5:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/gov.proto:18:12: "osmosis.poolmanager.v1beta1.DenomPairTakerFee" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/taker_fee_share.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/taker_fee_share.proto:38:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:10:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:56:12: "DenomPairTakerFee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:155:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:157:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:161:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:171:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/taker_fee_share.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/taker_fee_share.proto:38:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:5:1: Import "osmosis/poolmanager/v1beta1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:6:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:8:1: Import "osmosis/poolmanager/v1beta1/taker_fee_share.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:10:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:11:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:221:26: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:369:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:380:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:393:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:420:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:453:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:457:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:465:12: "TakerFeeShareAgreement" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:474:3: "TakerFeeShareAgreement" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:498:12: "TakerFeeSkimAccumulator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:507:3: "AlloyContractTakerFeeShareState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:516:3: "AlloyContractTakerFeeShareState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/query.proto:525:12: "AlloyContractTakerFeeShareState" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tracked_volume.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tracked_volume.proto:10:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:36:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/tx.proto:96:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:10:1: Import "osmosis/poolmanager/v1beta1/tx.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:56:12: "DenomPairTakerFee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:155:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:157:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:161:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolmanager/v1beta1/genesis.proto:171:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/bank/v1beta1/bank.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/tx.proto:6:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/tx.proto:7:1: Import "cosmos/bank/v1beta1/bank.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/tx.proto:8:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/tx.proto:59:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/tx.proto:80:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/tx.proto:132:3: "cosmos.bank.v1beta1.Metadata" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/tx.proto:147:3: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/authorityMetadata.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:5:1: Import "osmosis/tokenfactory/v1beta1/authorityMetadata.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/query.proto:6:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/query.proto:7:1: Import "osmosis/tokenfactory/v1beta1/authorityMetadata.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/query.proto:8:1: Import "osmosis/tokenfactory/v1beta1/params.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/query.proto:62:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/query.proto:74:3: "DenomAuthorityMetadata" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/authorityMetadata.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:5:1: Import "osmosis/tokenfactory/v1beta1/authorityMetadata.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/genesis.proto:5:1: Import "osmosis/tokenfactory/v1beta1/authorityMetadata.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/genesis.proto:6:1: Import "osmosis/tokenfactory/v1beta1/params.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/genesis.proto:13:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/genesis.proto:28:3: "DenomAuthorityMetadata" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/authorityMetadata.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/authorityMetadata.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:5:1: Import "osmosis/tokenfactory/v1beta1/authorityMetadata.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/tokenfactory/v1beta1/params.proto:16:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/downtimedetector/v1beta1/query.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/downtimedetector/v1beta1/query.proto:9:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/downtimedetector/v1beta1/genesis.proto:5:1: warning: Import google/protobuf/any.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/downtimedetector/v1beta1/genesis.proto:6:1: warning: Import cosmos_proto/cosmos.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/downtimedetector/v1beta1/genesis.proto:7:1: warning: Import google/protobuf/duration.proto is unused.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:26:3: "osmosis.lockup.QueryCondition" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:30:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/incentives/gauge.proto:47:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolincentives/v1beta1/query.proto:7:1: Import "osmosis/incentives/gauge.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolincentives/v1beta1/query.proto:107:12: "osmosis.incentives.Gauge" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolincentives/v1beta1/shared.proto:5:1: warning: Import google/protobuf/duration.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/poolincentives/v1beta1/shared.proto:6:1: warning: Import osmosis/poolincentives/v1beta1/incentives.proto is unused.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/ibchooks/tx.proto:5:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/ibchooks/genesis.proto:5:1: warning: Import cosmos_proto/cosmos.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/ibchooks/params.proto:6:1: warning: Import google/protobuf/duration.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/ibchooks/params.proto:5:1: warning: Import cosmos_proto/cosmos.proto is unused.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/ibcratelimit/v1beta1/query.proto:6:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/ibcratelimit/v1beta1/genesis.proto:5:1: warning: Import cosmos_proto/cosmos.proto is unused.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/ibcratelimit/v1beta1/genesis.proto:6:1: warning: Import google/protobuf/any.proto is unused.
+cosmos/msg/v1/msg.proto: File not found.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tx.proto:4:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tx.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tx.proto:44:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tx.proto:190:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tx.proto:208:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tx.proto:213:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/incentive_record.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/incentive_record.proto:39:3: "cosmos.base.v1beta1.DecCoin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:10:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:11:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:45:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:49:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:53:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:57:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:61:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:69:3: "osmosis.lockup.PeriodLock" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:9:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:41:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:62:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:9:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:41:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:62:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+cosmos/base/query/v1beta1/pagination.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:10:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:11:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:45:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:49:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:53:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:57:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:61:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:69:3: "osmosis.lockup.PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/incentive_record.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/incentive_record.proto:39:3: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:6:1: Import "osmosis/concentratedliquidity/v1beta1/tick_info.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:8:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:9:1: Import "cosmos/base/query/v1beta1/pagination.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:14:1: Import "osmosis/concentratedliquidity/v1beta1/position.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:15:1: Import "osmosis/concentratedliquidity/v1beta1/incentive_record.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:139:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:143:12: "FullPositionBreakdown" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:144:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:153:3: "FullPositionBreakdown" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:168:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:175:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:247:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:259:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:263:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:275:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:279:12: "UptimeTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:292:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:297:12: "UptimeTracker" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:306:3: "cosmos.base.query.v1beta1.PageRequest" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:310:12: "IncentiveRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:313:3: "cosmos.base.query.v1beta1.PageResponse" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:332:12: "PositionWithPeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/query.proto:339:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:13:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:53:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/accum/v1beta1/accum.proto:62:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:10:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:11:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:45:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:49:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:53:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:57:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:61:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/position.proto:69:3: "osmosis.lockup.PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:9:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:41:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/tick_info.proto:62:12: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/incentive_record.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/incentive_record.proto:39:3: "cosmos.base.v1beta1.DecCoin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:7:1: Import "osmosis/accum/v1beta1/accum.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:9:1: Import "osmosis/concentratedliquidity/v1beta1/position.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:10:1: Import "osmosis/concentratedliquidity/v1beta1/tick_info.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:11:1: Import "osmosis/concentratedliquidity/v1beta1/incentive_record.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:23:3: "TickInfo" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:46:12: "IncentiveRecord" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:51:3: "Position" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:53:3: "osmosis.accum.v1beta1.Record" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:55:12: "osmosis.accum.v1beta1.Record" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/v1beta1/genesis.proto:90:3: "osmosis.accum.v1beta1.AccumulatorContent" is not defined.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/concentratedliquidity/poolmodel/concentrated/v1beta1/tx.proto:6:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+cosmos/base/v1beta1/coin.proto: File not found.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/valsetpref/v1beta1/tx.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/valsetpref/v1beta1/tx.proto:9:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/valsetpref/v1beta1/tx.proto:84:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/valsetpref/v1beta1/tx.proto:104:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/valsetpref/v1beta1/tx.proto:126:3: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/valsetpref/v1beta1/state.proto:5:1: warning: Import google/api/annotations.proto is unused.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/msg/v1/msg.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/tx.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/tx.proto:8:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/tx.proto:9:1: Import "cosmos/msg/v1/msg.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/tx.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/tx.proto:54:49: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/tx.proto:63:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/tx.proto:105:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:9:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:151:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:159:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:169:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:179:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:189:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:204:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:216:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:228:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:241:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:262:26: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:276:12: "SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:281:3: "SyntheticLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:293:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:305:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:317:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/query.proto:330:12: "PeriodLock" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/genesis.proto:5:1: Import "osmosis/lockup/lock.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/genesis.proto:13:12: "PeriodLock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/genesis.proto:14:12: "SyntheticLock" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:7:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/lockup/lock.proto:41:12: "cosmos.base.v1beta1.Coin" is not defined.
+cosmos/base/v1beta1/coin.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/osmosis/v31.0.0/protos/osmosis/store/v1beta1/tree.proto:5:1: Import "cosmos/base/v1beta1/coin.proto" was not found or had errors.

@@ -3,7 +3,7 @@
 /// StoreKVPair is a KVStore KVPair used for listening to state changes (Sets and Deletes)
 /// It optionally includes the StoreKey for the originating KVStore and a Boolean flag to distinguish between Sets and
 /// Deletes
-#[derive(Clone, PartialEq, Eq, Hash, ::prost::Message)]
+#[derive(Clone, PartialEq, ::prost::Message)]
 pub struct StoreKvPair {
     /// the store key for the KVStore this pair originates from
     #[prost(string, tag = "1")]
