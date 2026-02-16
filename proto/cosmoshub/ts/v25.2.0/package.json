@@ -1,0 +1,12 @@
+{
+  "name": "@puneet_m/proto-cosmoshub",
+  "version": "25.2.0-alpha.1",
+  "description": "Protobuf TypeScript types for CosmosHub (Gaia v25.2.0)",
+  "license": "MIT",
+  "main": "index.ts",
+  "types": "index.ts",
+  "dependencies": {
+    "long": "^5.2.0",
+    "protobufjs": "^7.2.0"
+  }
+}

@@ -1,0 +1,50 @@
+name: Proto CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  ts-dry-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - chain: cosmoshub
+            version: v25.2.0
+          - chain: osmosis
+            version: v31.0.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: npm pack (dry run)
+        working-directory: proto/${{ matrix.chain }}/ts/${{ matrix.version }}
+        run: npm pack
+
+  rust-dry-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - chain: cosmoshub
+            version: v25.2.0
+          - chain: osmosis
+            version: v31.0.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: cargo publish --dry-run
+        working-directory: proto/${{ matrix.chain }}/rust/${{ matrix.version }}
+        run: cargo publish --dry-run

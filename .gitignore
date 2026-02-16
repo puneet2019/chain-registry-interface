@@ -35,3 +35,11 @@ node_modules/
 /chain-registry/
 /cosmjs-types/
 /cosmos-rust/
+
+# Proto registry: Go output is reference-only (not publishable)
+/proto/*/go/
+
+# Proto registry: stale layout (removed)
+/proto-out/
+/proto-ts-output/
+/proto-ts-bundles/

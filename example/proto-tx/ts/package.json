@@ -1,0 +1,16 @@
+{
+  "name": "proto-tx-examples",
+  "private": true,
+  "scripts": {
+    "cosmoshub": "npx ts-node cosmoshub-send.ts",
+    "osmosis": "npx ts-node osmosis-swap.ts"
+  },
+  "dependencies": {
+    "long": "^5.2.0",
+    "protobufjs": "^7.2.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}

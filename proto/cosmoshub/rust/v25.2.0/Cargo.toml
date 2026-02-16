@@ -1,0 +1,17 @@
+[package]
+name = "cosmoshub-proto"
+version = "0.1.0-alpha.1"
+edition = "2021"
+description = "Protobuf Rust types for CosmosHub (Gaia v25.2.0)"
+license = "MIT"
+
+[dependencies]
+prost = "0.13"
+
+[dependencies.tonic]
+version = "0.12"
+optional = true
+
+[features]
+default = []
+grpc = ["tonic"]

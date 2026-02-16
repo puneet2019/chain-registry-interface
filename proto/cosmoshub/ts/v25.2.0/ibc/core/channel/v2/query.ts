@@ -1,0 +1,2057 @@
+/* eslint-disable */
+import Long from "long";
+import _m0 from "protobufjs/minimal";
+import { Height } from "../../../../ibc/core/client/v1/client";
+import {
+  PageRequest,
+  PageResponse,
+} from "../../../../cosmos/base/query/v1beta1/pagination";
+import { PacketState } from "../../../../ibc/core/channel/v2/genesis";
+
+export const protobufPackage = "ibc.core.channel.v2";
+
+/** QueryNextSequenceSendRequest is the request type for the Query/QueryNextSequenceSend RPC method */
+export interface QueryNextSequenceSendRequest {
+  /** client unique identifier */
+  clientId: string;
+}
+
+/** QueryNextSequenceSendResponse is the response type for the Query/QueryNextSequenceSend RPC method */
+export interface QueryNextSequenceSendResponse {
+  /** next sequence send number */
+  nextSequenceSend: number;
+  /** merkle proof of existence */
+  proof: Uint8Array;
+  /** height at which the proof was retrieved */
+  proofHeight: Height | undefined;
+}
+
+/** QueryPacketCommitmentRequest is the request type for the Query/PacketCommitment RPC method. */
+export interface QueryPacketCommitmentRequest {
+  /** client unique identifier */
+  clientId: string;
+  /** packet sequence */
+  sequence: number;
+}
+
+/** QueryPacketCommitmentResponse is the response type for the Query/PacketCommitment RPC method. */
+export interface QueryPacketCommitmentResponse {
+  /** packet associated with the request fields */
+  commitment: Uint8Array;
+  /** merkle proof of existence */
+  proof: Uint8Array;
+  /** height at which the proof was retrieved */
+  proofHeight: Height | undefined;
+}
+
+/** QueryPacketCommitmentsRequest is the request type for the Query/PacketCommitments RPC method. */
+export interface QueryPacketCommitmentsRequest {
+  /** client unique identifier */
+  clientId: string;
+  /** pagination request */
+  pagination: PageRequest | undefined;
+}
+
+/** QueryPacketCommitmentResponse is the response type for the Query/PacketCommitment RPC method. */
+export interface QueryPacketCommitmentsResponse {
+  /** collection of packet commitments for the requested channel identifier. */
+  commitments: PacketState[];
+  /** pagination response. */
+  pagination: PageResponse | undefined;
+  /** query block height. */
+  height: Height | undefined;
+}
+
+/** QueryPacketAcknowledgementRequest is the request type for the Query/PacketAcknowledgement RPC method. */
+export interface QueryPacketAcknowledgementRequest {
+  /** client unique identifier */
+  clientId: string;
+  /** packet sequence */
+  sequence: number;
+}
+
+/** QueryPacketAcknowledgementResponse is the response type for the Query/PacketAcknowledgement RPC method. */
+export interface QueryPacketAcknowledgementResponse {
+  /** acknowledgement associated with the request fields */
+  acknowledgement: Uint8Array;
+  /** merkle proof of existence */
+  proof: Uint8Array;
+  /** height at which the proof was retrieved */
+  proofHeight: Height | undefined;
+}
+
+/**
+ * QueryPacketAcknowledgementsRequest is the request type for the
+ * Query/QueryPacketCommitments RPC method
+ */
+export interface QueryPacketAcknowledgementsRequest {
+  /** client unique identifier */
+  clientId: string;
+  /** pagination request */
+  pagination: PageRequest | undefined;
+  /** list of packet sequences */
+  packetCommitmentSequences: number[];
+}
+
+/**
+ * QueryPacketAcknowledgemetsResponse is the request type for the
+ * Query/QueryPacketAcknowledgements RPC method
+ */
+export interface QueryPacketAcknowledgementsResponse {
+  acknowledgements: PacketState[];
+  /** pagination response */
+  pagination: PageResponse | undefined;
+  /** query block height */
+  height: Height | undefined;
+}
+
+/** QueryPacketReceiptRequest is the request type for the Query/PacketReceipt RPC method. */
+export interface QueryPacketReceiptRequest {
+  /** client unique identifier */
+  clientId: string;
+  /** packet sequence */
+  sequence: number;
+}
+
+/** QueryPacketReceiptResponse is the response type for the Query/PacketReceipt RPC method. */
+export interface QueryPacketReceiptResponse {
+  /** success flag for if receipt exists */
+  received: boolean;
+  /** merkle proof of existence or absence */
+  proof: Uint8Array;
+  /** height at which the proof was retrieved */
+  proofHeight: Height | undefined;
+}
+
+/** QueryUnreceivedPacketsRequest is the request type for the Query/UnreceivedPackets RPC method */
+export interface QueryUnreceivedPacketsRequest {
+  /** client unique identifier */
+  clientId: string;
+  /** list of packet sequences */
+  sequences: number[];
+}
+
+/** QueryUnreceivedPacketsResponse is the response type for the Query/UnreceivedPacketCommitments RPC method */
+export interface QueryUnreceivedPacketsResponse {
+  /** list of unreceived packet sequences */
+  sequences: number[];
+  /** query block height */
+  height: Height | undefined;
+}
+
+/**
+ * QueryUnreceivedAcks is the request type for the
+ * Query/UnreceivedAcks RPC method
+ */
+export interface QueryUnreceivedAcksRequest {
+  /** client unique identifier */
+  clientId: string;
+  /** list of acknowledgement sequences */
+  packetAckSequences: number[];
+}
+
+/**
+ * QueryUnreceivedAcksResponse is the response type for the
+ * Query/UnreceivedAcks RPC method
+ */
+export interface QueryUnreceivedAcksResponse {
+  /** list of unreceived acknowledgement sequences */
+  sequences: number[];
+  /** query block height */
+  height: Height | undefined;
+}
+
+const baseQueryNextSequenceSendRequest: object = { clientId: "" };
+
+export const QueryNextSequenceSendRequest = {
+  encode(
+    message: QueryNextSequenceSendRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryNextSequenceSendRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryNextSequenceSendRequest,
+    } as QueryNextSequenceSendRequest;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryNextSequenceSendRequest {
+    const message = {
+      ...baseQueryNextSequenceSendRequest,
+    } as QueryNextSequenceSendRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    return message;
+  },
+
+  toJSON(message: QueryNextSequenceSendRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryNextSequenceSendRequest>
+  ): QueryNextSequenceSendRequest {
+    const message = {
+      ...baseQueryNextSequenceSendRequest,
+    } as QueryNextSequenceSendRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    return message;
+  },
+};
+
+const baseQueryNextSequenceSendResponse: object = { nextSequenceSend: 0 };
+
+export const QueryNextSequenceSendResponse = {
+  encode(
+    message: QueryNextSequenceSendResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.nextSequenceSend !== 0) {
+      writer.uint32(8).uint64(message.nextSequenceSend);
+    }
+    if (message.proof.length !== 0) {
+      writer.uint32(18).bytes(message.proof);
+    }
+    if (message.proofHeight !== undefined) {
+      Height.encode(message.proofHeight, writer.uint32(26).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryNextSequenceSendResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryNextSequenceSendResponse,
+    } as QueryNextSequenceSendResponse;
+    message.proof = new Uint8Array();
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.nextSequenceSend = longToNumber(reader.uint64() as Long);
+          break;
+        case 2:
+          message.proof = reader.bytes();
+          break;
+        case 3:
+          message.proofHeight = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryNextSequenceSendResponse {
+    const message = {
+      ...baseQueryNextSequenceSendResponse,
+    } as QueryNextSequenceSendResponse;
+    message.proof = new Uint8Array();
+    if (
+      object.nextSequenceSend !== undefined &&
+      object.nextSequenceSend !== null
+    ) {
+      message.nextSequenceSend = Number(object.nextSequenceSend);
+    } else {
+      message.nextSequenceSend = 0;
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = bytesFromBase64(object.proof);
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromJSON(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryNextSequenceSendResponse): unknown {
+    const obj: any = {};
+    message.nextSequenceSend !== undefined &&
+      (obj.nextSequenceSend = message.nextSequenceSend);
+    message.proof !== undefined &&
+      (obj.proof = base64FromBytes(
+        message.proof !== undefined ? message.proof : new Uint8Array()
+      ));
+    message.proofHeight !== undefined &&
+      (obj.proofHeight = message.proofHeight
+        ? Height.toJSON(message.proofHeight)
+        : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryNextSequenceSendResponse>
+  ): QueryNextSequenceSendResponse {
+    const message = {
+      ...baseQueryNextSequenceSendResponse,
+    } as QueryNextSequenceSendResponse;
+    if (
+      object.nextSequenceSend !== undefined &&
+      object.nextSequenceSend !== null
+    ) {
+      message.nextSequenceSend = object.nextSequenceSend;
+    } else {
+      message.nextSequenceSend = 0;
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = object.proof;
+    } else {
+      message.proof = new Uint8Array();
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromPartial(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketCommitmentRequest: object = { clientId: "", sequence: 0 };
+
+export const QueryPacketCommitmentRequest = {
+  encode(
+    message: QueryPacketCommitmentRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    if (message.sequence !== 0) {
+      writer.uint32(16).uint64(message.sequence);
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketCommitmentRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketCommitmentRequest,
+    } as QueryPacketCommitmentRequest;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        case 2:
+          message.sequence = longToNumber(reader.uint64() as Long);
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketCommitmentRequest {
+    const message = {
+      ...baseQueryPacketCommitmentRequest,
+    } as QueryPacketCommitmentRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequence !== undefined && object.sequence !== null) {
+      message.sequence = Number(object.sequence);
+    } else {
+      message.sequence = 0;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketCommitmentRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    message.sequence !== undefined && (obj.sequence = message.sequence);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketCommitmentRequest>
+  ): QueryPacketCommitmentRequest {
+    const message = {
+      ...baseQueryPacketCommitmentRequest,
+    } as QueryPacketCommitmentRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequence !== undefined && object.sequence !== null) {
+      message.sequence = object.sequence;
+    } else {
+      message.sequence = 0;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketCommitmentResponse: object = {};
+
+export const QueryPacketCommitmentResponse = {
+  encode(
+    message: QueryPacketCommitmentResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.commitment.length !== 0) {
+      writer.uint32(10).bytes(message.commitment);
+    }
+    if (message.proof.length !== 0) {
+      writer.uint32(18).bytes(message.proof);
+    }
+    if (message.proofHeight !== undefined) {
+      Height.encode(message.proofHeight, writer.uint32(26).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketCommitmentResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketCommitmentResponse,
+    } as QueryPacketCommitmentResponse;
+    message.commitment = new Uint8Array();
+    message.proof = new Uint8Array();
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.commitment = reader.bytes();
+          break;
+        case 2:
+          message.proof = reader.bytes();
+          break;
+        case 3:
+          message.proofHeight = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketCommitmentResponse {
+    const message = {
+      ...baseQueryPacketCommitmentResponse,
+    } as QueryPacketCommitmentResponse;
+    message.commitment = new Uint8Array();
+    message.proof = new Uint8Array();
+    if (object.commitment !== undefined && object.commitment !== null) {
+      message.commitment = bytesFromBase64(object.commitment);
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = bytesFromBase64(object.proof);
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromJSON(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketCommitmentResponse): unknown {
+    const obj: any = {};
+    message.commitment !== undefined &&
+      (obj.commitment = base64FromBytes(
+        message.commitment !== undefined ? message.commitment : new Uint8Array()
+      ));
+    message.proof !== undefined &&
+      (obj.proof = base64FromBytes(
+        message.proof !== undefined ? message.proof : new Uint8Array()
+      ));
+    message.proofHeight !== undefined &&
+      (obj.proofHeight = message.proofHeight
+        ? Height.toJSON(message.proofHeight)
+        : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketCommitmentResponse>
+  ): QueryPacketCommitmentResponse {
+    const message = {
+      ...baseQueryPacketCommitmentResponse,
+    } as QueryPacketCommitmentResponse;
+    if (object.commitment !== undefined && object.commitment !== null) {
+      message.commitment = object.commitment;
+    } else {
+      message.commitment = new Uint8Array();
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = object.proof;
+    } else {
+      message.proof = new Uint8Array();
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromPartial(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketCommitmentsRequest: object = { clientId: "" };
+
+export const QueryPacketCommitmentsRequest = {
+  encode(
+    message: QueryPacketCommitmentsRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    if (message.pagination !== undefined) {
+      PageRequest.encode(message.pagination, writer.uint32(18).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketCommitmentsRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketCommitmentsRequest,
+    } as QueryPacketCommitmentsRequest;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        case 2:
+          message.pagination = PageRequest.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketCommitmentsRequest {
+    const message = {
+      ...baseQueryPacketCommitmentsRequest,
+    } as QueryPacketCommitmentsRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageRequest.fromJSON(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketCommitmentsRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    message.pagination !== undefined &&
+      (obj.pagination = message.pagination
+        ? PageRequest.toJSON(message.pagination)
+        : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketCommitmentsRequest>
+  ): QueryPacketCommitmentsRequest {
+    const message = {
+      ...baseQueryPacketCommitmentsRequest,
+    } as QueryPacketCommitmentsRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageRequest.fromPartial(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketCommitmentsResponse: object = {};
+
+export const QueryPacketCommitmentsResponse = {
+  encode(
+    message: QueryPacketCommitmentsResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    for (const v of message.commitments) {
+      PacketState.encode(v!, writer.uint32(10).fork()).ldelim();
+    }
+    if (message.pagination !== undefined) {
+      PageResponse.encode(
+        message.pagination,
+        writer.uint32(18).fork()
+      ).ldelim();
+    }
+    if (message.height !== undefined) {
+      Height.encode(message.height, writer.uint32(26).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketCommitmentsResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketCommitmentsResponse,
+    } as QueryPacketCommitmentsResponse;
+    message.commitments = [];
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.commitments.push(PacketState.decode(reader, reader.uint32()));
+          break;
+        case 2:
+          message.pagination = PageResponse.decode(reader, reader.uint32());
+          break;
+        case 3:
+          message.height = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketCommitmentsResponse {
+    const message = {
+      ...baseQueryPacketCommitmentsResponse,
+    } as QueryPacketCommitmentsResponse;
+    message.commitments = [];
+    if (object.commitments !== undefined && object.commitments !== null) {
+      for (const e of object.commitments) {
+        message.commitments.push(PacketState.fromJSON(e));
+      }
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageResponse.fromJSON(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromJSON(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketCommitmentsResponse): unknown {
+    const obj: any = {};
+    if (message.commitments) {
+      obj.commitments = message.commitments.map((e) =>
+        e ? PacketState.toJSON(e) : undefined
+      );
+    } else {
+      obj.commitments = [];
+    }
+    message.pagination !== undefined &&
+      (obj.pagination = message.pagination
+        ? PageResponse.toJSON(message.pagination)
+        : undefined);
+    message.height !== undefined &&
+      (obj.height = message.height ? Height.toJSON(message.height) : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketCommitmentsResponse>
+  ): QueryPacketCommitmentsResponse {
+    const message = {
+      ...baseQueryPacketCommitmentsResponse,
+    } as QueryPacketCommitmentsResponse;
+    message.commitments = [];
+    if (object.commitments !== undefined && object.commitments !== null) {
+      for (const e of object.commitments) {
+        message.commitments.push(PacketState.fromPartial(e));
+      }
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageResponse.fromPartial(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromPartial(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketAcknowledgementRequest: object = {
+  clientId: "",
+  sequence: 0,
+};
+
+export const QueryPacketAcknowledgementRequest = {
+  encode(
+    message: QueryPacketAcknowledgementRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    if (message.sequence !== 0) {
+      writer.uint32(16).uint64(message.sequence);
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketAcknowledgementRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketAcknowledgementRequest,
+    } as QueryPacketAcknowledgementRequest;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        case 2:
+          message.sequence = longToNumber(reader.uint64() as Long);
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketAcknowledgementRequest {
+    const message = {
+      ...baseQueryPacketAcknowledgementRequest,
+    } as QueryPacketAcknowledgementRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequence !== undefined && object.sequence !== null) {
+      message.sequence = Number(object.sequence);
+    } else {
+      message.sequence = 0;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketAcknowledgementRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    message.sequence !== undefined && (obj.sequence = message.sequence);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketAcknowledgementRequest>
+  ): QueryPacketAcknowledgementRequest {
+    const message = {
+      ...baseQueryPacketAcknowledgementRequest,
+    } as QueryPacketAcknowledgementRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequence !== undefined && object.sequence !== null) {
+      message.sequence = object.sequence;
+    } else {
+      message.sequence = 0;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketAcknowledgementResponse: object = {};
+
+export const QueryPacketAcknowledgementResponse = {
+  encode(
+    message: QueryPacketAcknowledgementResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.acknowledgement.length !== 0) {
+      writer.uint32(10).bytes(message.acknowledgement);
+    }
+    if (message.proof.length !== 0) {
+      writer.uint32(18).bytes(message.proof);
+    }
+    if (message.proofHeight !== undefined) {
+      Height.encode(message.proofHeight, writer.uint32(26).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketAcknowledgementResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketAcknowledgementResponse,
+    } as QueryPacketAcknowledgementResponse;
+    message.acknowledgement = new Uint8Array();
+    message.proof = new Uint8Array();
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.acknowledgement = reader.bytes();
+          break;
+        case 2:
+          message.proof = reader.bytes();
+          break;
+        case 3:
+          message.proofHeight = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketAcknowledgementResponse {
+    const message = {
+      ...baseQueryPacketAcknowledgementResponse,
+    } as QueryPacketAcknowledgementResponse;
+    message.acknowledgement = new Uint8Array();
+    message.proof = new Uint8Array();
+    if (
+      object.acknowledgement !== undefined &&
+      object.acknowledgement !== null
+    ) {
+      message.acknowledgement = bytesFromBase64(object.acknowledgement);
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = bytesFromBase64(object.proof);
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromJSON(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketAcknowledgementResponse): unknown {
+    const obj: any = {};
+    message.acknowledgement !== undefined &&
+      (obj.acknowledgement = base64FromBytes(
+        message.acknowledgement !== undefined
+          ? message.acknowledgement
+          : new Uint8Array()
+      ));
+    message.proof !== undefined &&
+      (obj.proof = base64FromBytes(
+        message.proof !== undefined ? message.proof : new Uint8Array()
+      ));
+    message.proofHeight !== undefined &&
+      (obj.proofHeight = message.proofHeight
+        ? Height.toJSON(message.proofHeight)
+        : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketAcknowledgementResponse>
+  ): QueryPacketAcknowledgementResponse {
+    const message = {
+      ...baseQueryPacketAcknowledgementResponse,
+    } as QueryPacketAcknowledgementResponse;
+    if (
+      object.acknowledgement !== undefined &&
+      object.acknowledgement !== null
+    ) {
+      message.acknowledgement = object.acknowledgement;
+    } else {
+      message.acknowledgement = new Uint8Array();
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = object.proof;
+    } else {
+      message.proof = new Uint8Array();
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromPartial(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketAcknowledgementsRequest: object = {
+  clientId: "",
+  packetCommitmentSequences: 0,
+};
+
+export const QueryPacketAcknowledgementsRequest = {
+  encode(
+    message: QueryPacketAcknowledgementsRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    if (message.pagination !== undefined) {
+      PageRequest.encode(message.pagination, writer.uint32(18).fork()).ldelim();
+    }
+    writer.uint32(26).fork();
+    for (const v of message.packetCommitmentSequences) {
+      writer.uint64(v);
+    }
+    writer.ldelim();
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketAcknowledgementsRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketAcknowledgementsRequest,
+    } as QueryPacketAcknowledgementsRequest;
+    message.packetCommitmentSequences = [];
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        case 2:
+          message.pagination = PageRequest.decode(reader, reader.uint32());
+          break;
+        case 3:
+          if ((tag & 7) === 2) {
+            const end2 = reader.uint32() + reader.pos;
+            while (reader.pos < end2) {
+              message.packetCommitmentSequences.push(
+                longToNumber(reader.uint64() as Long)
+              );
+            }
+          } else {
+            message.packetCommitmentSequences.push(
+              longToNumber(reader.uint64() as Long)
+            );
+          }
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketAcknowledgementsRequest {
+    const message = {
+      ...baseQueryPacketAcknowledgementsRequest,
+    } as QueryPacketAcknowledgementsRequest;
+    message.packetCommitmentSequences = [];
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageRequest.fromJSON(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    if (
+      object.packetCommitmentSequences !== undefined &&
+      object.packetCommitmentSequences !== null
+    ) {
+      for (const e of object.packetCommitmentSequences) {
+        message.packetCommitmentSequences.push(Number(e));
+      }
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketAcknowledgementsRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    message.pagination !== undefined &&
+      (obj.pagination = message.pagination
+        ? PageRequest.toJSON(message.pagination)
+        : undefined);
+    if (message.packetCommitmentSequences) {
+      obj.packetCommitmentSequences = message.packetCommitmentSequences.map(
+        (e) => e
+      );
+    } else {
+      obj.packetCommitmentSequences = [];
+    }
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketAcknowledgementsRequest>
+  ): QueryPacketAcknowledgementsRequest {
+    const message = {
+      ...baseQueryPacketAcknowledgementsRequest,
+    } as QueryPacketAcknowledgementsRequest;
+    message.packetCommitmentSequences = [];
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageRequest.fromPartial(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    if (
+      object.packetCommitmentSequences !== undefined &&
+      object.packetCommitmentSequences !== null
+    ) {
+      for (const e of object.packetCommitmentSequences) {
+        message.packetCommitmentSequences.push(e);
+      }
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketAcknowledgementsResponse: object = {};
+
+export const QueryPacketAcknowledgementsResponse = {
+  encode(
+    message: QueryPacketAcknowledgementsResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    for (const v of message.acknowledgements) {
+      PacketState.encode(v!, writer.uint32(10).fork()).ldelim();
+    }
+    if (message.pagination !== undefined) {
+      PageResponse.encode(
+        message.pagination,
+        writer.uint32(18).fork()
+      ).ldelim();
+    }
+    if (message.height !== undefined) {
+      Height.encode(message.height, writer.uint32(26).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketAcknowledgementsResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketAcknowledgementsResponse,
+    } as QueryPacketAcknowledgementsResponse;
+    message.acknowledgements = [];
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.acknowledgements.push(
+            PacketState.decode(reader, reader.uint32())
+          );
+          break;
+        case 2:
+          message.pagination = PageResponse.decode(reader, reader.uint32());
+          break;
+        case 3:
+          message.height = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketAcknowledgementsResponse {
+    const message = {
+      ...baseQueryPacketAcknowledgementsResponse,
+    } as QueryPacketAcknowledgementsResponse;
+    message.acknowledgements = [];
+    if (
+      object.acknowledgements !== undefined &&
+      object.acknowledgements !== null
+    ) {
+      for (const e of object.acknowledgements) {
+        message.acknowledgements.push(PacketState.fromJSON(e));
+      }
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageResponse.fromJSON(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromJSON(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketAcknowledgementsResponse): unknown {
+    const obj: any = {};
+    if (message.acknowledgements) {
+      obj.acknowledgements = message.acknowledgements.map((e) =>
+        e ? PacketState.toJSON(e) : undefined
+      );
+    } else {
+      obj.acknowledgements = [];
+    }
+    message.pagination !== undefined &&
+      (obj.pagination = message.pagination
+        ? PageResponse.toJSON(message.pagination)
+        : undefined);
+    message.height !== undefined &&
+      (obj.height = message.height ? Height.toJSON(message.height) : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketAcknowledgementsResponse>
+  ): QueryPacketAcknowledgementsResponse {
+    const message = {
+      ...baseQueryPacketAcknowledgementsResponse,
+    } as QueryPacketAcknowledgementsResponse;
+    message.acknowledgements = [];
+    if (
+      object.acknowledgements !== undefined &&
+      object.acknowledgements !== null
+    ) {
+      for (const e of object.acknowledgements) {
+        message.acknowledgements.push(PacketState.fromPartial(e));
+      }
+    }
+    if (object.pagination !== undefined && object.pagination !== null) {
+      message.pagination = PageResponse.fromPartial(object.pagination);
+    } else {
+      message.pagination = undefined;
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromPartial(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketReceiptRequest: object = { clientId: "", sequence: 0 };
+
+export const QueryPacketReceiptRequest = {
+  encode(
+    message: QueryPacketReceiptRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    if (message.sequence !== 0) {
+      writer.uint32(16).uint64(message.sequence);
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketReceiptRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketReceiptRequest,
+    } as QueryPacketReceiptRequest;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        case 2:
+          message.sequence = longToNumber(reader.uint64() as Long);
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketReceiptRequest {
+    const message = {
+      ...baseQueryPacketReceiptRequest,
+    } as QueryPacketReceiptRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequence !== undefined && object.sequence !== null) {
+      message.sequence = Number(object.sequence);
+    } else {
+      message.sequence = 0;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketReceiptRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    message.sequence !== undefined && (obj.sequence = message.sequence);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketReceiptRequest>
+  ): QueryPacketReceiptRequest {
+    const message = {
+      ...baseQueryPacketReceiptRequest,
+    } as QueryPacketReceiptRequest;
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequence !== undefined && object.sequence !== null) {
+      message.sequence = object.sequence;
+    } else {
+      message.sequence = 0;
+    }
+    return message;
+  },
+};
+
+const baseQueryPacketReceiptResponse: object = { received: false };
+
+export const QueryPacketReceiptResponse = {
+  encode(
+    message: QueryPacketReceiptResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.received === true) {
+      writer.uint32(16).bool(message.received);
+    }
+    if (message.proof.length !== 0) {
+      writer.uint32(26).bytes(message.proof);
+    }
+    if (message.proofHeight !== undefined) {
+      Height.encode(message.proofHeight, writer.uint32(34).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryPacketReceiptResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryPacketReceiptResponse,
+    } as QueryPacketReceiptResponse;
+    message.proof = new Uint8Array();
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 2:
+          message.received = reader.bool();
+          break;
+        case 3:
+          message.proof = reader.bytes();
+          break;
+        case 4:
+          message.proofHeight = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryPacketReceiptResponse {
+    const message = {
+      ...baseQueryPacketReceiptResponse,
+    } as QueryPacketReceiptResponse;
+    message.proof = new Uint8Array();
+    if (object.received !== undefined && object.received !== null) {
+      message.received = Boolean(object.received);
+    } else {
+      message.received = false;
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = bytesFromBase64(object.proof);
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromJSON(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryPacketReceiptResponse): unknown {
+    const obj: any = {};
+    message.received !== undefined && (obj.received = message.received);
+    message.proof !== undefined &&
+      (obj.proof = base64FromBytes(
+        message.proof !== undefined ? message.proof : new Uint8Array()
+      ));
+    message.proofHeight !== undefined &&
+      (obj.proofHeight = message.proofHeight
+        ? Height.toJSON(message.proofHeight)
+        : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryPacketReceiptResponse>
+  ): QueryPacketReceiptResponse {
+    const message = {
+      ...baseQueryPacketReceiptResponse,
+    } as QueryPacketReceiptResponse;
+    if (object.received !== undefined && object.received !== null) {
+      message.received = object.received;
+    } else {
+      message.received = false;
+    }
+    if (object.proof !== undefined && object.proof !== null) {
+      message.proof = object.proof;
+    } else {
+      message.proof = new Uint8Array();
+    }
+    if (object.proofHeight !== undefined && object.proofHeight !== null) {
+      message.proofHeight = Height.fromPartial(object.proofHeight);
+    } else {
+      message.proofHeight = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryUnreceivedPacketsRequest: object = {
+  clientId: "",
+  sequences: 0,
+};
+
+export const QueryUnreceivedPacketsRequest = {
+  encode(
+    message: QueryUnreceivedPacketsRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    writer.uint32(18).fork();
+    for (const v of message.sequences) {
+      writer.uint64(v);
+    }
+    writer.ldelim();
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryUnreceivedPacketsRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryUnreceivedPacketsRequest,
+    } as QueryUnreceivedPacketsRequest;
+    message.sequences = [];
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        case 2:
+          if ((tag & 7) === 2) {
+            const end2 = reader.uint32() + reader.pos;
+            while (reader.pos < end2) {
+              message.sequences.push(longToNumber(reader.uint64() as Long));
+            }
+          } else {
+            message.sequences.push(longToNumber(reader.uint64() as Long));
+          }
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryUnreceivedPacketsRequest {
+    const message = {
+      ...baseQueryUnreceivedPacketsRequest,
+    } as QueryUnreceivedPacketsRequest;
+    message.sequences = [];
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequences !== undefined && object.sequences !== null) {
+      for (const e of object.sequences) {
+        message.sequences.push(Number(e));
+      }
+    }
+    return message;
+  },
+
+  toJSON(message: QueryUnreceivedPacketsRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    if (message.sequences) {
+      obj.sequences = message.sequences.map((e) => e);
+    } else {
+      obj.sequences = [];
+    }
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryUnreceivedPacketsRequest>
+  ): QueryUnreceivedPacketsRequest {
+    const message = {
+      ...baseQueryUnreceivedPacketsRequest,
+    } as QueryUnreceivedPacketsRequest;
+    message.sequences = [];
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    if (object.sequences !== undefined && object.sequences !== null) {
+      for (const e of object.sequences) {
+        message.sequences.push(e);
+      }
+    }
+    return message;
+  },
+};
+
+const baseQueryUnreceivedPacketsResponse: object = { sequences: 0 };
+
+export const QueryUnreceivedPacketsResponse = {
+  encode(
+    message: QueryUnreceivedPacketsResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    writer.uint32(10).fork();
+    for (const v of message.sequences) {
+      writer.uint64(v);
+    }
+    writer.ldelim();
+    if (message.height !== undefined) {
+      Height.encode(message.height, writer.uint32(18).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryUnreceivedPacketsResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryUnreceivedPacketsResponse,
+    } as QueryUnreceivedPacketsResponse;
+    message.sequences = [];
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          if ((tag & 7) === 2) {
+            const end2 = reader.uint32() + reader.pos;
+            while (reader.pos < end2) {
+              message.sequences.push(longToNumber(reader.uint64() as Long));
+            }
+          } else {
+            message.sequences.push(longToNumber(reader.uint64() as Long));
+          }
+          break;
+        case 2:
+          message.height = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryUnreceivedPacketsResponse {
+    const message = {
+      ...baseQueryUnreceivedPacketsResponse,
+    } as QueryUnreceivedPacketsResponse;
+    message.sequences = [];
+    if (object.sequences !== undefined && object.sequences !== null) {
+      for (const e of object.sequences) {
+        message.sequences.push(Number(e));
+      }
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromJSON(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryUnreceivedPacketsResponse): unknown {
+    const obj: any = {};
+    if (message.sequences) {
+      obj.sequences = message.sequences.map((e) => e);
+    } else {
+      obj.sequences = [];
+    }
+    message.height !== undefined &&
+      (obj.height = message.height ? Height.toJSON(message.height) : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryUnreceivedPacketsResponse>
+  ): QueryUnreceivedPacketsResponse {
+    const message = {
+      ...baseQueryUnreceivedPacketsResponse,
+    } as QueryUnreceivedPacketsResponse;
+    message.sequences = [];
+    if (object.sequences !== undefined && object.sequences !== null) {
+      for (const e of object.sequences) {
+        message.sequences.push(e);
+      }
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromPartial(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+};
+
+const baseQueryUnreceivedAcksRequest: object = {
+  clientId: "",
+  packetAckSequences: 0,
+};
+
+export const QueryUnreceivedAcksRequest = {
+  encode(
+    message: QueryUnreceivedAcksRequest,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    if (message.clientId !== "") {
+      writer.uint32(10).string(message.clientId);
+    }
+    writer.uint32(18).fork();
+    for (const v of message.packetAckSequences) {
+      writer.uint64(v);
+    }
+    writer.ldelim();
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryUnreceivedAcksRequest {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryUnreceivedAcksRequest,
+    } as QueryUnreceivedAcksRequest;
+    message.packetAckSequences = [];
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.clientId = reader.string();
+          break;
+        case 2:
+          if ((tag & 7) === 2) {
+            const end2 = reader.uint32() + reader.pos;
+            while (reader.pos < end2) {
+              message.packetAckSequences.push(
+                longToNumber(reader.uint64() as Long)
+              );
+            }
+          } else {
+            message.packetAckSequences.push(
+              longToNumber(reader.uint64() as Long)
+            );
+          }
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryUnreceivedAcksRequest {
+    const message = {
+      ...baseQueryUnreceivedAcksRequest,
+    } as QueryUnreceivedAcksRequest;
+    message.packetAckSequences = [];
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = String(object.clientId);
+    } else {
+      message.clientId = "";
+    }
+    if (
+      object.packetAckSequences !== undefined &&
+      object.packetAckSequences !== null
+    ) {
+      for (const e of object.packetAckSequences) {
+        message.packetAckSequences.push(Number(e));
+      }
+    }
+    return message;
+  },
+
+  toJSON(message: QueryUnreceivedAcksRequest): unknown {
+    const obj: any = {};
+    message.clientId !== undefined && (obj.clientId = message.clientId);
+    if (message.packetAckSequences) {
+      obj.packetAckSequences = message.packetAckSequences.map((e) => e);
+    } else {
+      obj.packetAckSequences = [];
+    }
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryUnreceivedAcksRequest>
+  ): QueryUnreceivedAcksRequest {
+    const message = {
+      ...baseQueryUnreceivedAcksRequest,
+    } as QueryUnreceivedAcksRequest;
+    message.packetAckSequences = [];
+    if (object.clientId !== undefined && object.clientId !== null) {
+      message.clientId = object.clientId;
+    } else {
+      message.clientId = "";
+    }
+    if (
+      object.packetAckSequences !== undefined &&
+      object.packetAckSequences !== null
+    ) {
+      for (const e of object.packetAckSequences) {
+        message.packetAckSequences.push(e);
+      }
+    }
+    return message;
+  },
+};
+
+const baseQueryUnreceivedAcksResponse: object = { sequences: 0 };
+
+export const QueryUnreceivedAcksResponse = {
+  encode(
+    message: QueryUnreceivedAcksResponse,
+    writer: _m0.Writer = _m0.Writer.create()
+  ): _m0.Writer {
+    writer.uint32(10).fork();
+    for (const v of message.sequences) {
+      writer.uint64(v);
+    }
+    writer.ldelim();
+    if (message.height !== undefined) {
+      Height.encode(message.height, writer.uint32(18).fork()).ldelim();
+    }
+    return writer;
+  },
+
+  decode(
+    input: _m0.Reader | Uint8Array,
+    length?: number
+  ): QueryUnreceivedAcksResponse {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = {
+      ...baseQueryUnreceivedAcksResponse,
+    } as QueryUnreceivedAcksResponse;
+    message.sequences = [];
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          if ((tag & 7) === 2) {
+            const end2 = reader.uint32() + reader.pos;
+            while (reader.pos < end2) {
+              message.sequences.push(longToNumber(reader.uint64() as Long));
+            }
+          } else {
+            message.sequences.push(longToNumber(reader.uint64() as Long));
+          }
+          break;
+        case 2:
+          message.height = Height.decode(reader, reader.uint32());
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): QueryUnreceivedAcksResponse {
+    const message = {
+      ...baseQueryUnreceivedAcksResponse,
+    } as QueryUnreceivedAcksResponse;
+    message.sequences = [];
+    if (object.sequences !== undefined && object.sequences !== null) {
+      for (const e of object.sequences) {
+        message.sequences.push(Number(e));
+      }
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromJSON(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+
+  toJSON(message: QueryUnreceivedAcksResponse): unknown {
+    const obj: any = {};
+    if (message.sequences) {
+      obj.sequences = message.sequences.map((e) => e);
+    } else {
+      obj.sequences = [];
+    }
+    message.height !== undefined &&
+      (obj.height = message.height ? Height.toJSON(message.height) : undefined);
+    return obj;
+  },
+
+  fromPartial(
+    object: DeepPartial<QueryUnreceivedAcksResponse>
+  ): QueryUnreceivedAcksResponse {
+    const message = {
+      ...baseQueryUnreceivedAcksResponse,
+    } as QueryUnreceivedAcksResponse;
+    message.sequences = [];
+    if (object.sequences !== undefined && object.sequences !== null) {
+      for (const e of object.sequences) {
+        message.sequences.push(e);
+      }
+    }
+    if (object.height !== undefined && object.height !== null) {
+      message.height = Height.fromPartial(object.height);
+    } else {
+      message.height = undefined;
+    }
+    return message;
+  },
+};
+
+/** Query provides defines the gRPC querier service */
+export interface Query {
+  /** NextSequenceSend returns the next send sequence for a given channel. */
+  NextSequenceSend(
+    request: QueryNextSequenceSendRequest
+  ): Promise<QueryNextSequenceSendResponse>;
+  /** PacketCommitment queries a stored packet commitment hash. */
+  PacketCommitment(
+    request: QueryPacketCommitmentRequest
+  ): Promise<QueryPacketCommitmentResponse>;
+  /** PacketCommitments queries a stored packet commitment hash. */
+  PacketCommitments(
+    request: QueryPacketCommitmentsRequest
+  ): Promise<QueryPacketCommitmentsResponse>;
+  /** PacketAcknowledgement queries a stored acknowledgement commitment hash. */
+  PacketAcknowledgement(
+    request: QueryPacketAcknowledgementRequest
+  ): Promise<QueryPacketAcknowledgementResponse>;
+  /** PacketAcknowledgements returns all packet acknowledgements associated with a channel. */
+  PacketAcknowledgements(
+    request: QueryPacketAcknowledgementsRequest
+  ): Promise<QueryPacketAcknowledgementsResponse>;
+  /** PacketReceipt queries a stored packet receipt. */
+  PacketReceipt(
+    request: QueryPacketReceiptRequest
+  ): Promise<QueryPacketReceiptResponse>;
+  /** UnreceivedPackets returns all the unreceived IBC packets associated with a channel and sequences. */
+  UnreceivedPackets(
+    request: QueryUnreceivedPacketsRequest
+  ): Promise<QueryUnreceivedPacketsResponse>;
+  /** UnreceivedAcks returns all the unreceived IBC acknowledgements associated with a channel and sequences. */
+  UnreceivedAcks(
+    request: QueryUnreceivedAcksRequest
+  ): Promise<QueryUnreceivedAcksResponse>;
+}
+
+export class QueryClientImpl implements Query {
+  private readonly rpc: Rpc;
+  constructor(rpc: Rpc) {
+    this.rpc = rpc;
+  }
+  NextSequenceSend(
+    request: QueryNextSequenceSendRequest
+  ): Promise<QueryNextSequenceSendResponse> {
+    const data = QueryNextSequenceSendRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "NextSequenceSend",
+      data
+    );
+    return promise.then((data) =>
+      QueryNextSequenceSendResponse.decode(new _m0.Reader(data))
+    );
+  }
+
+  PacketCommitment(
+    request: QueryPacketCommitmentRequest
+  ): Promise<QueryPacketCommitmentResponse> {
+    const data = QueryPacketCommitmentRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "PacketCommitment",
+      data
+    );
+    return promise.then((data) =>
+      QueryPacketCommitmentResponse.decode(new _m0.Reader(data))
+    );
+  }
+
+  PacketCommitments(
+    request: QueryPacketCommitmentsRequest
+  ): Promise<QueryPacketCommitmentsResponse> {
+    const data = QueryPacketCommitmentsRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "PacketCommitments",
+      data
+    );
+    return promise.then((data) =>
+      QueryPacketCommitmentsResponse.decode(new _m0.Reader(data))
+    );
+  }
+
+  PacketAcknowledgement(
+    request: QueryPacketAcknowledgementRequest
+  ): Promise<QueryPacketAcknowledgementResponse> {
+    const data = QueryPacketAcknowledgementRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "PacketAcknowledgement",
+      data
+    );
+    return promise.then((data) =>
+      QueryPacketAcknowledgementResponse.decode(new _m0.Reader(data))
+    );
+  }
+
+  PacketAcknowledgements(
+    request: QueryPacketAcknowledgementsRequest
+  ): Promise<QueryPacketAcknowledgementsResponse> {
+    const data = QueryPacketAcknowledgementsRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "PacketAcknowledgements",
+      data
+    );
+    return promise.then((data) =>
+      QueryPacketAcknowledgementsResponse.decode(new _m0.Reader(data))
+    );
+  }
+
+  PacketReceipt(
+    request: QueryPacketReceiptRequest
+  ): Promise<QueryPacketReceiptResponse> {
+    const data = QueryPacketReceiptRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "PacketReceipt",
+      data
+    );
+    return promise.then((data) =>
+      QueryPacketReceiptResponse.decode(new _m0.Reader(data))
+    );
+  }
+
+  UnreceivedPackets(
+    request: QueryUnreceivedPacketsRequest
+  ): Promise<QueryUnreceivedPacketsResponse> {
+    const data = QueryUnreceivedPacketsRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "UnreceivedPackets",
+      data
+    );
+    return promise.then((data) =>
+      QueryUnreceivedPacketsResponse.decode(new _m0.Reader(data))
+    );
+  }
+
+  UnreceivedAcks(
+    request: QueryUnreceivedAcksRequest
+  ): Promise<QueryUnreceivedAcksResponse> {
+    const data = QueryUnreceivedAcksRequest.encode(request).finish();
+    const promise = this.rpc.request(
+      "ibc.core.channel.v2.Query",
+      "UnreceivedAcks",
+      data
+    );
+    return promise.then((data) =>
+      QueryUnreceivedAcksResponse.decode(new _m0.Reader(data))
+    );
+  }
+}
+
+declare var self: any | undefined;
+declare var window: any | undefined;
+var globalThis: any = (() => {
+  if (typeof globalThis !== "undefined") return globalThis;
+  if (typeof self !== "undefined") return self;
+  if (typeof window !== "undefined") return window;
+  if (typeof global !== "undefined") return global;
+  throw "Unable to locate global object";
+})();
+
+const atob: (b64: string) => string =
+  globalThis.atob ||
+  ((b64) => globalThis.Buffer.from(b64, "base64").toString("binary"));
+function bytesFromBase64(b64: string): Uint8Array {
+  const bin = atob(b64);
+  const arr = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; ++i) {
+    arr[i] = bin.charCodeAt(i);
+  }
+  return arr;
+}
+
+const btoa: (bin: string) => string =
+  globalThis.btoa ||
+  ((bin) => globalThis.Buffer.from(bin, "binary").toString("base64"));
+function base64FromBytes(arr: Uint8Array): string {
+  const bin: string[] = [];
+  for (let i = 0; i < arr.byteLength; ++i) {
+    bin.push(String.fromCharCode(arr[i]));
+  }
+  return btoa(bin.join(""));
+}
+
+type Builtin = Date | Function | Uint8Array | string | number | undefined;
+export type DeepPartial<T> = T extends Builtin
+  ? T
+  : T extends Array<infer U>
+  ? Array<DeepPartial<U>>
+  : T extends ReadonlyArray<infer U>
+  ? ReadonlyArray<DeepPartial<U>>
+  : T extends {}
+  ? { [K in keyof T]?: DeepPartial<T[K]> }
+  : Partial<T>;
+
+function longToNumber(long: Long): number {
+  if (long.gt(Number.MAX_SAFE_INTEGER)) {
+    throw new globalThis.Error("Value is larger than Number.MAX_SAFE_INTEGER");
+  }
+  return long.toNumber();
+}
+
+if (_m0.util.Long !== Long) {
+  _m0.util.Long = Long as any;
+  _m0.configure();
+}

@@ -1,0 +1,36 @@
+{
+  "chain": "cosmoshub",
+  "version": "v25.2.0",
+  "git_repo": "https://github.com/cosmos/gaia",
+  "git_commit": "6e74cf647f60ef59f4dfade16bd41ff890539fb0",
+  "go_module": "github.com/cosmos/gaia/v25",
+  "fetch_method": "go-module",
+  "proto_files": 315,
+  "dependencies": {
+    "cosmos-sdk": "v0.53.3",
+    "ibc-go": "v10.3.0",
+    "cometbft": "v1.0.4",
+    "wasmd": "v0.60.2"
+  },
+  "created_at": "2026-02-15T16:17:37Z",
+  "codegen": {
+    "go": {
+      "status": "success",
+      "files": 314,
+      "output_dir": "/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/go/cosmoshub/v25.2.0",
+      "protoc_version": "32.0"
+    },
+    "ts": {
+      "status": "success",
+      "files": 268,
+      "output_dir": "/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/ts/cosmoshub/v25.2.0",
+      "protoc_version": "32.0"
+    },
+    "rust": {
+      "status": "success",
+      "files": 182,
+      "output_dir": "/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/rust/cosmoshub/v25.2.0",
+      "protoc_version": "32.0"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "skip": [],
+  "pin": {},
+  "add": [],
+  "proto_module_patterns": [
+    "cosmos/cosmos-sdk",
+    "cosmos/ibc-go",
+    "cometbft/cometbft",
+    "CosmWasm/wasmd",
+    "cosmos/gogoproto",
+    "cosmos/cosmos-proto",
+    "cosmos/ics23"
+  ]
+}

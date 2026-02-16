@@ -1,0 +1,36 @@
+{
+  "chain": "osmosis",
+  "version": "v31.0.0",
+  "git_repo": "https://github.com/osmosis-labs/osmosis",
+  "git_commit": "c1adfd5fd510f132137857c2d644db6b2c70981b",
+  "go_module": "github.com/osmosis-labs/osmosis/v31",
+  "fetch_method": "go-module",
+  "proto_files": 129,
+  "dependencies": {
+    "cosmos-sdk": "unknown",
+    "ibc-go": "unknown",
+    "cometbft": "unknown",
+    "wasmd": "unknown"
+  },
+  "created_at": "2026-02-15T16:20:34Z",
+  "codegen": {
+    "go": {
+      "status": "success",
+      "files": 66,
+      "output_dir": "/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/go/osmosis/v31.0.0",
+      "protoc_version": "32.0"
+    },
+    "ts": {
+      "status": "success",
+      "files": 60,
+      "output_dir": "/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/ts/osmosis/v31.0.0",
+      "protoc_version": "32.0"
+    },
+    "rust": {
+      "status": "success",
+      "files": 31,
+      "output_dir": "/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/rust/osmosis/v31.0.0",
+      "protoc_version": "32.0"
+    }
+  }
+}

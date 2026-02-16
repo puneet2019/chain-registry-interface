@@ -1,0 +1,581 @@
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:8:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:108:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:111:3: "ibc.lightclients.tendermint.v1.ConsensusState" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:13:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:252:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:15:1: Import "interchain_security/ccv/provider/v1/provider.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:16:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:71:3: "ibc.lightclients.tendermint.v1.Misbehaviour" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:91:3: "ibc.lightclients.tendermint.v1.Header" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:106:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:358:3: "ConsumerMetadata" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:360:3: "ConsumerInitializationParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:362:3: "PowerShapingParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:365:3: "AllowlistedRewardDenoms" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:368:3: "InfractionParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:390:3: "ConsumerMetadata" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:393:3: "ConsumerInitializationParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:396:3: "PowerShapingParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:399:3: "AllowlistedRewardDenoms" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/tx.proto:407:3: "InfractionParameters" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:13:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:252:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:8:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:108:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:111:3: "ibc.lightclients.tendermint.v1.ConsensusState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:9:1: Import "interchain_security/ccv/provider/v1/provider.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:10:1: Import "interchain_security/ccv/v1/shared_consumer.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:162:3: "interchain_security.ccv.v1.ConsumerGenesisState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:169:3: "ConsumerPhase" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:199:3: "ConsumerMetadata" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:206:3: "AllowlistedRewardDenoms" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:213:4: "InfractionParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:284:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:399:3: "ConsumerMetadata" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:400:3: "ConsumerInitializationParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:401:3: "PowerShapingParameters" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/query.proto:402:3: "InfractionParameters" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:8:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:108:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:111:3: "ibc.lightclients.tendermint.v1.ConsensusState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:13:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:252:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:8:1: Import "interchain_security/ccv/v1/shared_consumer.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:10:1: Import "interchain_security/ccv/provider/v1/provider.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:45:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:47:12: "ValidatorConsumerPubKey" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:50:12: "ValidatorByConsumerAddr" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:54:12: "ConsumerAddrsToPruneV2" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:74:3: "interchain_security.ccv.v1.ConsumerGenesisState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/genesis.proto:82:3: "ConsumerPhase" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:13:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/provider/v1/provider.proto:252:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:8:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:108:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:111:3: "ibc.lightclients.tendermint.v1.ConsensusState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/tx.proto:10:1: Import "interchain_security/ccv/v1/shared_consumer.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/tx.proto:26:3: "interchain_security.ccv.v1.ConsumerParams" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:8:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:108:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:111:3: "ibc.lightclients.tendermint.v1.ConsensusState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/query.proto:4:1: Import "interchain_security/ccv/v1/shared_consumer.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/query.proto:64:3: "interchain_security.ccv.v1.ConsumerParams" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:8:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:108:3: "ibc.lightclients.tendermint.v1.ClientState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/v1/shared_consumer.proto:111:3: "ibc.lightclients.tendermint.v1.ConsensusState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/genesis.proto:7:1: Import "interchain_security/ccv/v1/shared_consumer.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/genesis.proto:8:1: Import "ibc/lightclients/tendermint/v1/tendermint.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/genesis.proto:36:3: "interchain_security.ccv.v1.ConsumerParams" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/interchain_security/ccv/consumer/v1/genesis.proto:58:3: "interchain_security.ccv.v1.ProviderInfo" is not defined.
+FAILED!Unhandled field [object Object]Error: Unhandled field [object Object]
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:610:19
+    at Array.forEach (<anonymous>)
+    at generateEncode (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:580:23)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:64:36
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:25:9
+    at Array.forEach (<anonymous>)
+    at Object.visit (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:19:14)
+    at Object.generateFile (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:56:17)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/plugin.js:21:37
+    at Array.map (<anonymous>)--ts_proto_out: protoc-gen-ts_proto: Plugin failed with status code 1.
+google/api/expr/v1alpha1/checked.proto: File not found.
+google/api/expr/v1alpha1/eval.proto: File not found.
+google/api/expr/v1alpha1/value.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:12:1: Import "google/api/expr/v1alpha1/checked.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:13:1: Import "google/api/expr/v1alpha1/eval.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:14:1: Import "google/api/expr/v1alpha1/value.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto: "google.api.expr.v1alpha1.ExprValue" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:68:12: "google.api.expr.v1alpha1.Decl" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:83:5: "google.api.expr.v1alpha1.Value" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:89:5: "google.api.expr.v1alpha1.ErrorSet" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:96:5: "google.api.expr.v1alpha1.UnknownSet" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:110:3: "google.api.expr.v1alpha1.Value" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:113:3: "google.api.expr.v1alpha1.Type" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:119:12: "google.api.expr.v1alpha1.ErrorSet" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/test/v1/simple.proto:125:12: "google.api.expr.v1alpha1.UnknownSet" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:8:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:80:3: "ibc.core.commitment.v1.MerklePrefix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:8:1: Import "ibc/core/connection/v1/connection.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:12:12: "IdentifiedConnection" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:13:12: "ConnectionPaths" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:16:3: "Params" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/types/v1/genesis.proto:10:1: Import "ibc/core/connection/v1/genesis.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/types/v1/genesis.proto:19:3: "ibc.core.connection.v1.GenesisState" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:8:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:80:3: "ibc.core.commitment.v1.MerklePrefix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/tx.proto:11:1: Import "ibc/core/connection/v1/connection.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/tx.proto:43:3: "Counterparty" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/tx.proto:44:3: "Version" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/tx.proto:65:3: "Counterparty" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/tx.proto:67:12: "Version" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/tx.proto:95:3: "Version" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/tx.proto:146:3: "Params" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:8:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:80:3: "ibc.core.commitment.v1.MerklePrefix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/query.proto:10:1: Import "ibc/core/connection/v1/connection.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/query.proto:63:3: "ibc.core.connection.v1.ConnectionEnd" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/query.proto:80:12: "ibc.core.connection.v1.IdentifiedConnection" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/query.proto:151:3: "Params" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:8:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:80:3: "ibc.core.commitment.v1.MerklePrefix" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:8:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:80:3: "ibc.core.commitment.v1.MerklePrefix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:8:1: Import "ibc/core/connection/v1/connection.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:12:12: "IdentifiedConnection" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:13:12: "ConnectionPaths" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/genesis.proto:16:3: "Params" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:8:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/connection/v1/connection.proto:80:3: "ibc.core.commitment.v1.MerklePrefix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/solomachine/v2/solomachine.proto:7:1: Import "ibc/core/connection/v1/connection.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/solomachine/v2/solomachine.proto:152:3: "ibc.core.connection.v1.ConnectionEnd" is not defined.
+cosmos/ics23/v1/proofs.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:8:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/core/commitment/v1/commitment.proto:31:12: "cosmos.ics23.v1.CommitmentProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:9:1: Import "cosmos/ics23/v1/proofs.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:13:1: Import "ibc/core/commitment/v1/commitment.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:36:12: "cosmos.ics23.v1.ProofSpec" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/ibc/lightclients/tendermint/v1/tendermint.proto:61:3: "ibc.core.commitment.v1.MerkleRoot" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/packetforward/v1/genesis.proto:5:1: warning: Import amino/amino.proto is unused.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/attestation.proto:19:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/events.proto:19:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/eth/ext/options.proto: File not found.
+proto/eth/v1/attestation.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/beacon_block.proto:19:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/beacon_block.proto:20:1: Import "proto/eth/v1/attestation.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/beacon_block.proto:87:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/beacon_block.proto:221:3: "AttestationData" is not defined.
+proto/eth/ext/options.proto: File not found.
+proto/eth/v1/beacon_block.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/validator.proto:20:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/validator.proto:21:1: Import "proto/eth/v1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/eth/v1/validator.proto:116:32: "BeaconBlock" is not defined.
+proto/eth/ext/options.proto: File not found.
+proto/engine/v1/execution_engine.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/engine/v1/electra.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/engine/v1/electra.proto:19:1: Import "proto/engine/v1/execution_engine.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/engine/v1/electra.proto:78:3: "ExecutionPayloadDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/engine/v1/electra.proto:80:3: "BlobsBundle" is not defined.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/engine/v1/execution_engine.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+FAILED!Unhandled field [object Object]Error: Unhandled field [object Object]
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:610:19
+    at Array.forEach (<anonymous>)
+    at generateEncode (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:580:23)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:64:36
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:25:9
+    at Array.forEach (<anonymous>)
+    at Object.visit (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:19:14)
+    at Object.generateFile (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:56:17)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/plugin.js:21:37
+    at Array.map (<anonymous>)--ts_proto_out: protoc-gen-ts_proto: Plugin failed with status code 1.
+google/rpc/status.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/eval.proto:20:1: Import "google/rpc/status.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/eval.proto:107:12: "google.rpc.Status" is not defined.
+google/rpc/status.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/eval.proto:20:1: Import "google/rpc/status.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/eval.proto:107:12: "google.rpc.Status" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/test/simple.proto:22:1: Import "cel/expr/eval.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/test/simple.proto: "cel.expr.ExprValue" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/test/simple.proto:107:5: "cel.expr.ErrorSet" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/test/simple.proto:114:5: "cel.expr.UnknownSet" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/test/simple.proto:136:12: "cel.expr.ErrorSet" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/test/simple.proto:142:12: "cel.expr.UnknownSet" is not defined.
+google/rpc/status.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/eval.proto:20:1: Import "google/rpc/status.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/eval.proto:107:12: "google.rpc.Status" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/conformance_service.proto:20:1: Import "cel/expr/eval.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/conformance_service.proto:22:1: Import "google/rpc/status.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/conformance_service.proto:72:12: "google.rpc.Status" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/conformance_service.proto:101:12: "google.rpc.Status" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/conformance_service.proto: "cel.expr.ExprValue" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/conformance_service.proto:126:3: "cel.expr.ExprValue" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/cel/expr/conformance/conformance_service.proto:132:12: "google.rpc.Status" is not defined.
+FAILED!Unhandled field [object Object]Error: Unhandled field [object Object]
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:610:19
+    at Array.forEach (<anonymous>)
+    at generateEncode (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:580:23)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:64:36
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:25:9
+    at Array.forEach (<anonymous>)
+    at Object.visit (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:19:14)
+    at Object.generateFile (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:56:17)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/plugin.js:21:37
+    at Array.map (<anonymous>)--ts_proto_out: protoc-gen-ts_proto: Plugin failed with status code 1.
+FAILED!Unhandled field [object Object]Error: Unhandled field [object Object]
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:610:19
+    at Array.forEach (<anonymous>)
+    at generateEncode (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:580:23)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:64:36
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:25:9
+    at Array.forEach (<anonymous>)
+    at Object.visit (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/visit.js:19:14)
+    at Object.generateFile (/Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/main.js:56:17)
+    at /Users/puneetmahajan/.config/yarn/global/node_modules/ts-proto/build/plugin.js:21:37
+    at Array.map (<anonymous>)--ts_proto_out: protoc-gen-ts_proto: Plugin failed with status code 1.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/eip_7251.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/attestation.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/blobs.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/attestation.proto: File not found.
+proto/prysm/v1alpha1/beacon_block.proto: File not found.
+proto/prysm/v1alpha1/beacon_state.proto: File not found.
+proto/prysm/v1alpha1/sync_committee.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:4:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:5:1: Import "proto/prysm/v1alpha1/attestation.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:6:1: Import "proto/prysm/v1alpha1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:7:1: Import "proto/prysm/v1alpha1/beacon_state.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:8:1: Import "proto/prysm/v1alpha1/sync_committee.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:36:5: "ethereum.eth.v1alpha1.BeaconBlock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:37:5: "ethereum.eth.v1alpha1.AttestationData" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:38:5: "ethereum.eth.v1alpha1.AggregateAttestationAndProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:40:5: "ethereum.eth.v1alpha1.VoluntaryExit" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:51:5: "ethereum.eth.v1alpha1.BeaconBlockAltair" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:52:5: "ethereum.eth.v1alpha1.SyncAggregatorSelectionData" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:54:5: "ethereum.eth.v1alpha1.ContributionAndProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:58:5: "ethereum.eth.v1alpha1.BeaconBlockBellatrix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:59:5: "ethereum.eth.v1alpha1.BlindedBeaconBlockBellatrix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:63:5: "ethereum.eth.v1alpha1.ValidatorRegistrationV1" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:66:5: "ethereum.eth.v1alpha1.BeaconBlockCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:67:5: "ethereum.eth.v1alpha1.BlindedBeaconBlockCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:70:5: "ethereum.eth.v1alpha1.BeaconBlockDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:71:5: "ethereum.eth.v1alpha1.BlindedBeaconBlockDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:74:5: "ethereum.eth.v1alpha1.BeaconBlockElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:75:5: "ethereum.eth.v1alpha1.BlindedBeaconBlockElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:76:5: "ethereum.eth.v1alpha1.AggregateAttestationAndProofElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:80:5: "ethereum.eth.v1alpha1.BeaconBlockFulu" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator-client/keymanager.proto:81:5: "ethereum.eth.v1alpha1.BlindedBeaconBlockFulu" is not defined.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/slasher.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/prysm/v1alpha1/beacon_block.proto: File not found.
+proto/prysm/v1alpha1/beacon_state.proto: File not found.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/powchain.proto:6:1: Import "proto/prysm/v1alpha1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/powchain.proto:7:1: Import "proto/prysm/v1alpha1/beacon_state.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/powchain.proto:8:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/powchain.proto:22:3: "BeaconState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/powchain.proto:53:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/powchain.proto:54:12: "Deposit" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/powchain.proto:73:3: "Deposit" is not defined.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/node.proto: File not found.
+proto/prysm/v1alpha1/p2p_messages.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:5:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:6:1: Import "proto/prysm/v1alpha1/node.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:7:1: Import "proto/prysm/v1alpha1/p2p_messages.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:109:5: "MetaDataV0" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:110:5: "MetaDataV1" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:125:3: "ethereum.eth.v1alpha1.PeerDirection" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:127:3: "ethereum.eth.v1alpha1.ConnectionState" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:135:3: "Status" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/debug.proto:50:15: "ethereum.eth.v1alpha1.PeerRequest" is not defined.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/node.proto:22:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/withdrawals.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/attestation.proto: File not found.
+proto/prysm/v1alpha1/withdrawals.proto: File not found.
+proto/engine/v1/execution_engine.proto: File not found.
+proto/engine/v1/electra.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:19:1: Import "proto/prysm/v1alpha1/attestation.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:20:1: Import "proto/prysm/v1alpha1/withdrawals.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:21:1: Import "proto/engine/v1/execution_engine.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:22:1: Import "proto/engine/v1/electra.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:181:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:264:3: "AttestationData" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:343:3: "ethereum.engine.v1.ExecutionPayloadHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:410:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:495:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:509:3: "ethereum.engine.v1.ExecutionPayload" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:562:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:576:3: "ethereum.engine.v1.ExecutionPayloadHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:637:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:650:3: "ethereum.engine.v1.ExecutionPayloadCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:653:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:707:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:720:3: "ethereum.engine.v1.ExecutionPayloadHeaderCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:724:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:734:3: "ethereum.engine.v1.ExecutionPayloadHeaderCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:821:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:834:3: "ethereum.engine.v1.ExecutionPayloadDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:837:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:896:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:909:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:912:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:928:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:938:5: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:940:5: "ethereum.engine.v1.ExecutionRequests" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1048:12: "AttestationElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1063:3: "ethereum.engine.v1.ExecutionPayloadDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1066:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1076:3: "ethereum.engine.v1.ExecutionRequests" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1129:12: "AttestationElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1143:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1146:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1156:3: "ethereum.engine.v1.ExecutionRequests" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1171:3: "AttestationData" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1259:12: "AttestationElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1274:3: "ethereum.engine.v1.ExecutionPayloadDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1277:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1287:3: "ethereum.engine.v1.ExecutionRequests" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1340:12: "AttestationElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1354:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1357:12: "SignedBLSToExecutionChange" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_block.proto:1367:3: "ethereum.engine.v1.ExecutionRequests" is not defined.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/beacon_block.proto: File not found.
+proto/engine/v1/execution_engine.proto: File not found.
+proto/prysm/v1alpha1/beacon_state.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:19:1: Import "proto/prysm/v1alpha1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:20:1: Import "proto/engine/v1/execution_engine.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:21:1: Import "proto/prysm/v1alpha1/beacon_state.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:36:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:43:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:48:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:59:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:68:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:75:35: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:83:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:90:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:95:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:106:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:115:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:123:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:124:3: "ethereum.engine.v1.ExecutionPayloadHeaderCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:134:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:141:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:146:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:157:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:166:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:174:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:175:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:185:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:192:3: "SyncCommittee" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:197:3: "SyncAggregate" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/light_client.proto:208:3: "SyncAggregate" is not defined.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/beacon_block.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/data_columns.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/data_columns.proto:19:1: Import "proto/prysm/v1alpha1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/data_columns.proto:42:3: "SignedBeaconBlockHeader" is not defined.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/sync_committee.proto:18:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+proto/prysm/v1alpha1/attestation.proto: File not found.
+proto/prysm/v1alpha1/beacon_block.proto: File not found.
+proto/prysm/v1alpha1/validator.proto: File not found.
+proto/engine/v1/execution_engine.proto: File not found.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/eip_7251.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:5:1: Import "proto/prysm/v1alpha1/attestation.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:6:1: Import "proto/prysm/v1alpha1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:7:1: Import "proto/prysm/v1alpha1/validator.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:8:1: Import "proto/engine/v1/execution_engine.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:9:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:10:1: Import "proto/prysm/v1alpha1/eip_7251.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:34:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:45:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:46:12: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:51:12: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:77:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:78:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:79:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:99:3: "AttestationData" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:206:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:217:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:218:12: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:223:12: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:251:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:252:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:253:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:297:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:308:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:309:12: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:314:12: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:340:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:341:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:342:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:351:3: "ethereum.engine.v1.ExecutionPayloadHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:370:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:381:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:382:12: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:387:12: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:413:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:414:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:415:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:424:3: "ethereum.engine.v1.ExecutionPayloadHeaderCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:459:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:470:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:471:12: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:476:12: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:502:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:503:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:504:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:513:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:541:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:552:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:553:12: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:558:12: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:584:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:585:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:586:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:595:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:629:12: "PendingDeposit" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:631:12: "PendingPartialWithdrawal" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:633:12: "PendingConsolidation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:652:3: "BeaconBlockHeader" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:663:3: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:664:12: "Eth1Data" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:669:12: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:695:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:696:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:697:3: "Checkpoint" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:706:3: "ethereum.engine.v1.ExecutionPayloadHeaderDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:740:12: "PendingDeposit" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:742:12: "PendingPartialWithdrawal" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_state.proto:744:12: "PendingConsolidation" is not defined.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/attestation.proto: File not found.
+proto/prysm/v1alpha1/beacon_block.proto: File not found.
+proto/prysm/v1alpha1/validator.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:21:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:22:1: Import "proto/prysm/v1alpha1/attestation.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:23:1: Import "proto/prysm/v1alpha1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:24:1: Import "proto/prysm/v1alpha1/validator.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:336:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:348:12: "AttestationElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:360:12: "IndexedAttestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:372:12: "IndexedAttestationElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:442:5: "SignedBeaconBlock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:445:5: "SignedBeaconBlockAltair" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:448:5: "SignedBeaconBlockBellatrix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:451:5: "SignedBlindedBeaconBlockBellatrix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:454:5: "SignedBeaconBlockCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:457:5: "SignedBlindedBeaconBlockCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:460:5: "SignedBeaconBlockDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:463:5: "SignedBlindedBeaconBlockDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:466:5: "SignedBeaconBlockElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:469:5: "SignedBlindedBeaconBlockElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:709:5: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:996:3: "ValidatorParticipation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:1012:12: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:1025:12: "AttestationElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:187:50: "Validator" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:256:30: "AttesterSlashing" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:264:37: "AttesterSlashingElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/beacon_chain.proto:272:30: "ProposerSlashing" is not defined.
+proto/eth/ext/options.proto: File not found.
+proto/prysm/v1alpha1/beacon_block.proto: File not found.
+proto/prysm/v1alpha1/sync_committee.proto: File not found.
+proto/prysm/v1alpha1/attestation.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:22:1: Import "proto/eth/ext/options.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:24:1: Import "proto/prysm/v1alpha1/beacon_block.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:25:1: Import "proto/prysm/v1alpha1/sync_committee.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:26:1: Import "proto/prysm/v1alpha1/attestation.proto" was not found or had errors.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:455:5: "SignedBeaconBlock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:458:5: "SignedBeaconBlockAltair" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:461:5: "SignedBeaconBlockBellatrix" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:464:5: "SignedBeaconBlockCapella" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:467:5: "SignedBeaconBlockDeneb" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:470:5: "SignedBeaconBlockElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:473:5: "SignedBeaconBlockFulu" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:750:3: "AggregateAttestationAndProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:755:3: "AggregateAttestationAndProofElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:760:3: "SignedAggregateAttestationAndProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:765:3: "SignedAggregateAttestationAndProofElectra" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:1007:12: "SyncCommitteeMessage" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:143:45: "GenericBeaconBlock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:154:26: "GenericSignedBeaconBlock" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:186:59: "AttestationData" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:197:26: "Attestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:209:33: "SingleAttestation" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:263:19: "SignedVoluntaryExit" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:303:25: "SyncCommitteeMessage" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:328:16: "SyncCommitteeContribution" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:337:40: "SignedContributionAndProof" is not defined.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/validator.proto:368:36: "SignedValidatorRegistrationsV1" is not defined.
+proto/eth/ext/options.proto: File not found.
+/Users/puneetmahajan/WebstormProjects/chain-registry-interface/proto-out/raw/cosmoshub/v25.2.0/protos/prysm/v1alpha1/p2p_messages.proto:6:1: Import "proto/eth/ext/options.proto" was not found or had errors.
