@@ -58,6 +58,72 @@ copy_protos() {
   fi
 }
 
+# --- Go module helpers ---
+# parse_gomod <go.mod path>
+# Parses a go.mod file and outputs tab-separated lines:
+#   module_path\tversion\tactual_module_path
+# Handles both require and replace directives (replace overrides require).
+parse_gomod() {
+  local gomod="$1"
+  python3 - "$gomod" << 'PYEOF'
+import re, sys
+
+gomod_path = sys.argv[1]
+with open(gomod_path) as f:
+    content = f.read()
+
+requires = {}  # module -> version
+replaces = {}  # module -> (actual_module, version)
+
+# Parse require blocks
+for m in re.finditer(r'require\s*\((.*?)\)', content, re.DOTALL):
+    for line in m.group(1).strip().split('\n'):
+        line = line.strip()
+        if line and not line.startswith('//'):
+            parts = line.split()
+            if len(parts) >= 2:
+                requires[parts[0]] = parts[1]
+
+# Parse single-line requires
+for m in re.finditer(r'^require\s+(\S+)\s+(\S+)', content, re.MULTILINE):
+    requires[m.group(1)] = m.group(2)
+
+# Parse replace blocks
+for m in re.finditer(r'replace\s*\((.*?)\)', content, re.DOTALL):
+    for line in m.group(1).strip().split('\n'):
+        line = line.strip()
+        if line and not line.startswith('//') and '=>' in line:
+            left, right = line.split('=>', 1)
+            left_parts = left.strip().split()
+            right_parts = right.strip().split()
+            if len(left_parts) >= 1 and len(right_parts) >= 1:
+                orig_mod = left_parts[0]
+                actual_mod = right_parts[0]
+                actual_ver = right_parts[1] if len(right_parts) >= 2 else ''
+                replaces[orig_mod] = (actual_mod, actual_ver)
+
+# Parse single-line replaces
+for m in re.finditer(r'^replace\s+(\S+)\s+\S*\s*=>\s*(\S+)\s*(\S*)', content, re.MULTILINE):
+    orig_mod = m.group(1)
+    actual_mod = m.group(2)
+    actual_ver = m.group(3)
+    # Skip local path replacements
+    if actual_mod.startswith('.') or actual_mod.startswith('/'):
+        continue
+    replaces[orig_mod] = (actual_mod, actual_ver)
+
+# Output: merge requires with replaces
+for mod, ver in requires.items():
+    if mod in replaces:
+        actual_mod, actual_ver = replaces[mod]
+        if actual_mod.startswith('.') or actual_mod.startswith('/'):
+            continue  # skip local replacements
+        print(f"{mod}\t{actual_ver or ver}\t{actual_mod}")
+    else:
+        print(f"{mod}\t{ver}\t{mod}")
+PYEOF
+}
+
 # --- Root directory ---
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PROTO_REGISTRY_DIR="$REPO_ROOT/proto-registry"

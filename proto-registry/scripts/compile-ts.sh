@@ -52,25 +52,51 @@ fi
 COMPILABLE=$(echo "$PROTO_FILES" | wc -l | tr -d ' ')
 info "Compiling $COMPILABLE proto files..."
 
-# Compile individually to handle failures gracefully
-FAIL_COUNT=0
-SUCCESS_COUNT=0
+# Compile all protos in a single batch for proper cross-file type resolution.
+# Fall back to per-file identification of failures.
+TS_PROTO_PLUGIN="protoc-gen-ts_proto=$(command -v protoc-gen-ts_proto)"
 : > "$TS_OUT/compile_errors.log"
 
-for proto in $PROTO_FILES; do
-  if protoc \
-    -I "$PROTO_DIR" \
-    --plugin="protoc-gen-ts_proto=$(command -v protoc-gen-ts_proto)" \
-    --ts_proto_out="$TS_OUT" \
-    --ts_proto_opt=esModuleInterop=true \
-    --ts_proto_opt=outputServices=generic-definitions \
-    --ts_proto_opt=useExactTypes=false \
-    "$proto" 2>>"$TS_OUT/compile_errors.log"; then
-    SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
-  else
-    FAIL_COUNT=$((FAIL_COUNT + 1))
+info "Batch-compiling all proto files..."
+if protoc \
+  -I "$PROTO_DIR" \
+  --plugin="$TS_PROTO_PLUGIN" \
+  --ts_proto_out="$TS_OUT" \
+  --ts_proto_opt=esModuleInterop=true \
+  --ts_proto_opt=outputServices=generic-definitions \
+  --ts_proto_opt=useExactTypes=false \
+  $PROTO_FILES 2>"$TS_OUT/compile_errors.log"; then
+  SUCCESS_COUNT=$COMPILABLE
+  FAIL_COUNT=0
+else
+  # Batch failed — identify which protos fail and compile the rest in one batch
+  info "Batch compilation had errors, identifying failing protos..."
+  GOOD_PROTOS=""
+  FAIL_COUNT=0
+  SUCCESS_COUNT=0
+  TS_TEST_DIR=$(mktemp -d)
+  for proto in $PROTO_FILES; do
+    if protoc -I "$PROTO_DIR" --plugin="$TS_PROTO_PLUGIN" --ts_proto_out="$TS_TEST_DIR" "$proto" 2>/dev/null; then
+      GOOD_PROTOS="$GOOD_PROTOS $proto"
+      SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+    else
+      FAIL_COUNT=$((FAIL_COUNT + 1))
+    fi
+  done
+  rm -rf "$TS_TEST_DIR"
+  # Batch-compile all good protos together
+  if [ -n "$GOOD_PROTOS" ]; then
+    find "$TS_OUT" -name '*.ts' -delete 2>/dev/null || true
+    protoc \
+      -I "$PROTO_DIR" \
+      --plugin="$TS_PROTO_PLUGIN" \
+      --ts_proto_out="$TS_OUT" \
+      --ts_proto_opt=esModuleInterop=true \
+      --ts_proto_opt=outputServices=generic-definitions \
+      --ts_proto_opt=useExactTypes=false \
+      $GOOD_PROTOS 2>>"$TS_OUT/compile_errors.log" || true
   fi
-done
+fi
 
 if [ "$FAIL_COUNT" -gt 0 ]; then
   warn "$FAIL_COUNT proto files failed to compile (see $TS_OUT/compile_errors.log)"

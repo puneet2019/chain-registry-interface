@@ -88,6 +88,11 @@ info "Copying chain protos..."
 copy_protos "$WORK/repo/proto" "$OUT/protos"
 copy_protos "$WORK/repo/third_party/proto" "$OUT/protos"
 
+# Save the chain's go.mod for later use by compile-go.sh
+if [ -f "$GO_MOD_DIR/go.mod" ]; then
+  cp "$GO_MOD_DIR/go.mod" "$OUT/chain-go.mod"
+fi
+
 # --- Step 4: Resolve ALL dependencies via Go modules ---
 # Uses the chain's own go.mod to resolve the full dependency tree,
 # then scans every resolved module for proto/ directories.
@@ -164,6 +169,17 @@ PYEOF
       copy_protos "$mod_dir/third_party/proto" "$OUT/protos"
     fi
 
+    # Scan additional directories (e.g., ics23 stores protos in go/)
+    for subdir in go types; do
+      if [ -d "$mod_dir/$subdir" ]; then
+        PROTO_IN_SUB=$(count_protos "$mod_dir/$subdir")
+        if [ "$PROTO_IN_SUB" -gt 0 ]; then
+          info "  $mod_path@$mod_ver ($PROTO_IN_SUB protos in $subdir/)"
+          copy_protos "$mod_dir/$subdir" "$OUT/protos"
+        fi
+      fi
+    done
+
     # Track key dependency versions for the manifest
     case "$mod_path" in
       *cosmos/cosmos-sdk*) SDK_VERSION="$mod_ver" ;;
@@ -204,6 +220,146 @@ PYEOF
 )
 
   info "Found protos in $DEP_COUNT dependencies"
+
+  # --- Fallback: clone missing deps from proto_module_patterns ---
+  # Some modules (like ics23) store protos outside the Go module path, so
+  # go list can resolve them but the module cache won't contain protos.
+  # For each pattern in chains.json, check if it contributed protos already.
+  # If not (or if go list failed entirely), clone the repo and copy protos.
+  CHAINS_JSON="$PROTO_REGISTRY_DIR/config/chains.json"
+  ORIGINAL_GOMOD="$GO_MOD_DIR/go.mod"  # Original go.mod (before local-replace stripping)
+
+  if [ -f "$CHAINS_JSON" ] && [ -f "$ORIGINAL_GOMOD" ]; then
+    # Collect which module paths contributed protos in the main loop
+    FOUND_MODS="$SDK_VERSION:cosmos-sdk $IBC_VERSION:ibc-go $COMETBFT_VERSION:cometbft $WASMD_VERSION:wasmd"
+
+    # Read proto_module_patterns from chains.json
+    PATTERNS=$(python3 -c "
+import json
+with open('$CHAINS_JSON') as f:
+    data = json.load(f)
+for p in data.get('proto_module_patterns', []):
+    print(p)
+")
+
+    # Parse the ORIGINAL go.mod (respects replace directives like osmosis forks)
+    GOMOD_DEPS=$(parse_gomod "$ORIGINAL_GOMOD")
+
+    FALLBACK_DIR="$WORK/fallback_deps"
+    mkdir -p "$FALLBACK_DIR"
+    FALLBACK_COUNT=0
+
+    for pattern in $PATTERNS; do
+      # Find matching module in parsed go.mod output
+      MATCH=$(echo "$GOMOD_DEPS" | grep "$pattern" | head -1 || true)
+      [ -z "$MATCH" ] && continue
+
+      MOD=$(echo "$MATCH" | cut -f1)
+      VER=$(echo "$MATCH" | cut -f2)
+      ACTUAL=$(echo "$MATCH" | cut -f3)
+
+      # Check if this pattern's protos are already present.
+      # For tracked deps (sdk, ibc, etc.) check version vars.
+      # For others (ics23, gogoproto, etc.) we always try the fallback
+      # since the Go module cache might not contain their protos.
+      ALREADY_FOUND=false
+      case "$MOD" in
+        *cosmos/cosmos-sdk*) [ -n "$SDK_VERSION" ] && [ "$SDK_VERSION" != "unknown" ] && ALREADY_FOUND=true ;;
+        *cosmos/ibc-go*)     [ -n "$IBC_VERSION" ] && [ "$IBC_VERSION" != "unknown" ] && ALREADY_FOUND=true ;;
+        *cometbft/cometbft*) [ -n "$COMETBFT_VERSION" ] && [ "$COMETBFT_VERSION" != "unknown" ] && ALREADY_FOUND=true ;;
+        *CosmWasm/wasmd*)    [ -n "$WASMD_VERSION" ] && [ "$WASMD_VERSION" != "unknown" ] && ALREADY_FOUND=true ;;
+      esac
+      [ "$ALREADY_FOUND" = true ] && continue
+
+      # Convert Go module path to GitHub URL
+      # e.g., github.com/osmosis-labs/cosmos-sdk -> https://github.com/osmosis-labs/cosmos-sdk
+      GH_URL=""
+      if echo "$ACTUAL" | grep -q "^github.com/"; then
+        GH_OWNER_REPO=$(echo "$ACTUAL" | sed 's|github.com/||' | cut -d'/' -f1-2)
+        GH_URL="https://github.com/$GH_OWNER_REPO"
+      fi
+      [ -z "$GH_URL" ] && continue
+
+      CLONE_DIR="$FALLBACK_DIR/$(echo "$ACTUAL" | tr '/' '_')"
+      info "  Fallback: cloning $ACTUAL@$VER..."
+
+      # For Go submodules (e.g., github.com/cosmos/ics23/go), the tag format is
+      # <subdir>/<version> (e.g., go/v0.11.0). Detect the subdir prefix.
+      SUBMOD_PREFIX=""
+      ACTUAL_NO_GH=$(echo "$ACTUAL" | sed 's|github.com/||')
+      ACTUAL_PARTS=$(echo "$ACTUAL_NO_GH" | tr '/' '\n' | wc -l | tr -d ' ')
+      if [ "$ACTUAL_PARTS" -gt 2 ]; then
+        # Extra path components after owner/repo are the submodule dir
+        SUBMOD_PREFIX=$(echo "$ACTUAL_NO_GH" | cut -d'/' -f3-)
+      fi
+
+      # Try multiple tag formats for the version
+      CLONED=false
+      TAGS_TO_TRY="$VER v$VER"
+      if [ -n "$SUBMOD_PREFIX" ]; then
+        TAGS_TO_TRY="$SUBMOD_PREFIX/$VER $SUBMOD_PREFIX/v$VER $TAGS_TO_TRY"
+      fi
+      for tag in $TAGS_TO_TRY; do
+        if git clone --depth 1 --branch "$tag" "$GH_URL" "$CLONE_DIR" 2>/dev/null; then
+          CLONED=true
+          break
+        fi
+        rm -rf "$CLONE_DIR" 2>/dev/null || true
+      done
+
+      # For pseudo-versions (e.g., v0.50.12-osmosis-v31), try the full string
+      if [ "$CLONED" = false ] && echo "$VER" | grep -qE '^v[0-9]+\.[0-9]+\.[0-9]+-'; then
+        if git clone --depth 1 --branch "$VER" "$GH_URL" "$CLONE_DIR" 2>/dev/null; then
+          CLONED=true
+        else
+          rm -rf "$CLONE_DIR" 2>/dev/null || true
+        fi
+      fi
+
+      # Last resort: try full clone + checkout
+      if [ "$CLONED" = false ]; then
+        if git clone "$GH_URL" "$CLONE_DIR" 2>/dev/null; then
+          if (cd "$CLONE_DIR" && git checkout "$VER" 2>/dev/null); then
+            CLONED=true
+          else
+            rm -rf "$CLONE_DIR"
+          fi
+        fi
+      fi
+
+      if [ "$CLONED" = true ] && [ -d "$CLONE_DIR" ]; then
+        FB_COUNT=0
+        for subdir in proto third_party/proto go types; do
+          if [ -d "$CLONE_DIR/$subdir" ]; then
+            SUB_COUNT=$(count_protos "$CLONE_DIR/$subdir")
+            if [ "$SUB_COUNT" -gt 0 ]; then
+              info "    $ACTUAL: $SUB_COUNT protos in $subdir/"
+              copy_protos "$CLONE_DIR/$subdir" "$OUT/protos"
+              FB_COUNT=$((FB_COUNT + SUB_COUNT))
+            fi
+          fi
+        done
+        if [ "$FB_COUNT" -gt 0 ]; then
+          FALLBACK_COUNT=$((FALLBACK_COUNT + 1))
+          DEP_COUNT=$((DEP_COUNT + 1))
+        fi
+
+        # Track versions
+        case "$MOD" in
+          *cosmos/cosmos-sdk*) SDK_VERSION="$VER" ;;
+          *cosmos/ibc-go*)     IBC_VERSION="$VER" ;;
+          *cometbft/cometbft*) COMETBFT_VERSION="$VER" ;;
+          *CosmWasm/wasmd*)    WASMD_VERSION="$VER" ;;
+        esac
+      else
+        warn "  Failed to clone $ACTUAL@$VER"
+      fi
+    done
+
+    if [ "$FALLBACK_COUNT" -gt 0 ]; then
+      info "Fallback fetched protos from $FALLBACK_COUNT additional dependencies"
+    fi
+  fi
 
   DEPS_JSON=$(cat <<EOF
     "cosmos-sdk": "${SDK_VERSION:-unknown}",

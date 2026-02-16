@@ -56,22 +56,43 @@ fi
 COMPILABLE=$(echo "$PROTO_FILES" | wc -l | tr -d ' ')
 info "Compiling $COMPILABLE proto files..."
 
-# Compile individually to handle failures gracefully
-FAIL_COUNT=0
-SUCCESS_COUNT=0
+# Compile all protos in a single batch (required for prost — individual compilation
+# overwrites same-package output files). Fall back to per-file for failures.
 : > "$RUST_OUT/compile_errors.log"
 
-for proto in $PROTO_FILES; do
-  if protoc \
-    -I "$PROTO_DIR" \
-    --prost_out="$RUST_OUT" \
-    --tonic_out="$RUST_OUT" \
-    "$proto" 2>>"$RUST_OUT/compile_errors.log"; then
-    SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
-  else
-    FAIL_COUNT=$((FAIL_COUNT + 1))
+info "Batch-compiling all proto files..."
+if protoc \
+  -I "$PROTO_DIR" \
+  --prost_out="$RUST_OUT" \
+  --tonic_out="$RUST_OUT" \
+  $PROTO_FILES 2>"$RUST_OUT/compile_errors.log"; then
+  SUCCESS_COUNT=$COMPILABLE
+  FAIL_COUNT=0
+else
+  # Batch failed — identify which protos fail and compile the rest in one batch
+  info "Batch compilation had errors, identifying failing protos..."
+  GOOD_PROTOS=""
+  FAIL_COUNT=0
+  SUCCESS_COUNT=0
+  for proto in $PROTO_FILES; do
+    if protoc -I "$PROTO_DIR" --prost_out=/dev/null "$proto" 2>/dev/null; then
+      GOOD_PROTOS="$GOOD_PROTOS $proto"
+      SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+    else
+      FAIL_COUNT=$((FAIL_COUNT + 1))
+    fi
+  done
+  # Batch-compile all good protos together
+  if [ -n "$GOOD_PROTOS" ]; then
+    rm -rf "$RUST_OUT"/*.rs "$RUST_OUT"/*/  2>/dev/null || true
+    mkdir -p "$RUST_OUT"
+    protoc \
+      -I "$PROTO_DIR" \
+      --prost_out="$RUST_OUT" \
+      --tonic_out="$RUST_OUT" \
+      $GOOD_PROTOS 2>>"$RUST_OUT/compile_errors.log" || true
   fi
-done
+fi
 
 if [ "$FAIL_COUNT" -gt 0 ]; then
   warn "$FAIL_COUNT proto files failed to compile (see $RUST_OUT/compile_errors.log)"
@@ -79,6 +100,75 @@ fi
 
 COMPILED=$(find "$RUST_OUT" -name '*.rs' -type f 2>/dev/null | wc -l | tr -d ' ')
 info "Rust compilation complete: $COMPILED .rs files generated ($SUCCESS_COUNT succeeded, $FAIL_COUNT failed)"
+
+# --- Post-codegen fixup: remove unconditional tonic includes from .rs files ---
+# protoc-gen-prost emits include!("foo.tonic.rs") in the .rs files, but lib.rs
+# already includes them with #[cfg(feature = "grpc")]. Remove the unconditional
+# includes to prevent missing-tonic errors or duplicate definitions.
+info "Removing unconditional tonic includes from .rs files..."
+find "$RUST_OUT" -name '*.rs' ! -name '*.tonic.rs' ! -path '*/src/*' -type f | while read -r f; do
+  sed -i '' '/^include!(".*\.tonic\.rs");$/d' "$f"
+done
+
+# --- Post-codegen fixup: fix derive trait issues in generated .rs files ---
+# Two issues to fix:
+# 1. Structs (::prost::Message) with Eq/Hash fail when they contain fields whose
+#    types don't implement Eq/Hash (prost_types::Any/Timestamp/Duration, or other
+#    generated structs that transitively contain them). Strip Eq/Hash from ALL structs.
+# 2. Enums (::prost::Enumeration) with Ord need Eq (since Ord: Eq), but prost
+#    sometimes generates Ord without Eq. Add Eq where Ord is present.
+info "Fixing derive traits in generated .rs files..."
+python3 - "$RUST_OUT" << 'PYEOF'
+import os, re, sys
+
+rust_out = sys.argv[1]
+fixed = 0
+
+for root, dirs, files in os.walk(rust_out):
+    for fname in files:
+        if not fname.endswith('.rs'):
+            continue
+        fpath = os.path.join(root, fname)
+        with open(fpath) as f:
+            content = f.read()
+
+        def fix_derive(m):
+            traits = [t.strip() for t in m.group(1).split(',')]
+            is_message = any('Message' in t for t in traits)
+            is_oneof = any('Oneof' in t for t in traits)
+            is_enum = any('Enumeration' in t for t in traits)
+
+            if is_message or is_oneof:
+                # Strip Eq and Hash from structs/oneofs — they cause cross-file issues
+                traits = [t for t in traits if t not in ('Eq', 'Hash', '::prost::Eq', '::prost::Hash')]
+            elif is_enum:
+                # Enums with Ord need Eq
+                has_ord = 'Ord' in traits
+                has_eq = 'Eq' in traits
+                if has_ord and not has_eq:
+                    # Insert Eq after PartialEq
+                    idx = next((i for i, t in enumerate(traits) if t == 'PartialEq'), -1)
+                    if idx >= 0:
+                        traits.insert(idx + 1, 'Eq')
+                    else:
+                        traits.insert(0, 'Eq')
+
+            return '#[derive({})]'.format(', '.join(traits))
+
+        new_content = re.sub(r'#\[derive\(([^)]*)\)\]', fix_derive, content)
+
+        # Clean up empty derives or trailing commas
+        new_content = re.sub(r'#\[derive\(\s*,', '#[derive(', new_content)
+        new_content = re.sub(r',\s*\)\]', ')]', new_content)
+        new_content = re.sub(r'#\[derive\(\s*\)\]\n?', '', new_content)
+
+        if new_content != content:
+            with open(fpath, 'w') as f:
+                f.write(new_content)
+            fixed += 1
+
+print(f"Fixed derive traits in {fixed} files")
+PYEOF
 
 # Update manifest with codegen info
 MANIFEST="$PROTO_OUT_DIR/$CHAIN/raw/$VERSION/manifest.json"
@@ -114,6 +204,7 @@ license = "MIT"
 
 [dependencies]
 prost = "0.13"
+prost-types = "0.13"
 
 [dependencies.tonic]
 version = "0.12"
@@ -140,6 +231,8 @@ for root, dirs, files in os.walk(rust_out):
     if root == src_dir or root.startswith(src_dir + os.sep):
         continue
     for f in files:
+        if f.startswith('.'):
+            continue
         if f.endswith('.rs'):
             rel = os.path.relpath(os.path.join(root, f), rust_out)
             rs_files.append(rel)
