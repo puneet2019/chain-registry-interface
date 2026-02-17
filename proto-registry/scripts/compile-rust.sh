@@ -74,14 +74,16 @@ else
   GOOD_PROTOS=""
   FAIL_COUNT=0
   SUCCESS_COUNT=0
+  RUST_TEST_DIR=$(mktemp -d)
   for proto in $PROTO_FILES; do
-    if protoc -I "$PROTO_DIR" --prost_out=/dev/null "$proto" 2>/dev/null; then
+    if protoc -I "$PROTO_DIR" --prost_out="$RUST_TEST_DIR" "$proto" 2>/dev/null; then
       GOOD_PROTOS="$GOOD_PROTOS $proto"
       SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
     else
       FAIL_COUNT=$((FAIL_COUNT + 1))
     fi
   done
+  rm -rf "$RUST_TEST_DIR"
   # Batch-compile all good protos together
   if [ -n "$GOOD_PROTOS" ]; then
     rm -rf "$RUST_OUT"/*.rs "$RUST_OUT"/*/  2>/dev/null || true

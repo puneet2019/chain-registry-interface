@@ -377,6 +377,59 @@ if [ -d "$THIRD_PARTY" ]; then
   copy_protos "$THIRD_PARTY" "$OUT/protos"
 fi
 
+# --- Step 5b: Deduplicate proto files ---
+# When the same proto package is defined in multiple files at different paths
+# (e.g., proofs.proto at root AND confio/proofs.proto both defining package ics23),
+# protoc fails with "already defined" errors. Remove duplicates.
+DEDUPED=$(python3 - "$OUT/protos" << 'PYEOF'
+import os, re, sys, collections
+
+proto_dir = sys.argv[1]
+# Map: (package, basename) -> list of (filepath, depth)
+seen = collections.defaultdict(list)
+for dirpath, dirnames, filenames in os.walk(proto_dir):
+    for f in filenames:
+        if not f.endswith('.proto'):
+            continue
+        fpath = os.path.join(dirpath, f)
+        rel = os.path.relpath(fpath, proto_dir)
+        depth = rel.count(os.sep)
+        try:
+            with open(fpath) as fh:
+                content = fh.read()
+            m = re.search(r'^package\s+([^;]+);', content, re.MULTILINE)
+            if m:
+                pkg = m.group(1).strip()
+                seen[(pkg, f)].append((fpath, depth, rel))
+        except:
+            pass
+
+removed = 0
+for key, entries in seen.items():
+    if len(entries) <= 1:
+        continue
+    # Keep the shallowest path (most canonical), remove others
+    entries.sort(key=lambda x: x[1])
+    for fpath, depth, rel in entries[1:]:
+        os.remove(fpath)
+        removed += 1
+        print(f"  Removed duplicate: {rel} (same package as {entries[0][2]})", file=sys.stderr)
+
+# Clean up empty directories
+for dirpath, dirnames, filenames in os.walk(proto_dir, topdown=False):
+    if not filenames and not dirnames:
+        try:
+            os.rmdir(dirpath)
+        except:
+            pass
+
+print(removed)
+PYEOF
+)
+if [ "$DEDUPED" -gt 0 ]; then
+  info "Removed $DEDUPED duplicate proto files"
+fi
+
 # --- Step 6: Write manifest ---
 PROTO_COUNT=$(count_protos "$OUT/protos")
 info "Total proto files collected: $PROTO_COUNT"
